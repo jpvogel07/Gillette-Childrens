@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Inputs pinputs;
     private bool highlighted;
     private GameObject grabbed;
+    public ClickableObject ClkObj;
 
     private void OnEnable()
     {
@@ -25,15 +26,18 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     void Update()
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //this.gameObject.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0;
         this.gameObject.transform.position = mousePos;
+        if (Input.GetMouseButtonUp(0))
+        {
+            ClkObj.MovedCheck();
+        }
     }
 
 
@@ -46,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("highlighted");
             highlighted = true;
             grabbed = collision.gameObject;
+            ClkObj = collision.GetComponent<ClickableObject>();
         } 
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -60,11 +65,12 @@ public class PlayerMovement : MonoBehaviour
     }
     private void movment(InputAction.CallbackContext c)
     {
-        Debug.Log("click");
         if (highlighted)
         {
             grabbed.gameObject.transform.parent = this.transform;
             highlighted = false;
+            ClkObj.MovedCheck();
+
         }
         else if(!highlighted&&grabbed.gameObject.transform.parent!=null)
         {
