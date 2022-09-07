@@ -556,6 +556,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2efa978586ccda24c94af8e3fe0b0048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Obj: {x: 0, y: 0}
+  HighLighted: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!1 &695347601
 GameObject:
   m_ObjectHideFlags: 0

@@ -46,11 +46,10 @@ public class PlayerMovement : MonoBehaviour
         if (collision.CompareTag("clickable"))
         {
             pinputs.player.movement.started += movment;
-            //switch image
-            Debug.Log("highlighted");
             highlighted = true;
             grabbed = collision.gameObject;
             ClkObj = collision.GetComponent<ClickableObject>();
+            ClkObj.GetComponent<ClickableObject>().highlighted();
         } 
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -58,9 +57,11 @@ public class PlayerMovement : MonoBehaviour
         if (collision.CompareTag("clickable"))
         {
             pinputs.player.movement.started -= movment;
-            //switch image
             highlighted = false;
             grabbed = null;
+            ClkObj.GetComponent<ClickableObject>().nonhighlighted();
+            ClkObj.GetComponent<ClickableObject>().Obj.x = ClkObj.transform.position.x;
+            ClkObj.GetComponent<ClickableObject>().Obj.y = ClkObj.transform.position.y;
         }
     }
     private void movment(InputAction.CallbackContext c)
@@ -70,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
             grabbed.gameObject.transform.parent = this.transform;
             highlighted = false;
             ClkObj.MovedCheck();
-
+            Debug.Log("picked up");
         }
         else if(!highlighted&&grabbed.gameObject.transform.parent!=null)
         {

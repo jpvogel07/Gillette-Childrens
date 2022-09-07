@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ClickableObject : MonoBehaviour
 {
-    private Vector2 Obj;
+    public Vector2 Obj;
     private Transform parent;
+    private Sprite nonHighLighted;
+    public Sprite HighLighted;
 
     void Start()
     {
@@ -13,6 +16,7 @@ public class ClickableObject : MonoBehaviour
         Obj.x = this.transform.position.x;
         Obj.y = this.transform.position.y;
         parent = this.transform.parent;
+        nonHighLighted = this.GetComponent<SpriteRenderer>().sprite;
     }
 
     void Update()
@@ -22,11 +26,20 @@ public class ClickableObject : MonoBehaviour
 
     public void MovedCheck()
     {
-        //checks if obj has moved since mouse
-        if (Input.GetMouseButtonUp(0) && this.transform.position.x != Obj.x && this.transform.position.y != Obj.y)
+        //checks if obj has moved since mouse down
+        if ((Input.GetMouseButtonUp(0) && this.transform.position.x != Obj.x) || (Input.GetMouseButtonUp(0) && this.transform.position.y != Obj.y))
         {
             Debug.Log("moved");
             this.transform.parent = parent;
         }
+    }
+
+    public void highlighted()
+    {
+        this.GetComponent<SpriteRenderer>().sprite = HighLighted;
+    }
+    public void nonhighlighted()
+    {
+        this.GetComponent<SpriteRenderer>().sprite = nonHighLighted;
     }
 }
