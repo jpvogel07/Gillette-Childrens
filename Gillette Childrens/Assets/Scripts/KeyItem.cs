@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KeyItem : MonoBehaviour
 {
-    public PlayerMovement movement;
+    private PlayerMovement movement;
 
     public int KeyNum;
 
@@ -17,7 +17,8 @@ public class KeyItem : MonoBehaviour
         if (movement!=null)
         {
             movement.keys[KeyNum] = true;
-            Debug.Log(movement.keys);
+            Debug.Log(KeyNum);
+            Debug.Log(movement.keys[KeyNum]);
             this.gameObject.SetActive(false);
         }
     }
