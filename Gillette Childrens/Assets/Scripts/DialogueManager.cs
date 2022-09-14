@@ -9,6 +9,8 @@ public class DialogueManager : MonoBehaviour
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
+    public Animator animateBox;
+    public Animator animateName;
     public GameObject textBox;
     public GameObject continueButton;
     public GameObject backButton;
@@ -24,10 +26,12 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        nameText.enabled = true;
         dialogueText.enabled = true;
         textBox.SetActive(true);
         continueButton.SetActive(true);
+        backButton.SetActive(true);
+        animateBox.SetBool("IsOpen", true);
+        animateName.SetBool("IsOpen", true);
 
         nameText.text = dialogue.name;
 
@@ -51,7 +55,8 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
-        dialogueText.text = sentence;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
         number++;
     }
 
@@ -59,12 +64,22 @@ public class DialogueManager : MonoBehaviour
     {
 
     }
+
+    IEnumerator TypeSentence(string sentence) 
+    {
+        dialogueText.text = "";
+        foreach(char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return null;
+        }
+    }
     void EndDialogue()
     {
         Debug.Log("End of Conversation");
-        nameText.enabled = false;
-        dialogueText.enabled = false;
-        textBox.SetActive(false);
         continueButton.SetActive(false);
+        backButton.SetActive(false);
+        animateBox.SetBool("IsOpen", false);
+        animateName.SetBool("IsOpen", false);
     }
 }
