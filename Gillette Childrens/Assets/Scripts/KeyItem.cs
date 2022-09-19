@@ -7,6 +7,7 @@ public class KeyItem : MonoBehaviour
     private PlayerMovement movement;
 
     public int KeyNum;
+    //public text pop up
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class KeyItem : MonoBehaviour
             Debug.Log(KeyNum);
             Debug.Log(movement.keys[KeyNum]);
             this.gameObject.SetActive(false);
+            //create key item pop up now
         }
     }
 }
