@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private void OnDisable()
     {
         pinputs.Disable();
-        pinputs.player.movement.started -= movment;
+        //pinputs.player.movement.started -= movment;
     }
 
     void Start()

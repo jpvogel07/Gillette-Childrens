@@ -69,7 +69,7 @@ public class DialogueManager : MonoBehaviour
         number++;
     }
 
-    public void back()
+    public void back(Dialogue dialogue)
     {
         for(int i = 0; i < count-number; i++)
         {

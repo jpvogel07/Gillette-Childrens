@@ -7,7 +7,7 @@ public class KeyItem : MonoBehaviour
     private PlayerMovement movement;
 
     public int KeyNum;
-    //public text pop up
+    //public text pop up 
 
     private void Start()
     {
