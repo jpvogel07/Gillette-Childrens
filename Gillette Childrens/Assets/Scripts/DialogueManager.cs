@@ -16,7 +16,9 @@ public class DialogueManager : MonoBehaviour
     public GameObject backButton;
 
     private Queue<string> sentences;
-    private int count;
+    private string[] backer;
+    
+    private int count = 0;
     private int number = 0;
     // Start is called before the first frame update
     void Start()
@@ -30,6 +32,8 @@ public class DialogueManager : MonoBehaviour
         textBox.SetActive(true);
         continueButton.SetActive(true);
         backButton.SetActive(true);
+        nameText.enabled = true;
+
         animateBox.SetBool("IsOpen", true);
         animateName.SetBool("IsOpen", true);
 
@@ -43,6 +47,11 @@ public class DialogueManager : MonoBehaviour
             count++;
         }
 
+        for(int k = 0; k < count; k++) 
+        {
+            backer[k] = dialogue.sentences[k];
+        }
+        Debug.Log(backer.Length);
         DisplayNextSentence();
     } 
 
@@ -60,9 +69,14 @@ public class DialogueManager : MonoBehaviour
         number++;
     }
 
-    void back(int count)
+    public void back()
     {
-
+        for(int i = 0; i < count-number; i++)
+        {
+            sentences.Enqueue(backer[i+number]);
+            //number--;
+        }
+        DisplayNextSentence();
     }
 
     IEnumerator TypeSentence(string sentence) 
