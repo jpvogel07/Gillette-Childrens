@@ -26,7 +26,7 @@ public class TaskList : MonoBehaviour
     private void Awake()
     {
         Won = GameObject.Find("winscreen");
-        tasks = GameObject.Find("HUD");
+        //tasks = GameObject.Find("HUD");
     }
 
     private void Start()
