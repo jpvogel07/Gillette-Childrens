@@ -30,8 +30,8 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueText.enabled = true;
         textBox.SetActive(true);
-        continueButton.SetActive(true);
-        backButton.SetActive(true);
+        //continueButton.SetActive(true);
+        //backButton.SetActive(true);
         nameText.enabled = true;
 
         animateBox.SetBool("IsOpen", true);
@@ -47,17 +47,20 @@ public class DialogueManager : MonoBehaviour
             count++;
         }
 
-        for(int k = 0; k < count; k++) 
+        /*for(int k = 0; k < count; k++) 
         {
             backer[k] = dialogue.sentences[k];
-        }
-        Debug.Log(backer.Length);
+        }*/
+        
         DisplayNextSentence();
     } 
 
     public void DisplayNextSentence()
     {
-        if(sentences.Count == 0) 
+        continueButton.SetActive(true);
+        backButton.SetActive(true);
+
+        if (sentences.Count == 0) 
         {
             EndDialogue();
             return;
@@ -69,11 +72,13 @@ public class DialogueManager : MonoBehaviour
         number++;
     }
 
-    public void back()
+    public void back(Dialogue dialogue)
     {
-        for(int i = 0; i < count-number; i++)
+        sentences.Clear();
+
+        foreach(string sentence in dialogue.sentences)
         {
-            sentences.Enqueue(backer[i+number]);
+            sentences.Enqueue(sentence);
             //number--;
         }
         DisplayNextSentence();
