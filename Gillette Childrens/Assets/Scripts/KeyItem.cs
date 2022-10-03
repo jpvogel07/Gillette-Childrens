@@ -7,6 +7,8 @@ public class KeyItem : MonoBehaviour
     private PlayerMovement movement;
 
     public int KeyNum;
+    public bool isTask;
+    public int taskDone;
     //public text pop up
 
     private void Start()
@@ -20,6 +22,11 @@ public class KeyItem : MonoBehaviour
             movement.keys[KeyNum] = true;
             Debug.Log(KeyNum);
             Debug.Log(movement.keys[KeyNum]);
+
+            if (isTask)
+            {
+                this.gameObject.GetComponent<Task>().donetask(taskDone);
+            }
             this.gameObject.SetActive(false);
             //create key item pop up now
         }
