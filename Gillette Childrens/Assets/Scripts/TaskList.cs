@@ -7,7 +7,7 @@ using TMPro;
 public class TaskList : MonoBehaviour
 {
     public GameObject tasks;
-    public int TaskNum = 5;
+    public int TaskNum = 3;
 
     private bool[] AllDone;
     private TextMeshProUGUI[] tasklist;
@@ -26,7 +26,7 @@ public class TaskList : MonoBehaviour
     private void Awake()
     {
         Won = GameObject.Find("winscreen");
-        tasks = GameObject.Find("HUD");
+        //tasks = GameObject.Find("HUD");
     }
 
     private void Start()
