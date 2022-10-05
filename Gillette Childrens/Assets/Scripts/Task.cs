@@ -3,10 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Task : TaskList
+public class Task : MonoBehaviour
 {
+    public GameObject mouse;
+
+    private void Start()
+    {
+        mouse = GameObject.Find("mouse");
+    }
+
     public void donetask(int complete)
     {
-        TaskComplete(complete);
+        mouse.GetComponent<TaskList>().TaskComplete(complete);
     }
 }

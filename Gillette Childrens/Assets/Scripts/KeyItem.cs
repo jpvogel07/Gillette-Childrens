@@ -20,8 +20,6 @@ public class KeyItem : MonoBehaviour
         if (movement!=null)
         {
             movement.keys[KeyNum] = true;
-            Debug.Log(KeyNum);
-            Debug.Log(movement.keys[KeyNum]);
 
             if (isTask)
             {

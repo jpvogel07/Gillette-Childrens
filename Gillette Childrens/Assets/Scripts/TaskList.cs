@@ -43,7 +43,11 @@ public class TaskList : MonoBehaviour
 
     public void TaskComplete(int complete)
     {
-        tasklist[complete].text = tasklist[complete].text.ToString() + " done";
+        if (tasklist[complete])
+        {
+            tasklist[complete].text = tasklist[complete].text.ToString() + " done";
+        }
+        tasklist[complete] = null;
         AllDone[complete] = true;
 
         Won.SetActive(done());
@@ -53,6 +57,7 @@ public class TaskList : MonoBehaviour
     {
         for (i=0;i<TaskNum;i++)
         {
+            Debug.Log(AllDone[i]);
             if (AllDone[i])
             {
 
