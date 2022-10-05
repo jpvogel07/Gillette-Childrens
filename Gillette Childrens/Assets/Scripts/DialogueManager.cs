@@ -57,9 +57,7 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        continueButton.SetActive(true);
-        backButton.SetActive(true);
-
+        
         if (sentences.Count == 0) 
         {
             EndDialogue();
@@ -92,6 +90,8 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text += letter;
             yield return null;
         }
+        continueButton.SetActive(true);
+        backButton.SetActive(true);
     }
     void EndDialogue()
     {
