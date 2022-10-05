@@ -9,6 +9,8 @@ public class RequiredLockedDoor : MonoBehaviour
     private CanvasHandler OnOff;
     public int KeyReq;
     public Canvas NextScene;
+
+    public bool isTask;
     public int taskDone;
 
     void Start()
@@ -27,7 +29,11 @@ public class RequiredLockedDoor : MonoBehaviour
         {
             OnOff.Off();
             NextScene.GetComponent<CanvasHandler>().On();
-            this.gameObject.GetComponent<Task>().donetask(taskDone);
+
+            if (isTask)
+            {
+                this.gameObject.GetComponent<Task>().donetask(taskDone);
+            }
         }
     }
 }

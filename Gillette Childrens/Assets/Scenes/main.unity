@@ -990,6 +990,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KeyNum: 1
+  isTask: 0
+  taskDone: 0
 --- !u!114 &375417921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1756,6 +1758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   KeyReq: 1
   NextScene: {fileID: 355132170}
+  isTask: 1
   taskDone: 0
 --- !u!114 &531708739
 MonoBehaviour:
@@ -1770,7 +1773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tasks: {fileID: 62017302}
-  TaskNum: 5
+  TaskNum: 3
 --- !u!114 &531708740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2034,7 +2037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tasks: {fileID: 62017302}
-  TaskNum: 5
+  TaskNum: 3
 --- !u!50 &607123652
 Rigidbody2D:
   serializedVersion: 4
@@ -2895,6 +2898,7 @@ GameObject:
   - component: {fileID: 1294124578}
   - component: {fileID: 1294124577}
   - component: {fileID: 1294124576}
+  - component: {fileID: 1294124579}
   - component: {fileID: 1294124575}
   - component: {fileID: 1294124574}
   m_Layer: 5
@@ -2955,6 +2959,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KeyNum: 0
+  isTask: 1
+  taskDone: 1
 --- !u!114 &1294124576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3073,6 +3079,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294124572}
   m_CullTransparentMesh: 1
+--- !u!114 &1294124579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294124572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f23ef4faeb2a2a442b8d4129b462655b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tasks: {fileID: 62017302}
+  TaskNum: 3
 --- !u!1 &1386942806
 GameObject:
   m_ObjectHideFlags: 0
