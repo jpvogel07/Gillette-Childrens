@@ -35,7 +35,7 @@ public class TaskList : MonoBehaviour
         tasklist = new TextMeshProUGUI[TaskNum];
 
         Won.SetActive(false);
-        for (i=0;i<TaskNum;i++)
+        for (i=1;i<TaskNum;i++)
         {
             tasklist[i] = tasks.transform.GetChild(i).GetComponent<TextMeshProUGUI>();
         }
@@ -45,7 +45,8 @@ public class TaskList : MonoBehaviour
     {
         if (tasklist[complete])
         {
-            tasklist[complete].text = tasklist[complete].text.ToString() + " done";
+            //tasklist[complete].text = tasklist[complete].text.ToString() + " done";
+            tasklist[complete].gameObject.SetActive(false);
         }
         tasklist[complete] = null;
         AllDone[complete] = true;
