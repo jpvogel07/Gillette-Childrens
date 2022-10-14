@@ -14,6 +14,10 @@ public class DialogueManager : MonoBehaviour
     public GameObject textBox;
     public GameObject continueButton;
     public GameObject backButton;
+    public GameObject choice1;
+    public GameObject choice2;
+    public GameObject choice3;
+    public bool hasChoice;
 
     private Queue<string> sentences;
     private string[] backer;
@@ -33,6 +37,9 @@ public class DialogueManager : MonoBehaviour
         //continueButton.SetActive(true);
         //backButton.SetActive(true);
         nameText.enabled = true;
+        choice1.SetActive(false);
+        choice2.SetActive(false);
+        choice3.SetActive(false);
 
         animateBox.SetBool("IsOpen", true);
         animateName.SetBool("IsOpen", true);
@@ -100,5 +107,18 @@ public class DialogueManager : MonoBehaviour
         backButton.SetActive(false);
         animateBox.SetBool("IsOpen", false);
         animateName.SetBool("IsOpen", false);
+        
+        if(hasChoice == true)
+        {
+            DisplayChoices();
+            hasChoice = false;
+        }
+    }
+
+    void DisplayChoices()
+    {
+        choice1.SetActive(true);
+        choice2.SetActive(true);
+        choice3.SetActive(true);
     }
 }
