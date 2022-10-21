@@ -35,9 +35,9 @@ public class TaskList : MonoBehaviour
         tasklist = new TextMeshProUGUI[TaskNum];
 
         Won.SetActive(false);
-        for (i=1;i<TaskNum;i++)
+        for (i=1;i<TaskNum+1;i++)
         {
-            tasklist[i] = tasks.transform.GetChild(i).GetComponent<TextMeshProUGUI>();
+            tasklist[i-1] = tasks.transform.GetChild(i).GetComponent<TextMeshProUGUI>();
         }
     }
 
