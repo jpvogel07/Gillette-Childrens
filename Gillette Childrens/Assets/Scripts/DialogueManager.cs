@@ -37,9 +37,11 @@ public class DialogueManager : MonoBehaviour
         //continueButton.SetActive(true);
         //backButton.SetActive(true);
         nameText.enabled = true;
+        /*
         choice1.SetActive(false);
         choice2.SetActive(false);
         choice3.SetActive(false);
+        */
 
         animateBox.SetBool("IsOpen", true);
         animateName.SetBool("IsOpen", true);
