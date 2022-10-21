@@ -28,7 +28,7 @@ public class DialogueManager : MonoBehaviour
     
     private int count = 0;
     private int number = 0;
-    // Start is called before the first frame update
+
     void Start()
     {
         sentences = new Queue<string>();
@@ -50,8 +50,11 @@ public class DialogueManager : MonoBehaviour
         blocker4.SetActive(true);
         //       enableBlockers(true);
 
-        animateBox.SetBool("IsOpen", true);
-        animateName.SetBool("IsOpen", true);
+        if (animateBox!=null)
+        {
+            animateBox.SetBool("IsOpen", true);
+            animateName.SetBool("IsOpen", true);
+        }
 
         nameText.text = dialogue.name;
 
@@ -152,6 +155,8 @@ public class DialogueManager : MonoBehaviour
             DisplayChoices();
             hasChoice = false;
         }
+
+        
     }
 
     void DisplayChoices()

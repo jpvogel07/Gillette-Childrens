@@ -6,10 +6,17 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
     public bool hasChoices;
+    public Animation animation;
 
     public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+
+        if (animation != null)
+        {
+            animation.Play();
+        }
+
         if(hasChoices == true)
         {
             FindObjectOfType<DialogueManager>().hasChoice = true;
