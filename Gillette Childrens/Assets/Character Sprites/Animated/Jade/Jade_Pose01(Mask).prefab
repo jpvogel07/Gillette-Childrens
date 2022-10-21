@@ -199,7 +199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3792603892218284490}
   m_Layer: 0
-  m_Name: Jade
+  m_Name: Jade_Pose01(Mask)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

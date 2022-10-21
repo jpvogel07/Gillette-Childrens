@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Gillette Childrens/Assets/Sprites/rooms/visitationroom.png.meta
-guid: 6361d8240ff9eea4faa89ec64566c165
-========
-guid: 2d4dd38f4c8916944962d666f1ff4b7f
->>>>>>>> 1003b3f9aa5a9d7fad08c16993c9926c677d903d:Gillette Childrens/Assets/Sprites/chart.png.meta
+guid: e73dab34a725c1646b9630912cf85b00
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

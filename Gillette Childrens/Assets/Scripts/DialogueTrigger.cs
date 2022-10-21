@@ -10,7 +10,6 @@ public class DialogueTrigger : MonoBehaviour
     public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-        
         if(hasChoices == true)
         {
             FindObjectOfType<DialogueManager>().hasChoice = true;
