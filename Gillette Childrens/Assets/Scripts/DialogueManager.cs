@@ -17,6 +17,10 @@ public class DialogueManager : MonoBehaviour
     public GameObject choice1;
     public GameObject choice2;
     public GameObject choice3;
+    public GameObject blocker;
+    public GameObject blocker2;
+    public GameObject blocker3;
+    public GameObject blocker4;
     public bool hasChoice;
 
     private Queue<string> sentences;
@@ -37,11 +41,14 @@ public class DialogueManager : MonoBehaviour
         //continueButton.SetActive(true);
         //backButton.SetActive(true);
         nameText.enabled = true;
-        /*
         choice1.SetActive(false);
         choice2.SetActive(false);
         choice3.SetActive(false);
-        */
+        blocker.SetActive(true);
+        blocker2.SetActive(true);
+        blocker3.SetActive(true);
+        blocker4.SetActive(true);
+        //       enableBlockers(true);
 
         animateBox.SetBool("IsOpen", true);
         animateName.SetBool("IsOpen", true);
@@ -64,6 +71,31 @@ public class DialogueManager : MonoBehaviour
         DisplayNextSentence();
     } 
 
+    void enableBlockers(bool status)
+    {
+        GameObject[] Blockers = GameObject.FindGameObjectsWithTag("Blocker");
+        int c = 1;
+
+        foreach (GameObject Blocker in Blockers)
+        {
+            Debug.LogError("I am number" + c + "! ");
+            c++;
+        }
+        if (status == true)
+        {
+            foreach (GameObject Blocker in Blockers)
+            {
+                Blocker.SetActive(true);
+            }
+        }
+        else
+        {
+            foreach (GameObject Blocker in Blockers)
+            {
+                Blocker.SetActive(false);
+            }
+        }
+    }
     public void DisplayNextSentence()
     {
         
@@ -109,8 +141,13 @@ public class DialogueManager : MonoBehaviour
         backButton.SetActive(false);
         animateBox.SetBool("IsOpen", false);
         animateName.SetBool("IsOpen", false);
-        
-        if(hasChoice == true)
+        blocker.SetActive(false);
+        blocker2.SetActive(false);
+        blocker3.SetActive(false);
+        blocker4.SetActive(false);
+        //       enableBlockers(false);
+
+        if (hasChoice == true)
         {
             DisplayChoices();
             hasChoice = false;

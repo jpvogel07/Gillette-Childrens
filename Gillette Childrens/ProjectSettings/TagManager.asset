@@ -6,11 +6,12 @@ TagManager:
   tags:
   - clickable
   - key item
+  - Blocker
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Buttons
   - Water
   - UI
   - 
