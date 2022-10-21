@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8604232102964865362}
   m_Layer: 0
-  m_Name: Julia
+  m_Name: Julia_Pose01(Mask)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
