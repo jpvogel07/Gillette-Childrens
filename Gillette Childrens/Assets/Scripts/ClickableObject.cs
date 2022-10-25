@@ -19,19 +19,14 @@ public class ClickableObject : MonoBehaviour
         nonHighLighted = this.GetComponent<SpriteRenderer>().sprite;
     }
 
-    void Update()
-    {
-        
-    }
-
     public void MovedCheck()
     {
         //checks if obj has moved since mouse down
-        if ((Input.GetMouseButtonUp(0) && this.transform.position.x != Obj.x) || (Input.GetMouseButtonUp(0) && this.transform.position.y != Obj.y))
+       /* if ((Input.GetMouseButtonUp(0) && this.transform.position.x != Obj.x) || (Input.GetMouseButtonUp(0) && this.transform.position.y != Obj.y))
         {
             Debug.Log("moved");
-            this.transform.parent = parent;
-        }
+            PutDown();
+        }*/
     }
 
     public void highlighted()
@@ -41,5 +36,10 @@ public class ClickableObject : MonoBehaviour
     public void nonhighlighted()
     {
         this.GetComponent<SpriteRenderer>().sprite = nonHighLighted;
+    }
+
+    public void PutDown()
+    {
+        this.transform.parent = parent;
     }
 }

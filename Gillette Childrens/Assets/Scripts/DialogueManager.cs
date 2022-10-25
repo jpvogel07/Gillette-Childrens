@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     public Animator animateBox;
     public Animator animateName;
     public GameObject textBox;
+    public GameObject mouse;
     public GameObject continueButton;
     public GameObject backButton;
     public GameObject choice1;
@@ -32,10 +33,18 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
+        mouse = GameObject.Find("mouse")?.gameObject; 
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
+        if (mouse.GetComponent<PlayerMovement>().ClkObj != null)
+        {
+            mouse.GetComponent<PlayerMovement>().ClkObj?.PutDown();
+            Debug.Log("putdown");
+            mouse.GetComponent<PlayerMovement>().ClkObj = null;
+        }
+
         dialogueText.enabled = true;
         textBox.SetActive(true);
         //continueButton.SetActive(true);

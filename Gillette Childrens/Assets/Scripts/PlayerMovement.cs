@@ -39,6 +39,9 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetMouseButtonUp(0)&&ClkObj)
         {
             ClkObj.MovedCheck();
+            ClickableObject[] cObjects = transform.GetComponentsInChildren<ClickableObject>();
+            foreach (ClickableObject item in cObjects)
+                item.PutDown();
         }
     }
 
@@ -61,9 +64,12 @@ public class PlayerMovement : MonoBehaviour
             pinputs.player.movement.started -= movment;
             highlighted = false;
             grabbed = null;
-            ClkObj.GetComponent<ClickableObject>().nonhighlighted();
-            ClkObj.GetComponent<ClickableObject>().Obj.x = ClkObj.transform.position.x;
-            ClkObj.GetComponent<ClickableObject>().Obj.y = ClkObj.transform.position.y;
+            if (ClkObj.GetComponent<ClickableObject>() != null)
+            {
+                ClkObj.GetComponent<ClickableObject>().nonhighlighted();
+                ClkObj.GetComponent<ClickableObject>().Obj.x = ClkObj.transform.position.x;
+                ClkObj.GetComponent<ClickableObject>().Obj.y = ClkObj.transform.position.y;
+            }
         }
     }
     private void movment(InputAction.CallbackContext c)
@@ -80,5 +86,4 @@ public class PlayerMovement : MonoBehaviour
             grabbed.gameObject.transform.parent = null;
         }
     }
-
 }
