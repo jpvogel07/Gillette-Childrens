@@ -38,13 +38,13 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        if (mouse.GetComponent<PlayerMovement>().ClkObj != null)
+       /* if (mouse.GetComponent<PlayerMovement>().ClkObj != null)
         {
             mouse.GetComponent<PlayerMovement>().ClkObj?.PutDown();
             Debug.Log("putdown");
             mouse.GetComponent<PlayerMovement>().ClkObj = null;
         }
-
+       */
         dialogueText.enabled = true;
         textBox.SetActive(true);
         //continueButton.SetActive(true);
@@ -57,9 +57,8 @@ public class DialogueManager : MonoBehaviour
         blocker2.SetActive(true);
         blocker3.SetActive(true);
         blocker4.SetActive(true);
-        //       enableBlockers(true);
 
-        if (animateBox!=null)
+        if (animateBox != null)
         {
             animateBox.SetBool("IsOpen", true);
             animateName.SetBool("IsOpen", true);
@@ -82,35 +81,8 @@ public class DialogueManager : MonoBehaviour
         
         DisplayNextSentence();
     } 
-
-    void enableBlockers(bool status)
-    {
-        GameObject[] Blockers = GameObject.FindGameObjectsWithTag("Blocker");
-        int c = 1;
-
-        foreach (GameObject Blocker in Blockers)
-        {
-            Debug.LogError("I am number" + c + "! ");
-            c++;
-        }
-        if (status == true)
-        {
-            foreach (GameObject Blocker in Blockers)
-            {
-                Blocker.SetActive(true);
-            }
-        }
-        else
-        {
-            foreach (GameObject Blocker in Blockers)
-            {
-                Blocker.SetActive(false);
-            }
-        }
-    }
     public void DisplayNextSentence()
     {
-        
         if (sentences.Count == 0) 
         {
             EndDialogue();
@@ -125,6 +97,7 @@ public class DialogueManager : MonoBehaviour
 
     public void back(Dialogue dialogue)
     {
+        Debug.LogError("We got here");
         sentences.Clear();
 
         foreach(string sentence in dialogue.sentences)
@@ -157,7 +130,6 @@ public class DialogueManager : MonoBehaviour
         blocker2.SetActive(false);
         blocker3.SetActive(false);
         blocker4.SetActive(false);
-        //       enableBlockers(false);
 
         if (hasChoice == true)
         {

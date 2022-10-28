@@ -603,6 +603,7 @@ MonoBehaviour:
     - I know this looks bad but we are still working on the game.
     - Thanks for testing this!
   hasChoices: 0
+  animation: {fileID: 0}
 --- !u!1 &340846704
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,7 +742,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1443390965}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: back
+        m_MethodName: DisplayNextSentence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -868,6 +869,7 @@ MonoBehaviour:
     sentences:
     - Jesse! We need to cook! You're in right?
   hasChoices: 1
+  animation: {fileID: 0}
 --- !u!114 &407189779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1366,6 +1368,7 @@ MonoBehaviour:
       the family computer?
     - What do you think Mom is going to say about this?
   hasChoices: 0
+  animation: {fileID: 0}
 --- !u!114 &858024562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2334,6 +2337,7 @@ MonoBehaviour:
     - Remember though, don't tell my wife.
     - I am the one who knocks!
   hasChoices: 0
+  animation: {fileID: 0}
 --- !u!114 &1417012793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2546,6 +2550,7 @@ MonoBehaviour:
   animateBox: {fileID: 305687169}
   animateName: {fileID: 282243578}
   textBox: {fileID: 305687165}
+  mouse: {fileID: 0}
   continueButton: {fileID: 1626522646}
   backButton: {fileID: 397675843}
   choice1: {fileID: 1417012790}
@@ -2833,6 +2838,7 @@ MonoBehaviour:
     - I don't know why I keep using you as a partner!
     - Why are you always high?
   hasChoices: 0
+  animation: {fileID: 0}
 --- !u!114 &1981667386
 MonoBehaviour:
   m_ObjectHideFlags: 0
