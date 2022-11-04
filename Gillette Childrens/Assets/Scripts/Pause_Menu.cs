@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Pause_Menu : MonoBehaviour
 {
-    // Start is called before the first frame update
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject pauseButton;
 
