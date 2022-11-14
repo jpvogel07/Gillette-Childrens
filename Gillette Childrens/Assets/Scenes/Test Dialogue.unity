@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &34337789
 RectTransform:
   m_ObjectHideFlags: 0
@@ -344,8 +344,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278254591
+  m_fontColor: {r: 1, g: 0.9843137, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -820,6 +820,10 @@ MonoBehaviour:
     - Thanks for testing this!
   hasChoices: 0
   animation: {fileID: 0}
+  dialogue2:
+    name: Doctor
+    sentences:
+    - Come back when there is more to test!
 --- !u!1 &340846704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,6 +1090,11 @@ MonoBehaviour:
     - Jesse! We need to cook! You're in right?
   hasChoices: 1
   animation: {fileID: 0}
+  dialogue2:
+    name: Heisenberg
+    sentences:
+    - Have you reconsidered Jesse?
+    - If not then why are you talking to me?
 --- !u!114 &407189779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1581,11 +1590,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-    Main Menu
-
-'
+  m_text: Main Menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1594,8 +1599,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278254591
+  m_fontColor: {r: 1, g: 0.9843137, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1724,6 +1729,9 @@ MonoBehaviour:
     - What do you think Mom is going to say about this?
   hasChoices: 0
   animation: {fileID: 0}
+  dialogue2:
+    name: 
+    sentences: []
 --- !u!114 &858024562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2069,8 +2077,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 0210b2a83ed6e3c40bac83311666f9f7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2610,8 +2618,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 0210b2a83ed6e3c40bac83311666f9f7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2961,6 +2969,9 @@ MonoBehaviour:
     - I am the one who knocks!
   hasChoices: 0
   animation: {fileID: 0}
+  dialogue2:
+    name: 
+    sentences: []
 --- !u!114 &1417012793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3171,8 +3182,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 0210b2a83ed6e3c40bac83311666f9f7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3753,8 +3764,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278254591
+  m_fontColor: {r: 1, g: 0.9843137, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4017,6 +4028,9 @@ MonoBehaviour:
     - Why are you always high?
   hasChoices: 0
   animation: {fileID: 0}
+  dialogue2:
+    name: 
+    sentences: []
 --- !u!114 &1981667386
 MonoBehaviour:
   m_ObjectHideFlags: 0

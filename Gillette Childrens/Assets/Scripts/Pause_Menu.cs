@@ -29,6 +29,8 @@ public class Pause_Menu : MonoBehaviour
 
     public void close()
     {
+        Debug.LogError("Quit");
         Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
     }
 }
