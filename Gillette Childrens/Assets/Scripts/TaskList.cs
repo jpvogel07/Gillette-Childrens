@@ -31,6 +31,7 @@ public class TaskList : MonoBehaviour
 
     private void Start()
     {
+        /*
         AllDone = new bool[TaskNum];
         tasklist = new TextMeshProUGUI[TaskNum];
 
@@ -39,10 +40,12 @@ public class TaskList : MonoBehaviour
         {
             tasklist[i-1] = tasks.transform.GetChild(i).GetComponent<TextMeshProUGUI>();
         }
+        */
     }
 
     public void TaskComplete(int complete)
     {
+        /*
         if (tasklist[complete])
         {
             //tasklist[complete].text = tasklist[complete].text.ToString() + " done";
@@ -52,10 +55,12 @@ public class TaskList : MonoBehaviour
         AllDone[complete] = true;
 
         Won.SetActive(done());
+        */
     }
 
     private bool done()
     {
+        /*
         for (i=0;i<TaskNum;i++)
         {
             Debug.Log(AllDone[i]);
@@ -68,7 +73,7 @@ public class TaskList : MonoBehaviour
                 return false;
             }
         }
-        
-        return true; 
+        */
+        return true;         
     }
 }
