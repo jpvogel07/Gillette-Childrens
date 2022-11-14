@@ -675,6 +675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RL: {fileID: 21300000, guid: d62a5aac6cda6284792d6e413a1bb10e, type: 3}
+  Art: {fileID: 21300000, guid: e0655bb41a1c5e94594e223dee6cbd45, type: 3}
   AR: {fileID: 1065267473}
 --- !u!1001 &78688771
 PrefabInstance:
@@ -805,6 +806,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 064830224a982ea4a9cd4948c18e0fa0, type: 3}
+--- !u!1 &188230858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 188230860}
+  - component: {fileID: 188230859}
+  m_Layer: 0
+  m_Name: World Event System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &188230859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188230858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093c40c8beb065549b4a9b0cc4071ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &188230860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188230858}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &326479553
 GameObject:
   m_ObjectHideFlags: 0
@@ -2764,6 +2809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RL: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  Art: {fileID: 0}
   AR: {fileID: 1065267473}
 --- !u!114 &796301660
 MonoBehaviour:
@@ -3073,6 +3119,18 @@ MonoBehaviour:
     - Good luck!
   hasChoices: 0
   animation: {fileID: 0}
+  dialogue2:
+    name: 
+    sentences: []
+  secretMessage:
+    name: 
+    sentences: []
+  decisionText:
+  - 
+  - 
+  - 
+  secret: 0
+  tasks: 000000
 --- !u!95 &1007140255
 Animator:
   serializedVersion: 4
@@ -3247,6 +3305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RL: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  Art: {fileID: 0}
   AR: {fileID: 1065267473}
 --- !u!114 &1058281672
 MonoBehaviour:
@@ -4662,6 +4721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RL: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  Art: {fileID: 0}
   AR: {fileID: 1065267473}
 --- !u!114 &1490568498
 MonoBehaviour:
@@ -4754,6 +4814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RL: {fileID: 21300000, guid: 739ccdcb9f97a6544993dbcf60347d50, type: 3}
+  Art: {fileID: 0}
   AR: {fileID: 1065267473}
 --- !u!114 &1508813888
 MonoBehaviour:
@@ -5263,6 +5324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RL: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  Art: {fileID: 0}
   AR: {fileID: 1065267473}
 --- !u!114 &1797084482
 MonoBehaviour:
