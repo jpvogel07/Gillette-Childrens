@@ -9,7 +9,9 @@ public class DialogueTrigger : MonoBehaviour
     public Animation animation;
     public Dialogue dialogue2;
     public Dialogue secretMessage;
+    public string[] decisionText = new string[3];
     public bool secret = false;
+    public bool[] tasks = new bool[3];
     int stage = 1;
     public void TriggerDialogue()
     {
@@ -21,6 +23,7 @@ public class DialogueTrigger : MonoBehaviour
         else if (secret == true)
         {
             FindObjectOfType<DialogueManager>().StartDialogue(secretMessage);
+            secret = false;
         } else
         {
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue2);
@@ -36,6 +39,7 @@ public class DialogueTrigger : MonoBehaviour
         if(hasChoices == true)
         {
             FindObjectOfType<DialogueManager>().hasChoice = true;
+
         }
         
     }
