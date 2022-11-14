@@ -7,10 +7,26 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public bool hasChoices;
     public Animation animation;
-
+    public Dialogue dialogue2;
+    public Dialogue secretMessage;
+    public bool secret = false;
+    int stage = 1;
     public void TriggerDialogue()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        if (stage == 1)
+        { 
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+            stage++;
+        }
+        else if (secret == true)
+        {
+            FindObjectOfType<DialogueManager>().StartDialogue(secretMessage);
+        } else
+        {
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogue2);
+            hasChoices = false;
+        }
+
 
         if (animation != null)
         {
@@ -27,5 +43,11 @@ public class DialogueTrigger : MonoBehaviour
     public void Back()
     {
         FindObjectOfType<DialogueManager>().back(dialogue);
+    }
+
+    public void secretTrigger()
+    {
+        secret = true;
+        Debug.Log("The secret is active");
     }
 }
