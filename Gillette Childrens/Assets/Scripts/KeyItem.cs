@@ -23,7 +23,7 @@ public class KeyItem : MonoBehaviour
 
             if (isTask)
             {
-                this.gameObject.GetComponent<Task>().donetask(taskDone);
+                //this.gameObject.GetComponent<Task>().donetask(taskDone);
             }
             this.gameObject.SetActive(false);
             //create key item pop up now

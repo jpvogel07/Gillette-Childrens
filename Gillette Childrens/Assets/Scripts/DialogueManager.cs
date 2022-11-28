@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
+    public static Action DialogueDone = delegate { };
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
@@ -30,7 +32,7 @@ public class DialogueManager : MonoBehaviour
     private int count = 0;
     private int number = 0;
 
-    void Start()
+    void Awake()
     {
         sentences = new Queue<string>();
         mouse = GameObject.Find("mouse")?.gameObject; 
@@ -137,7 +139,8 @@ public class DialogueManager : MonoBehaviour
             hasChoice = false;
         }
 
-        
+        //end of dialogue
+        DialogueDone();
     }
 
     void DisplayChoices()
