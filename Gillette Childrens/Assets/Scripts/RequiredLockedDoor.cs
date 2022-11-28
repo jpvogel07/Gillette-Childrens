@@ -32,7 +32,7 @@ public class RequiredLockedDoor : MonoBehaviour
 
             if (isTask)
             {
-                this.gameObject.GetComponent<Task>().donetask(taskDone);
+                //this.gameObject.GetComponent<Task>().donetask(taskDone);
             }
         }
     }
