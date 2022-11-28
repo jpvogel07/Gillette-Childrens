@@ -5,15 +5,15 @@ using System;
 
 public class Task : MonoBehaviour
 {
-    public GameObject mouse;
+    public int TaskNum;
+    private WorldEvent World = GameObject.Find("World Event System").gameObject.GetComponent<WorldEvent>();
 
-    private void Start()
+    public void DoTask()
     {
-        mouse = GameObject.Find("mouse");
-    }
-
-    public void donetask(int complete)
-    {
-        mouse.GetComponent<TaskList>().TaskComplete(complete);
+        if (TaskNum == World.EventCounter-4)
+        {
+            World.check = true;
+            this.gameObject.SetActive(false);
+        }
     }
 }

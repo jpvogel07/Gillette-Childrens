@@ -12,7 +12,7 @@ public class CanvasHandler : MonoBehaviour
 
     private void Start()
     {
-        AR = GameObject.Find("AR switch").gameObject;
+        //AR = GameObject.Find("AR switch").gameObject;
         Art = this.GetComponent<Image>().sprite; //<-- does not grab source image from image component 
     }
 
