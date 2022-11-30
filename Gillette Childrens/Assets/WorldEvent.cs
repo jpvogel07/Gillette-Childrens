@@ -13,15 +13,17 @@ public class WorldEvent : MonoBehaviour
     public GameObject lobby;
     public GameObject checkin;
     public bool check = true;
+    private int TutCount = 3;
 
     public static Action TutDone = delegate { };
+    public static Action<int> TaskDone = delegate { };
 
     void Start()
     {
         DialogueManager.DialogueDone += ProgressCheck;
         //trigger starting jade dialogue
         Debug.Log("event: " + EventCounter);
-        DTrigger();
+        Start_DTrigger();
     }
 
     private void OnDisable()
@@ -49,16 +51,17 @@ public class WorldEvent : MonoBehaviour
             checkin.SetActive(false);
 
             //trigger next jade dialogue
-            DTrigger();
+            //Start_DTrigger();
 
             //first actual task given
             StartJade.SetActive(false);
+            Jade.SetActive(true);
             TutDone();
             Debug.Log("event: " + EventCounter);
         }
         else if (EventCounter==4)
         {
-
+            TaskDone(EventCounter-TutCount);
             Debug.Log("event: " + EventCounter);
         }
         else if(EventCounter == 5)
@@ -77,10 +80,17 @@ public class WorldEvent : MonoBehaviour
         }
     }
 
-    public void DTrigger()
+    public void Start_DTrigger()
     {
         StartJade.GetComponent<DialogueTrigger>().stage = EventCounter;
         StartJade.GetComponent<DialogueTrigger>().TriggerDialogue();
         StartJade.GetComponent<DialogueTrigger>().stage = 100;
+    }
+
+    public void DTrigger()
+    {
+        Jade.GetComponent<DialogueTrigger>().stage = EventCounter;
+        Jade.GetComponent<DialogueTrigger>().TriggerDialogue();
+        Jade.GetComponent<DialogueTrigger>().stage = 100;
     }
 }

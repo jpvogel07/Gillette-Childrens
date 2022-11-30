@@ -11,7 +11,7 @@ public class StartKey_Event1 : MonoBehaviour
         //trigger Jade next dialogue
 
         Events.GetComponent<WorldEvent>().check = true;
-        Events.GetComponent<WorldEvent>().DTrigger();
+        Events.GetComponent<WorldEvent>().Start_DTrigger();
         this.gameObject.SetActive(false);
     }
 }
