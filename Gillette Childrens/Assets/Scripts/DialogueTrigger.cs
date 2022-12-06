@@ -14,10 +14,21 @@ public class DialogueTrigger : MonoBehaviour
     public string[] decisionText = new string[3];
     public bool secret = false;
     public bool[] tasks = new bool[3];
-    public int  stage = 0;
+    public int  stage;
+
+    private void OnEnable()
+    {
+        stage = 0;
+    }
+
     public void TriggerDialogue()
     {
-        if (stage == 0)
+        if (secret)
+        {
+            FindObjectOfType<DialogueManager>().StartDialogue(secretMessage);
+            secret = false;
+        }
+        else if (stage == 0)
         { 
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
             stage++;
@@ -34,13 +45,9 @@ public class DialogueTrigger : MonoBehaviour
         {
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue4);
         }
-        else if (secret == true)
+        else
         {
-            FindObjectOfType<DialogueManager>().StartDialogue(secretMessage);
-            secret = false;
-        } else
-        {
-            FindObjectOfType<DialogueManager>().StartDialogue(dialogue2);
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
             hasChoices = false;
         }
 
