@@ -5,16 +5,31 @@ using UnityEngine.UI;
 
 public class AfterTut : MonoBehaviour
 {
+    public GameObject[] TaskItems;
+    private int i;
 
     void Start()
     {
         WorldEvent.TutDone += TurnOff;
-        this.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        i = 0;
+        while (i != TaskItems.Length)
+        {
+            TaskItems[i].SetActive(false);
+            i++;
+        }
+    }
+    private void OnDisable()
+    {
+        WorldEvent.TutDone -= TurnOff;
     }
 
     private void TurnOff()
     {
-        this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
-        WorldEvent.TutDone -= TurnOff;
+        i = 0;
+        while (i!=TaskItems.Length)
+        {
+            TaskItems[i].SetActive(true);
+            i++;
+        }
     }
 }

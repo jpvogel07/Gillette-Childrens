@@ -40,13 +40,15 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-       /* if (mouse.GetComponent<PlayerMovement>().ClkObj != null)
-        {
-            mouse.GetComponent<PlayerMovement>().ClkObj?.PutDown();
-            Debug.Log("putdown");
-            mouse.GetComponent<PlayerMovement>().ClkObj = null;
-        }
-       */
+        /* if (mouse.GetComponent<PlayerMovement>().ClkObj != null)
+         {
+             mouse.GetComponent<PlayerMovement>().ClkObj?.PutDown();
+             Debug.Log("putdown");
+             mouse.GetComponent<PlayerMovement>().ClkObj = null;
+         }
+        */
+        //DialogueDone();
+
         dialogueText.enabled = true;
         textBox.SetActive(true);
         //continueButton.SetActive(true);

@@ -23,8 +23,7 @@ public class Task : MonoBehaviour
             this.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
             mouse.GetComponent<PlayerMovement>().keys[TaskNum] = true;
             this.gameObject.SetActive(false);
-            World.check = true;
-            World.Jade.gameObject.GetComponent<DialogueTrigger>().secret = true;
+            World.Jade.gameObject.GetComponent<DialogueTrigger>().secret = false;
         }
         else
         {

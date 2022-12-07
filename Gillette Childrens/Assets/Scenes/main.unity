@@ -276,15 +276,15 @@ RectTransform:
   m_GameObject: {fileID: 58647377}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49999997, y: 2.5000002, z: 0.49999973}
+  m_LocalScale: {x: 0.49999997, y: 2.5000002, z: 0.49999967}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 397162481}
+  m_Father: {fileID: 76761944}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000022888184, y: 0.000038146973}
+  m_AnchoredPosition: {x: 73.408104, y: 110.0579}
   m_SizeDelta: {x: 64.4101, y: 42.5632}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &58647380
@@ -757,9 +757,9 @@ RectTransform:
   m_LocalScale: {x: 0.76566875, y: 0.76566875, z: 1.0771478}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 397162481}
+  - {fileID: 58647378}
   - {fileID: 1007140250}
-  - {fileID: 1613191081}
+  - {fileID: 1481454259}
   - {fileID: 760601937}
   - {fileID: 339286872}
   - {fileID: 1982292763}
@@ -825,7 +825,7 @@ MonoBehaviour:
   RL: {fileID: 21300000, guid: d62a5aac6cda6284792d6e413a1bb10e, type: 3}
   Art: {fileID: 21300000, guid: 111d9b7af6ca1324db77906858a8af23, type: 3}
   AR: {fileID: 1065267473}
---- !u!1 &154021440
+--- !u!1 &144138959
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -833,48 +833,185 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 154021441}
-  - component: {fileID: 154021442}
+  - component: {fileID: 144138960}
+  - component: {fileID: 144138965}
+  - component: {fileID: 144138964}
+  - component: {fileID: 144138963}
+  - component: {fileID: 144138962}
+  - component: {fileID: 144138961}
   m_Layer: 5
-  m_Name: Chart_KeyItemParent
+  m_Name: HearingAid KeyItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &154021441
+  m_IsActive: 0
+--- !u!224 &144138960
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 154021440}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 144138959}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.099999994}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1920090151}
-  m_Father: {fileID: 1797084484}
+  m_Children: []
+  m_Father: {fileID: 1058281674}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -270, y: -79}
+  m_SizeDelta: {x: 1015, y: 617}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &154021442
+--- !u!114 &144138961
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 154021440}
+  m_GameObject: {fileID: 144138959}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18e39e9f8b679ac428328a1cd9cd57ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'This is not the item you are looking for '
+  dialogue2:
+    name: 
+    sentences: []
+  dialogue3:
+    name: 
+    sentences: []
+  dialogue4:
+    name: 
+    sentences: []
+  hasChoices: 0
+  animation: {fileID: 0}
+  secretMessage:
+    name: 
+    sentences:
+    - 'Fantasic! This is the chart you were looking for! '
+  decisionText:
+  - 
+  - 
+  - 
+  secret: 0
+  tasks: 000000
+  stage: 0
+--- !u!114 &144138962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144138959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f23ef4faeb2a2a442b8d4129b462655b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TaskNum: 1
+  mouse: {fileID: 0}
+--- !u!114 &144138963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144138959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.8340077, b: 0.4669811, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 144138964}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 144138962}
+        m_TargetAssemblyTypeName: Task, Assembly-CSharp
+        m_MethodName: DoTask
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &144138964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144138959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 5b3af370e994f9445856c2c19f96842d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &144138965
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144138959}
+  m_CullTransparentMesh: 1
 --- !u!1 &188230858
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,6 +1022,7 @@ GameObject:
   m_Component:
   - component: {fileID: 188230860}
   - component: {fileID: 188230859}
+  - component: {fileID: 188230861}
   m_Layer: 0
   m_Name: World Event System
   m_TagString: Untagged
@@ -927,6 +1065,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &188230861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188230858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18e39e9f8b679ac428328a1cd9cd57ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TaskItems:
+  - {fileID: 1007140249}
+  - {fileID: 1481454258}
+  - {fileID: 58647377}
+  - {fileID: 1920090150}
+  - {fileID: 144138959}
 --- !u!1 &188683250
 GameObject:
   m_ObjectHideFlags: 0
@@ -1607,56 +1763,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 387861189}
   m_CullTransparentMesh: 1
---- !u!1 &397162480
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 397162481}
-  - component: {fileID: 397162482}
-  m_Layer: 5
-  m_Name: Hallway Door
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &397162481
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 397162480}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 58647378}
-  m_Father: {fileID: 76761944}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 73.408104, y: 110.0579}
-  m_SizeDelta: {x: 32.205048, y: 106.408005}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &397162482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 397162480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18e39e9f8b679ac428328a1cd9cd57ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &422096575
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,12 +2637,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 802527abf463c6c469376c1ef4da6708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tasks: {fileID: 62017302}
-  TaskNum: 5
-  AllDone: []
-  tasklist: []
-  i: 0
-  Won: {fileID: 0}
 --- !u!50 &607123652
 Rigidbody2D:
   serializedVersion: 4
@@ -3439,6 +3539,7 @@ GameObject:
   - component: {fileID: 1007140253}
   - component: {fileID: 1007140252}
   - component: {fileID: 1007140251}
+  - component: {fileID: 1007140256}
   - component: {fileID: 1007140254}
   - component: {fileID: 1007140255}
   m_Layer: 5
@@ -3524,6 +3625,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1007140256}
+        m_TargetAssemblyTypeName: Jade, Assembly-CSharp
+        m_MethodName: flip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1007140252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3577,11 +3690,13 @@ MonoBehaviour:
   dialogue:
     name: Jade
     sentences:
-    - 'You do not have the item I asked for right now can you go and grab it for
-      me? '
+    - 'Great! This just what I needed. Here is you next task:'
+    - I need you to grab a hearing aid from the audiology room.
+    - The audiology room is down the hallway to the right of the check in counter
   dialogue2:
-    name: 
-    sentences: []
+    name: Jade
+    sentences:
+    - 'Great! This just what I needed. Here is you next task: STOP'
   dialogue3:
     name: 
     sentences: []
@@ -3593,7 +3708,8 @@ MonoBehaviour:
   secretMessage:
     name: Jade
     sentences:
-    - 'Great! This just what I needed. Here is you next task:'
+    - 'You do not have the item I asked for right now can you go and grab it for
+      me? '
   decisionText:
   - 
   - 
@@ -3621,6 +3737,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1007140256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007140249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fcd619a8c8a9f4c80fb3b3b7cfab7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  world: {fileID: 188230858}
 --- !u!1 &1042961976
 GameObject:
   m_ObjectHideFlags: 0
@@ -3973,6 +4102,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 751824008}
+  - {fileID: 144138960}
   m_Father: {fileID: 62017306}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5193,15 +5323,15 @@ RectTransform:
   m_GameObject: {fileID: 1481454258}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49999997, y: 2.5000002, z: 0.49999982}
+  m_LocalScale: {x: 0.49999997, y: 2.5000002, z: 0.4999998}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1613191081}
-  m_RootOrder: 0
+  m_Father: {fileID: 76761944}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0}
+  m_AnchoredPosition: {x: -104.3846, y: 59.035744}
   m_SizeDelta: {x: 450.7693, y: 40.2398}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1481454261
@@ -5932,56 +6062,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586587640}
   m_CullTransparentMesh: 1
---- !u!1 &1613191080
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1613191081}
-  - component: {fileID: 1613191082}
-  m_Layer: 5
-  m_Name: check in door
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1613191081
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613191080}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1481454259}
-  m_Father: {fileID: 76761944}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -104.3846, y: 59.03577}
-  m_SizeDelta: {x: 225.38464, y: 100.59951}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1613191082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613191080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18e39e9f8b679ac428328a1cd9cd57ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1617171894
 GameObject:
   m_ObjectHideFlags: 0
@@ -6214,7 +6294,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 761155935}
-  - {fileID: 154021441}
+  - {fileID: 1920090151}
   m_Father: {fileID: 62017306}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6807,7 +6887,7 @@ GameObject:
   - component: {fileID: 1920090155}
   - component: {fileID: 1920090156}
   m_Layer: 5
-  m_Name: KeyItem
+  m_Name: Chart KeyItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6825,8 +6905,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 154021441}
-  m_RootOrder: 0
+  m_Father: {fileID: 1797084484}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6956,7 +7036,7 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - Fantasic! This is the chart you were looking for!
+    - 'This is not the item you are looking for '
   dialogue2:
     name: 
     sentences: []
@@ -6971,7 +7051,7 @@ MonoBehaviour:
   secretMessage:
     name: 
     sentences:
-    - 'This is not the item you are looking for '
+    - 'Fantasic! This is the chart you were looking for! '
   decisionText:
   - 
   - 

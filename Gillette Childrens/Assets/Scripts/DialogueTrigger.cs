@@ -26,12 +26,10 @@ public class DialogueTrigger : MonoBehaviour
         if (secret)
         {
             FindObjectOfType<DialogueManager>().StartDialogue(secretMessage);
-            secret = false;
         }
         else if (stage == 0)
         { 
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-            stage++;
         }
         else if (stage == 1)
         {
@@ -62,7 +60,7 @@ public class DialogueTrigger : MonoBehaviour
             FindObjectOfType<DialogueManager>().hasChoice = true;
 
         }
-        
+
     }
 
     public void Back()
