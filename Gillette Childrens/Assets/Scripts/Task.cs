@@ -8,16 +8,18 @@ public class Task : MonoBehaviour
     public int TaskNum;
     public GameObject mouse;
     private WorldEvent World;
+    private GameObject Jade;
 
     private void OnEnable()
     {
         World = GameObject.Find("World Event System").gameObject.GetComponent<WorldEvent>();
         mouse = GameObject.Find("mouse").gameObject;
+        Jade = World.GetComponent<WorldEvent>().Jade;
     }
 
     public void DoTask()
     {
-        if (TaskNum == World.EventCounter-3)
+        if (TaskNum == Jade.GetComponent<DialogueTrigger>().stage)
         {
             this.gameObject.GetComponent<DialogueTrigger>().secret = true;
             this.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();

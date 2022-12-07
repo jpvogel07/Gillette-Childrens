@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour
 {
     public static Action DialogueDone = delegate { };
 
+    public bool tut;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     public Animator animateBox;
@@ -142,7 +143,9 @@ public class DialogueManager : MonoBehaviour
         }
 
         //end of dialogue
+        if (tut) { 
         DialogueDone();
+        }
     }
 
     void DisplayChoices()

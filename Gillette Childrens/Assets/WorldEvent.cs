@@ -24,6 +24,7 @@ public class WorldEvent : MonoBehaviour
         DialogueManager.DialogueDone += ProgressCheck;
         Debug.Log("event: " + EventCounter);
         Start_DTrigger();
+        GameObject.Find("dialogue manager").gameObject.GetComponent<DialogueManager>().tut = true;
     }
 
     private void OnDisable()
