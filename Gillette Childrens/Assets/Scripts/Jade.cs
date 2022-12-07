@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Jade : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Jade : MonoBehaviour
     private DialogueTrigger JadeSpeech;
     public GameObject winscreen;
     public GameObject HUD;
+    public GameObject item;
+    public Sprite BlackBox;
 
     private void Awake()
     {
@@ -20,13 +23,13 @@ public class Jade : MonoBehaviour
         if (!this.GetComponent<DialogueTrigger>().secret)
         {
             JadeSpeech.stage++;
-            Debug.Log(JadeSpeech.stage);
             if (JadeSpeech.stage == 4)
             {
                 HUD.SetActive(false);
                 winscreen.SetActive(true);
             }
             JadeSpeech.secret = true;
+            item.GetComponent<Image>().sprite = BlackBox;
         }
     }
 }
