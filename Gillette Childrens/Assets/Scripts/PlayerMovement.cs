@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     private bool highlighted;
     private GameObject grabbed;
     public ClickableObject ClkObj;
+    public bool AR;
+    public GameObject ARHandler;
     
     public bool[] keys = new bool[3];
 
@@ -43,6 +45,15 @@ public class PlayerMovement : MonoBehaviour
             ClickableObject[] cObjects = transform.GetComponentsInChildren<ClickableObject>();
             foreach (ClickableObject item in cObjects)
                 item.PutDown();
+        }
+
+        if (Input.GetMouseButtonDown(0) && AR)
+        {
+            ARHandler.GetComponent<ARHandler>().handle();
+        }
+        if(Input.GetMouseButtonUp(0) && AR)
+        {
+            ARHandler.GetComponent<ARHandler>().handle();
         }
     }
 

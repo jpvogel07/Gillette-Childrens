@@ -2629,6 +2629,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ClkObj: {fileID: 0}
+  AR: 0
+  ARHandler: {fileID: 1065267473}
   keys: 00000000
 --- !u!212 &607123655
 SpriteRenderer:
@@ -4081,6 +4083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: {fileID: 76761943}
+  mouse: {fileID: 607123650}
 --- !u!61 &1065267476
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6767,7 +6770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1920090151
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6775,14 +6778,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920090150}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0.44373336, y: -0, z: -0, w: 0.89615893}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1797084484}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 52.685, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -270, y: -79}
