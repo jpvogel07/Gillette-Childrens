@@ -686,7 +686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RL: {fileID: 21300000, guid: d62a5aac6cda6284792d6e413a1bb10e, type: 3}
   Art: {fileID: 21300000, guid: 111d9b7af6ca1324db77906858a8af23, type: 3}
-  Map: {fileID: 21300000, guid: 111d9b7af6ca1324db77906858a8af23, type: 3}
+  Map: {fileID: 21300000, guid: 2e69e060c115cbb4790bf3a99916bf3e, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
 --- !u!1 &144138959
@@ -942,7 +942,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 4572f4b848f7b6541b90a18c85fa9288, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
