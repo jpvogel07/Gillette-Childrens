@@ -13,8 +13,9 @@ public class PlayerMovement : MonoBehaviour
     public ClickableObject ClkObj;
     public bool AR;
     public GameObject ARHandler;
-    
-    public bool[] keys = new bool[3];
+    //public bool[] keys = new bool[3];
+
+    public static Action click = delegate { };
 
     private void OnEnable()
     {
@@ -54,6 +55,11 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetMouseButtonUp(0) && AR)
         {
             ARHandler.GetComponent<ARHandler>().handle();
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            click();
         }
     }
 
