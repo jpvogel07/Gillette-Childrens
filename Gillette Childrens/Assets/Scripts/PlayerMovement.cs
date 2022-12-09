@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public ClickableObject ClkObj;
     public bool AR;
     public GameObject ARHandler;
-    //public bool[] keys = new bool[3];
+    public bool[] keys = new bool[3];
 
     public static Action click = delegate { };
 
