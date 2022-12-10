@@ -10,7 +10,7 @@ public class PlayClickSound : MonoBehaviour
     private void Start() {
         aSource = GetComponent<AudioSource>();
     }
-    private void onEnable()
+    private void Awake()
     {
         PlayerMovement.playClick += playSound;
     }
@@ -21,7 +21,7 @@ public class PlayClickSound : MonoBehaviour
 
     private void playSound()
     {
-        Debug.Log("Recieved");
+        //Debug.Log("Recieved");
         aSource.Play(0);
     }
 }
