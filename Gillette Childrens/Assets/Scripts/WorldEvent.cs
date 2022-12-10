@@ -48,7 +48,7 @@ public class WorldEvent : MonoBehaviour
         }
         else if (EventCounter==3)
         {
-            lobby.SetActive(true);
+            lobby.GetComponent<CanvasHandler>().On();
             checkin.SetActive(false);
 
 
