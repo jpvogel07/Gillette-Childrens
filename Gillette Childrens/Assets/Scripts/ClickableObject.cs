@@ -8,7 +8,7 @@ public class ClickableObject : MonoBehaviour
     public Vector2 Obj;
     private Transform parent;
     private Sprite nonHighLighted;
-    public Sprite HighLighted;
+    //public Sprite HighLighted;
 
     void Start()
     {
@@ -16,7 +16,7 @@ public class ClickableObject : MonoBehaviour
         Obj.x = this.transform.position.x;
         Obj.y = this.transform.position.y;
         parent = this.transform.parent;
-        nonHighLighted = this.GetComponent<SpriteRenderer>().sprite;
+        nonHighLighted = this.GetComponent<Image>().sprite;
     }
 
     public void MovedCheck()
@@ -31,15 +31,17 @@ public class ClickableObject : MonoBehaviour
 
     public void highlighted()
     {
-        this.GetComponent<SpriteRenderer>().sprite = HighLighted;
+        //this.GetComponent<SpriteRenderer>().sprite = HighLighted;
+        this.GetComponent<Image>().color = Color.yellow;
     }
     public void nonhighlighted()
     {
-        this.GetComponent<SpriteRenderer>().sprite = nonHighLighted;
+        //this.GetComponent<SpriteRenderer>().sprite = nonHighLighted;
+        this.GetComponent<Image>().color = Color.white;
     }
 
     public void PutDown()
     {
-        this.transform.parent = parent;
+        this.transform.SetParent(parent);
     }
 }
