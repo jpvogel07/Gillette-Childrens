@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject ARHandler;
     public bool[] keys = new bool[3];
 
-    public static Action click = delegate { };
+    public static Action playClick = delegate { };
 
     private void OnEnable()
     {
@@ -59,7 +59,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            click();
+            //Debug.Log("Click");
+            playClick();
         }
     }
 
@@ -104,4 +105,5 @@ public class PlayerMovement : MonoBehaviour
             grabbed.gameObject.transform.parent = null;
         }
     }
+
 }
