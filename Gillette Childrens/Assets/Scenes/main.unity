@@ -686,7 +686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RL: {fileID: 21300000, guid: d62a5aac6cda6284792d6e413a1bb10e, type: 3}
   Art: {fileID: 21300000, guid: 111d9b7af6ca1324db77906858a8af23, type: 3}
-  Map: {fileID: 21300000, guid: 4572f4b848f7b6541b90a18c85fa9288, type: 3}
+  Map: {fileID: 21300000, guid: 39c5752b58063c648aae34c4556c3938, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
 --- !u!1 &144138959
@@ -942,7 +942,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4572f4b848f7b6541b90a18c85fa9288, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 39c5752b58063c648aae34c4556c3938, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3195,7 +3195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RL: {fileID: 21300000, guid: 97a887cc1102f4845ad0b311f376bb7b, type: 3}
   Art: {fileID: 21300000, guid: 4164f7a93093e1f49aeea5b2b936ec90, type: 3}
-  Map: {fileID: 21300000, guid: 4164f7a93093e1f49aeea5b2b936ec90, type: 3}
+  Map: {fileID: 21300000, guid: bab5cb21ae6a08a45a6b2c55aad07325, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
 --- !u!114 &796301660
@@ -3251,8 +3251,8 @@ RectTransform:
   - {fileID: 1042961977}
   - {fileID: 1550215625}
   - {fileID: 188683251}
-  - {fileID: 1943480466}
   - {fileID: 2059890617}
+  - {fileID: 1943480466}
   m_Father: {fileID: 62017306}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4053,7 +4053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RL: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   Art: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  Map: {fileID: 21300000, guid: 21cf91bdf17b18b4b959d706b4e79a4d, type: 3}
+  Map: {fileID: 21300000, guid: dac1ae2c78bb6b7418d70693da10f3ed, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
 --- !u!114 &1058281672
@@ -4069,15 +4069,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: dac1ae2c78bb6b7418d70693da10f3ed, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5659,7 +5659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RL: {fileID: 21300000, guid: a664de7026c338f45a96f48825fe765e, type: 3}
   Art: {fileID: 21300000, guid: 6120ed8ba1df1094eb312c43069f77f4, type: 3}
-  Map: {fileID: 21300000, guid: d24eebd9c12fae44984bbb5996638229, type: 3}
+  Map: {fileID: 21300000, guid: dc457eeecadaf494daa2527618855158, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
 --- !u!114 &1490568498
@@ -5756,7 +5756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RL: {fileID: 21300000, guid: 739ccdcb9f97a6544993dbcf60347d50, type: 3}
   Art: {fileID: 21300000, guid: 59c5860416974ff45a0416de705bf0a5, type: 3}
-  Map: {fileID: 21300000, guid: 196e217010ea08d498f9c225d7e058f7, type: 3}
+  Map: {fileID: 21300000, guid: 1890386b23a7c9543ac068c39903e307, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
 --- !u!114 &1508813888
@@ -7375,7 +7375,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 796301662}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.19239828, y: 0.35200003}
   m_AnchorMax: {x: 0.19239828, y: 0.35200003}
