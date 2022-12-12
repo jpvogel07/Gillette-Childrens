@@ -719,7 +719,7 @@ RectTransform:
   m_GameObject: {fileID: 144138959}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.099999994}
+  m_LocalScale: {x: 0.052266996, y: 0.052266996, z: 0.052266993}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1058281674}
@@ -727,7 +727,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -270, y: -79}
+  m_AnchoredPosition: {x: 140.9, y: -48.9}
   m_SizeDelta: {x: 1015, y: 617}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &144138961
@@ -4245,8 +4245,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d4f937473fd494f961d13f970f4ff9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RL: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  Art: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  RL: {fileID: 21300000, guid: a2f339279422b644d8afa0d1800b30a7, type: 3}
+  Art: {fileID: 21300000, guid: a0f2715d705a5614883a85a7be5d7ae7, type: 3}
   Map: {fileID: 21300000, guid: dac1ae2c78bb6b7418d70693da10f3ed, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
@@ -4270,7 +4270,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dac1ae2c78bb6b7418d70693da10f3ed, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a0f2715d705a5614883a85a7be5d7ae7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6494,7 +6494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RL: {fileID: 21300000, guid: 40dcbf8ecbe813242b7deb829c99e60b, type: 3}
   Art: {fileID: 21300000, guid: b24bd0c8aaad7e149904e818c84169c0, type: 3}
-  Map: {fileID: 21300000, guid: b24bd0c8aaad7e149904e818c84169c0, type: 3}
+  Map: {fileID: 21300000, guid: cd956e936b6780b4680862f7bbac5fcb, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
 --- !u!114 &1797084482
