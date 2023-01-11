@@ -19,6 +19,7 @@ public class Jade : MonoBehaviour
     {
         GameObject.Find("dialogue manager").gameObject.GetComponent<DialogueManager>().tut = false;
         JadeSpeech = this.GetComponent<DialogueTrigger>();
+        NewIcon(0);
     }
 
     public void flip()

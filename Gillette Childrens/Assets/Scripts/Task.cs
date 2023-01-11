@@ -28,6 +28,7 @@ public class Task : MonoBehaviour
             this.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
             mouse.GetComponent<PlayerMovement>().keys[TaskNum] = true;
             item.GetComponent<Image>().sprite = this.gameObject.GetComponent<Image>().sprite;
+            item.GetComponent<Image>().color = Color.white;
             this.gameObject.SetActive(false);
             World.Jade.gameObject.GetComponent<DialogueTrigger>().secret = false;
         }
