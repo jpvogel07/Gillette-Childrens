@@ -4091,6 +4091,7 @@ MonoBehaviour:
   HUD: {fileID: 62017302}
   item: {fileID: 1119530962}
   BlackBox: {fileID: 21300000, guid: ecb4c0ab179cf3543ae1e93d62ff73f8, type: 3}
+  InvWisp: {fileID: 7208266561982394908, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
 --- !u!1 &1042961976
 GameObject:
   m_ObjectHideFlags: 0
