@@ -7,6 +7,8 @@ public class CanvasHandler : MonoBehaviour
 {
     public Sprite RL;
     public Sprite Art;
+    public Sprite Map;
+    public GameObject MiniMap;
     private bool check=false;
     public GameObject AR;
 
@@ -19,6 +21,7 @@ public class CanvasHandler : MonoBehaviour
     public void On()
     {
         this.gameObject.SetActive(true);
+        MiniMap.GetComponent<Image>().sprite = Map;
         AR.GetComponent<ARHandler>().scene = this.gameObject;
     }
     public void Off()

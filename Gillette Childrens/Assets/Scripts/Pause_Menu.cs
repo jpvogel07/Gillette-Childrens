@@ -24,6 +24,7 @@ public class Pause_Menu : MonoBehaviour
 
     public void mainMenu()
     {
+        SceneManager.LoadScene("Main Menu");
         Debug.LogError("No functioning main menu yet");
     }
 

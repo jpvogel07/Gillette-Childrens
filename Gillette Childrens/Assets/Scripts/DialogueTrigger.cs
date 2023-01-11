@@ -16,13 +16,14 @@ public class DialogueTrigger : MonoBehaviour
     public bool[] tasks = new bool[3];
     public int  stage;
 
-    private void OnEnable()
+    private void Awake()
     {
         stage = 0;
     }
 
     public void TriggerDialogue()
     {
+        Debug.Log(stage);
         if (secret)
         {
             FindObjectOfType<DialogueManager>().StartDialogue(secretMessage);

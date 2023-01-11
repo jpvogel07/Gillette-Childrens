@@ -952,12 +952,18 @@ MonoBehaviour:
     - Hello how are you doing?
     - I know this looks bad but we are still working on the game.
     - Thanks for testing this!
-  hasChoices: 0
-  animation: {fileID: 0}
   dialogue2:
     name: Doctor
     sentences:
     - Come back when there is more to test!
+  dialogue3:
+    name: 
+    sentences: []
+  dialogue4:
+    name: 
+    sentences: []
+  hasChoices: 0
+  animation: {fileID: 0}
   secretMessage:
     name: Secret Man
     sentences:
@@ -968,6 +974,7 @@ MonoBehaviour:
   - 
   secret: 0
   tasks: 000000
+  stage: 0
 --- !u!1 &340846704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,13 +1239,19 @@ MonoBehaviour:
     name: Heisenberg
     sentences:
     - Jesse! We need to cook! You're in right?
-  hasChoices: 1
-  animation: {fileID: 0}
   dialogue2:
     name: Heisenberg
     sentences:
     - Have you reconsidered Jesse?
     - If not then why are you talking to me?
+  dialogue3:
+    name: 
+    sentences: []
+  dialogue4:
+    name: 
+    sentences: []
+  hasChoices: 1
+  animation: {fileID: 0}
   secretMessage:
     name: None
     sentences:
@@ -1249,6 +1262,7 @@ MonoBehaviour:
   - 3
   secret: 0
   tasks: 000000
+  stage: 0
 --- !u!114 &407189779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1881,11 +1895,17 @@ MonoBehaviour:
     - Why the fuck did you install Bloons Tower Defense 3 hacked infinite money on
       the family computer?
     - What do you think Mom is going to say about this?
-  hasChoices: 0
-  animation: {fileID: 0}
   dialogue2:
     name: 
     sentences: []
+  dialogue3:
+    name: 
+    sentences: []
+  dialogue4:
+    name: 
+    sentences: []
+  hasChoices: 0
+  animation: {fileID: 0}
   secretMessage:
     name: 
     sentences: []
@@ -1895,6 +1915,7 @@ MonoBehaviour:
   - 
   secret: 0
   tasks: 000000
+  stage: 0
 --- !u!114 &858024562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3265,11 +3286,17 @@ MonoBehaviour:
     - Thank you Jesse!
     - Remember though, don't tell my wife.
     - I am the one who knocks!
-  hasChoices: 0
-  animation: {fileID: 0}
   dialogue2:
     name: 
     sentences: []
+  dialogue3:
+    name: 
+    sentences: []
+  dialogue4:
+    name: 
+    sentences: []
+  hasChoices: 0
+  animation: {fileID: 0}
   secretMessage:
     name: 
     sentences: []
@@ -3279,6 +3306,7 @@ MonoBehaviour:
   - 
   secret: 0
   tasks: 000000
+  stage: 0
 --- !u!114 &1417012793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3620,6 +3648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c37a6c6fd45872c42840931cbdc37341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tut: 0
   nameText: {fileID: 282243576}
   dialogueText: {fileID: 533162125}
   animateBox: {fileID: 305687169}
@@ -4333,11 +4362,17 @@ MonoBehaviour:
     - Jesse you are an idiot!
     - I don't know why I keep using you as a partner!
     - Why are you always high?
-  hasChoices: 0
-  animation: {fileID: 0}
   dialogue2:
     name: 
     sentences: []
+  dialogue3:
+    name: 
+    sentences: []
+  dialogue4:
+    name: 
+    sentences: []
+  hasChoices: 0
+  animation: {fileID: 0}
   secretMessage:
     name: 
     sentences: []
@@ -4347,6 +4382,7 @@ MonoBehaviour:
   - 
   secret: 0
   tasks: 000000
+  stage: 0
 --- !u!114 &1981667386
 MonoBehaviour:
   m_ObjectHideFlags: 0
