@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public bool AR;
     public GameObject ARHandler;
     public bool[] keys = new bool[3];
+    public Sprite[] InvontoryPics = new Sprite[3];
 
     public static Action playClick = delegate { };
 
@@ -22,11 +23,13 @@ public class PlayerMovement : MonoBehaviour
         pinputs = new Inputs();
         pinputs.Enable();
         //pinputs.player.movement.started += movment;
+        Jade.NewIcon += InventorySwitch;
     }
     private void OnDisable()
     {
         pinputs.Disable();
         //pinputs.player.movement.started -= movment;
+        Jade.NewIcon -= InventorySwitch;
     }
 
     void Start()
@@ -106,4 +109,8 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void InventorySwitch(int i)
+    {
+        Debug.Log("event:" + i);
+    }
 }

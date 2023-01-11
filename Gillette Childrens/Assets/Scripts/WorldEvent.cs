@@ -39,7 +39,7 @@ public class WorldEvent : MonoBehaviour
         if (EventCounter==1)
         {
             StartKey.SetActive(true);//picking up key handles rest of event
-            Debug.Log("event: " + EventCounter);
+            Debug.Log("Event: " + EventCounter);
         }
         else if (EventCounter==2)
         {
