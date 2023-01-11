@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class Jade : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class Jade : MonoBehaviour
     public GameObject HUD;
     public GameObject item;
     public Sprite BlackBox;
+
+    public static Action<int> NewIcon = delegate { };
 
     private void Awake()
     {
@@ -30,6 +33,8 @@ public class Jade : MonoBehaviour
             }
             JadeSpeech.secret = true;
             item.GetComponent<Image>().sprite = BlackBox;
+            //set new inventory item
+            NewIcon(JadeSpeech.stage);
         }
     }
 }
