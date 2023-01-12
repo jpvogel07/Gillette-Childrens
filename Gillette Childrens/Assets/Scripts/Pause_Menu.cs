@@ -24,16 +24,18 @@ public class Pause_Menu : MonoBehaviour
 
     public void mainMenu()
     {
+        pauseMenu.SetActive(false);
+        pauseButton.SetActive(true);
         SceneManager.LoadScene("Main Menu");
-        Debug.LogError("No functioning main menu yet");
+        //Debug.LogError("No functioning main menu yet");
     }
 
     public void close()
     {
         Debug.LogError("Quit");
         Application.Quit();
-#if UNITY_EDITOR
+        #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-#endif
+        #endif
     }
 }

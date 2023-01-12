@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class Jade : MonoBehaviour
 {
@@ -11,11 +12,15 @@ public class Jade : MonoBehaviour
     public GameObject HUD;
     public GameObject item;
     public Sprite BlackBox;
+    public GameObject InvWisp;
+
+    public static Action<int> NewIcon = delegate { };
 
     private void Awake()
     {
         GameObject.Find("dialogue manager").gameObject.GetComponent<DialogueManager>().tut = false;
         JadeSpeech = this.GetComponent<DialogueTrigger>();
+        NewIcon(0);
     }
 
     public void flip()
@@ -30,6 +35,10 @@ public class Jade : MonoBehaviour
             }
             JadeSpeech.secret = true;
             item.GetComponent<Image>().sprite = BlackBox;
+            //wisp effect
+            Instantiate(InvWisp);
+            //set new inventory item
+            NewIcon(JadeSpeech.stage);
         }
     }
 }
