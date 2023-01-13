@@ -2,19 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 using System;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
+    private int i;
     private Inputs pinputs;
     private bool highlighted;
     private GameObject grabbed;
     public ClickableObject ClkObj;
     public bool AR;
     public GameObject ARHandler;
+    public int taskNum;
     public bool[] keys = new bool[3];
-    public Sprite[] InvontoryPics = new Sprite[3];
+    public Sprite[] InventoryPics = new Sprite[3];
+    public GameObject inventory;
+    public GameObject WES;
 
     public static Action playClick = delegate { };
 
@@ -24,6 +29,12 @@ public class PlayerMovement : MonoBehaviour
         pinputs.Enable();
         //pinputs.player.movement.started += movment;
         Jade.NewIcon += InventorySwitch;
+        /*
+        for (i=1;i<taskNum;i++)
+        {
+            InventoryPics[i--] = WES.GetComponent<AfterTut>().TaskItems[i].GetComponent<Image>().sprite;
+        }
+        */
     }
     private void OnDisable()
     {
@@ -34,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-
+        
     }
 
     void Update()
@@ -111,6 +122,9 @@ public class PlayerMovement : MonoBehaviour
 
     public void InventorySwitch(int i)
     {
-        Debug.Log("event:" + i);
+        //i--;
+
+        inventory.GetComponent<Image>().sprite = InventoryPics[i];
+        inventory.GetComponent<Image>().color = Color.grey;
     }
 }

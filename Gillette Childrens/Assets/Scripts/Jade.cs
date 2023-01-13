@@ -12,6 +12,7 @@ public class Jade : MonoBehaviour
     public GameObject HUD;
     public GameObject item;
     public Sprite BlackBox;
+    public GameObject InvWisp;
 
     public static Action<int> NewIcon = delegate { };
 
@@ -19,6 +20,7 @@ public class Jade : MonoBehaviour
     {
         GameObject.Find("dialogue manager").gameObject.GetComponent<DialogueManager>().tut = false;
         JadeSpeech = this.GetComponent<DialogueTrigger>();
+        NewIcon(0);
     }
 
     public void flip()
@@ -33,6 +35,8 @@ public class Jade : MonoBehaviour
             }
             JadeSpeech.secret = true;
             item.GetComponent<Image>().sprite = BlackBox;
+            //wisp effect
+            Instantiate(InvWisp);
             //set new inventory item
             NewIcon(JadeSpeech.stage);
         }
