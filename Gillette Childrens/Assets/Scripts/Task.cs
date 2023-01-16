@@ -33,6 +33,8 @@ public class Task : MonoBehaviour
             mouse.GetComponent<PlayerMovement>().keys[TaskNum] = true;
             item.GetComponent<Image>().sprite = this.gameObject.GetComponent<Image>().sprite;
             item.GetComponent<Image>().color = Color.white;
+            float yRatio = 1 / GetRatio();
+            item.GetComponent<RectTransform>().localScale = new Vector3(1,yRatio,1);
             this.gameObject.SetActive(false);
             World.Jade.gameObject.GetComponent<DialogueTrigger>().secret = false;
         }
@@ -42,6 +44,13 @@ public class Task : MonoBehaviour
             Debug.Log("task failed");
         }
     }
+    private float GetRatio() { 
+        float ratio = 0.0f;
+        ratio = (float)this.gameObject.GetComponent<Image>().sprite.texture.width / (float)this.gameObject.GetComponent<Image>().sprite.texture.height;
+        Debug.Log(ratio);
+        return ratio;
+    }
+
     /*private void ItemPopup() {
         Popup.gameObject.SetActive(true);
     }*/

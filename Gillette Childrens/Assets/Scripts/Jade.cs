@@ -35,6 +35,8 @@ public class Jade : MonoBehaviour
             }
             JadeSpeech.secret = true;
             item.GetComponent<Image>().sprite = BlackBox;
+            item.transform.localScale = new Vector3(1, 1, 1);
+            Debug.Log("Resized");
             //wisp effect
             Instantiate(InvWisp);
             //set new inventory item
