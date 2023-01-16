@@ -11,7 +11,7 @@ public class Task : MonoBehaviour
     private GameObject item;
     private WorldEvent World;
     private GameObject Jade;
-    private Transform Popup;
+    //private Transform Popup;
     //public string name;
 
     private void OnEnable()
@@ -20,14 +20,14 @@ public class Task : MonoBehaviour
         mouse = GameObject.Find("mouse").gameObject;
         item = GameObject.Find("inventory");
         Jade = World.GetComponent<WorldEvent>().Jade;
-        Popup = GameObject.Find("PopupParent").transform.GetChild(0);
+        //Popup = GameObject.Find("PopupParent").transform.GetChild(0);
     }
 
     public void DoTask()
     {
         if (TaskNum == Jade.GetComponent<DialogueTrigger>().stage)
         {
-            ItemPopup();
+            //ItemPopup();
             this.gameObject.GetComponent<DialogueTrigger>().secret = true;
             this.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
             mouse.GetComponent<PlayerMovement>().keys[TaskNum] = true;
@@ -42,7 +42,7 @@ public class Task : MonoBehaviour
             Debug.Log("task failed");
         }
     }
-    private void ItemPopup() {
+    /*private void ItemPopup() {
         Popup.gameObject.SetActive(true);
-    }
+    }*/
 }
