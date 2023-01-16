@@ -2865,11 +2865,14 @@ MonoBehaviour:
   ClkObj: {fileID: 0}
   AR: 0
   ARHandler: {fileID: 1065267473}
+  taskNum: 0
   keys: 00000000
-  InvontoryPics:
+  InventoryPics:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  inventory: {fileID: 0}
+  WES: {fileID: 0}
 --- !u!212 &607123655
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4099,6 +4102,7 @@ MonoBehaviour:
   HUD: {fileID: 62017302}
   item: {fileID: 1119530962}
   BlackBox: {fileID: 21300000, guid: ecb4c0ab179cf3543ae1e93d62ff73f8, type: 3}
+  InvWisp: {fileID: 0}
 --- !u!1 &1042961976
 GameObject:
   m_ObjectHideFlags: 0
@@ -7442,17 +7446,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920090150}
-  m_LocalRotation: {x: 0.44373336, y: -0, z: -0, w: 0.89615893}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1797084484}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 52.685, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -270, y: -79}
+  m_AnchoredPosition: {x: -273, y: -77}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1920090152
@@ -7531,7 +7535,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c85759dfbf2409445b27202f17ee2b39, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6fc5aea3ceb5fc040a6bff827fa96c76, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
