@@ -6803,6 +6803,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7208266561982394908, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
 --- !u!1 &1617171894

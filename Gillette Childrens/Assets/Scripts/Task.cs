@@ -33,8 +33,13 @@ public class Task : MonoBehaviour
             mouse.GetComponent<PlayerMovement>().keys[TaskNum] = true;
             //item.GetComponent<Image>().sprite = mouse.gameObject.GetComponent<PlayerMovement>().InventoryPics[TaskNum];
             item.GetComponent<Image>().color = Color.white;
-            float yRatio = 1 / GetRatio();
-            item.GetComponent<RectTransform>().localScale = new Vector3(1,yRatio,1);
+
+            /*float ratio = 0.0f;
+            ratio = (float)this.gameObject.GetComponent<Image>().sprite.texture.width / (float)this.gameObject.GetComponent<Image>().sprite.texture.height;
+            Debug.Log(ratio);
+            ratio = 1 / ratio;
+            item.GetComponent<RectTransform>().localScale = new Vector3(1,ratio,1);*/
+
             this.gameObject.SetActive(false);
             World.Jade.gameObject.GetComponent<DialogueTrigger>().secret = false;
         }
@@ -43,12 +48,6 @@ public class Task : MonoBehaviour
             this.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
             Debug.Log("task failed");
         }
-    }
-    private float GetRatio() { 
-        float ratio = 0.0f;
-        ratio = (float)this.gameObject.GetComponent<Image>().sprite.texture.width / (float)this.gameObject.GetComponent<Image>().sprite.texture.height;
-        Debug.Log(ratio);
-        return ratio;
     }
 
     /*private void ItemPopup() {

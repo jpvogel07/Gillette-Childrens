@@ -123,8 +123,15 @@ public class PlayerMovement : MonoBehaviour
     public void InventorySwitch(int i)
     {
         //i--;
-
+        
         inventory.GetComponent<Image>().sprite = InventoryPics[i];
+
+        float ratio = 0.0f;
+        ratio = (float)InventoryPics[i].texture.width / (float)InventoryPics[i].texture.height;
+        Debug.Log(ratio);
+        ratio = 1 / ratio;
+        inventory.GetComponent<RectTransform>().localScale = new Vector3(1, ratio, 1);
+
         inventory.GetComponent<Image>().color = Color.grey;
     }
 }
