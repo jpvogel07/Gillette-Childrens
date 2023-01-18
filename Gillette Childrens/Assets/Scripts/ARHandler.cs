@@ -11,7 +11,6 @@ public class ARHandler : MonoBehaviour
     {
         //scene.GetComponent<CanvasHandler>().ARHandler();
         mouse.GetComponent<PlayerMovement>().AR = true;
-        Debug.Log("pot");
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -23,6 +22,5 @@ public class ARHandler : MonoBehaviour
     public void handle()
     {
         scene.GetComponent<CanvasHandler>().ARHandler();
-        Debug.Log("swap");
     }
 }
