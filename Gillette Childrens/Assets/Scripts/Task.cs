@@ -11,7 +11,7 @@ public class Task : MonoBehaviour
     private GameObject item;
     private WorldEvent World;
     private GameObject Jade;
-    private Transform Popup;
+    //private Transform Popup;
     //public string name;
 
     private void OnEnable()
@@ -20,19 +20,21 @@ public class Task : MonoBehaviour
         mouse = GameObject.Find("mouse").gameObject;
         item = GameObject.Find("inventory");
         Jade = World.GetComponent<WorldEvent>().Jade;
-        Popup = GameObject.Find("PopupParent").transform.GetChild(0);
+        //Popup = GameObject.Find("PopupParent").transform.GetChild(0);
     }
 
     public void DoTask()
     {
         if (TaskNum == Jade.GetComponent<DialogueTrigger>().stage)
         {
-            ItemPopup();
+            //ItemPopup();
             this.gameObject.GetComponent<DialogueTrigger>().secret = true;
             this.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
             mouse.GetComponent<PlayerMovement>().keys[TaskNum] = true;
-            item.GetComponent<Image>().sprite = this.gameObject.GetComponent<Image>().sprite;
+            //item.GetComponent<Image>().sprite = mouse.gameObject.GetComponent<PlayerMovement>().InventoryPics[TaskNum];
             item.GetComponent<Image>().color = Color.white;
+            float yRatio = 1 / GetRatio();
+            item.GetComponent<RectTransform>().localScale = new Vector3(1,yRatio,1);
             this.gameObject.SetActive(false);
             World.Jade.gameObject.GetComponent<DialogueTrigger>().secret = false;
         }
@@ -42,7 +44,14 @@ public class Task : MonoBehaviour
             Debug.Log("task failed");
         }
     }
-    private void ItemPopup() {
-        Popup.gameObject.SetActive(true);
+    private float GetRatio() { 
+        float ratio = 0.0f;
+        ratio = (float)this.gameObject.GetComponent<Image>().sprite.texture.width / (float)this.gameObject.GetComponent<Image>().sprite.texture.height;
+        Debug.Log(ratio);
+        return ratio;
     }
+
+    /*private void ItemPopup() {
+        Popup.gameObject.SetActive(true);
+    }*/
 }

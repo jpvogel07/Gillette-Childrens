@@ -126,7 +126,6 @@ public class DialogueManager : MonoBehaviour
     }
     public void EndDialogue()
     {
-        Debug.Log("End of Conversation");
         continueButton.SetActive(false);
         backButton.SetActive(false);
         animateBox.SetBool("IsOpen", false);

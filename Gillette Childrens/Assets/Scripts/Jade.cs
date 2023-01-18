@@ -13,6 +13,7 @@ public class Jade : MonoBehaviour
     public GameObject item;
     public Sprite BlackBox;
     public GameObject InvWisp;
+    private GameObject wisp;
 
     public static Action<int> NewIcon = delegate { };
 
@@ -35,8 +36,13 @@ public class Jade : MonoBehaviour
             }
             JadeSpeech.secret = true;
             item.GetComponent<Image>().sprite = BlackBox;
+            item.transform.localScale = new Vector3(1, 1, 1);
+            Debug.Log("Resized");
             //wisp effect
-            Instantiate(InvWisp);
+            wisp = Instantiate(InvWisp);
+            InvWisp.gameObject.GetComponent<Image>().sprite = GameObject.Find("mouse").gameObject.GetComponent<PlayerMovement>().InventoryPics[JadeSpeech.stage-1];
+            Debug.Log(JadeSpeech.stage);
+            //InvWisp.gameObject.GetComponent<InventoryWisp>().image = GameObject.Find("mouse").gameObject.GetComponent<PlayerMovement>().InventoryPics[JadeSpeech.stage - 1];
             //set new inventory item
             NewIcon(JadeSpeech.stage);
         }
