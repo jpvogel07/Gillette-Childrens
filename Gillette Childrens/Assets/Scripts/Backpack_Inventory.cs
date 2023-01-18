@@ -2,13 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Backpack_Inventory : MonoBehaviour
 {
-    [SerializeField] GameObject Menu;
+    [SerializeField] GameObject menu;
+    [SerializeField] GameObject descMenu;
+    public TextMeshProUGUI text;
+    [SerializeField] string[] lostDescriptions;
+    [SerializeField] string[] foundDescriptions;
     [SerializeField] Image[] initialized;
-    [SerializeField] Sprite[] Silhouettes;
-    [SerializeField] Sprite[] Images;
+    [SerializeField] Sprite[] silhouettes;
+    [SerializeField] Sprite[] images;
     public bool[] obtained;
 
     private void Start()
@@ -16,7 +21,7 @@ public class Backpack_Inventory : MonoBehaviour
         int k = 0;
         foreach (Image item in initialized)
         {
-            initialized[k].sprite = Silhouettes[k];
+            initialized[k].sprite = silhouettes[k];
             obtained[k] = false;
             k++;
         }
@@ -29,11 +34,11 @@ public class Backpack_Inventory : MonoBehaviour
         {
             if (obtained[k] == false)
             {
-                initialized[k].sprite = Images[k];
+                initialized[k].sprite = images[k];
                 obtained[k] = true;
             } else
             {
-                initialized[k].sprite = Silhouettes[k];
+                initialized[k].sprite = silhouettes[k];
                 obtained[k] = false;
             }
             k++;
@@ -42,13 +47,48 @@ public class Backpack_Inventory : MonoBehaviour
     }
     public void openInventory()
     {
-        Menu.SetActive(true);
+        menu.SetActive(true);
     }
 
     public void closeInventory()
     {
-        Menu.SetActive(false);
+        menu.SetActive(false);
     }
 
+    public void openDesc(int position)
+    {
+        descMenu.SetActive(true);
+        displayDesc(position);
+    }
 
+    public void closeDesc()
+    {
+        descMenu.SetActive(false);
+    }
+
+    public void displayDesc(int position)
+    {
+        if (obtained[position] == true)
+        {
+            string input = foundDescriptions[position];
+            StopAllCoroutines();
+            StartCoroutine(TypeSentence(input));
+        } else if(obtained[position] == false)
+        {
+            string input = lostDescriptions[position];
+            StopAllCoroutines();
+            StartCoroutine(TypeSentence(input));
+        }
+    }
+
+    IEnumerator TypeSentence(string sentence)
+    {
+        text.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            text.text += letter;
+            yield return null;
+        }
+        
+    }
 }
