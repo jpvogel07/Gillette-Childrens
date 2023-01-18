@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 mousePos = Input.mousePosition;
         //Vector3 mousePos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
         mousePos.z = 0;
         this.gameObject.transform.position = mousePos;
