@@ -686,7 +686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RL: {fileID: 21300000, guid: d62a5aac6cda6284792d6e413a1bb10e, type: 3}
   Art: {fileID: 21300000, guid: 111d9b7af6ca1324db77906858a8af23, type: 3}
-  Map: {fileID: 21300000, guid: 39c5752b58063c648aae34c4556c3938, type: 3}
+  Map: {fileID: 21300000, guid: 0ac807da482388c4593cd71a939ed7d3, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
 --- !u!1 &144138959
@@ -943,7 +943,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 39c5752b58063c648aae34c4556c3938, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0ac807da482388c4593cd71a939ed7d3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6802,6 +6802,10 @@ PrefabInstance:
     - target: {fileID: 7208266561982394908, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
       propertyPath: m_Layer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208266561982394908, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
