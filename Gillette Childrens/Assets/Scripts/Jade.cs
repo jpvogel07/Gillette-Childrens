@@ -41,6 +41,7 @@ public class Jade : MonoBehaviour
             //wisp effect
             wisp = Instantiate(InvWisp);
             InvWisp.gameObject.GetComponent<Image>().sprite = GameObject.Find("mouse").gameObject.GetComponent<PlayerMovement>().InventoryPics[JadeSpeech.stage-1];
+            Debug.Log(JadeSpeech.stage);
             //InvWisp.gameObject.GetComponent<InventoryWisp>().image = GameObject.Find("mouse").gameObject.GetComponent<PlayerMovement>().InventoryPics[JadeSpeech.stage - 1];
             //set new inventory item
             NewIcon(JadeSpeech.stage);

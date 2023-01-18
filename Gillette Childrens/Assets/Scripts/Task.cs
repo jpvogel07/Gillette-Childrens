@@ -31,7 +31,7 @@ public class Task : MonoBehaviour
             this.gameObject.GetComponent<DialogueTrigger>().secret = true;
             this.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
             mouse.GetComponent<PlayerMovement>().keys[TaskNum] = true;
-            item.GetComponent<Image>().sprite = this.gameObject.GetComponent<Image>().sprite;
+            //item.GetComponent<Image>().sprite = mouse.gameObject.GetComponent<PlayerMovement>().InventoryPics[TaskNum];
             item.GetComponent<Image>().color = Color.white;
             float yRatio = 1 / GetRatio();
             item.GetComponent<RectTransform>().localScale = new Vector3(1,yRatio,1);
