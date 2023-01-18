@@ -23,7 +23,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        Debug.Log(stage);
+
         if (secret)
         {
             FindObjectOfType<DialogueManager>().StartDialogue(secretMessage);

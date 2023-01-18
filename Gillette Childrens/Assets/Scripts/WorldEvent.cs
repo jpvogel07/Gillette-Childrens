@@ -22,7 +22,6 @@ public class WorldEvent : MonoBehaviour
     {
         check = true;
         DialogueManager.DialogueDone += ProgressCheck;
-        Debug.Log("event: " + EventCounter);
         Start_DTrigger();
         GameObject.Find("dialogue manager").gameObject.GetComponent<DialogueManager>().tut = true;
     }
@@ -39,12 +38,10 @@ public class WorldEvent : MonoBehaviour
         if (EventCounter==1)
         {
             StartKey.SetActive(true);//picking up key handles rest of event
-            Debug.Log("Event: " + EventCounter);
         }
         else if (EventCounter==2)
         {
             StartDoor.SetActive(true);//going through door handles rest of event
-            Debug.Log("event: " + EventCounter);
         }
         else if (EventCounter==3)
         {
@@ -56,7 +53,6 @@ public class WorldEvent : MonoBehaviour
             Jade.SetActive(true);
             Jade.GetComponent<DialogueTrigger>().secret = true;
             TutDone();
-            Debug.Log("event: " + EventCounter);
         }
         /*else if (EventCounter==4)
         {

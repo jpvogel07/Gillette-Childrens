@@ -91,3 +91,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: {fileID: 2423108825506983384, guid: fd98840d7e7f4ae4798e2defda63daf1, type: 3}
   end: {fileID: 7059409921733553220, guid: 79d7841bf18b2fb48ac1876faf4380cf, type: 3}
+  image: {fileID: 0}
