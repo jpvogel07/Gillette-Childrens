@@ -7,7 +7,7 @@ using System;
 public class Jade : MonoBehaviour
 {
     public GameObject world;
-    private DialogueTrigger JadeSpeech;
+    public DialogueTrigger JadeSpeech;
     public GameObject winscreen;
     public GameObject HUD;
     public GameObject item;
@@ -28,6 +28,11 @@ public class Jade : MonoBehaviour
     {
         if (!this.GetComponent<DialogueTrigger>().secret)
         {
+            wisp = Instantiate(InvWisp);
+            wisp.transform.SetParent(HUD.transform);
+            //InvWisp.gameObject.GetComponent<InventoryWisp>().image = GameObject.Find("mouse").gameObject.GetComponent<PlayerMovement>().InventoryPics[JadeSpeech.stage];
+            Debug.Log(JadeSpeech.stage);
+
             JadeSpeech.stage++;
             if (JadeSpeech.stage == 4)
             {
@@ -39,9 +44,6 @@ public class Jade : MonoBehaviour
             item.transform.localScale = new Vector3(1, 1, 1);
             Debug.Log("Resized");
             //wisp effect
-            wisp = Instantiate(InvWisp);
-            InvWisp.gameObject.GetComponent<Image>().sprite = GameObject.Find("mouse").gameObject.GetComponent<PlayerMovement>().InventoryPics[JadeSpeech.stage-1];
-            Debug.Log(JadeSpeech.stage);
             //InvWisp.gameObject.GetComponent<InventoryWisp>().image = GameObject.Find("mouse").gameObject.GetComponent<PlayerMovement>().InventoryPics[JadeSpeech.stage - 1];
             //set new inventory item
             NewIcon(JadeSpeech.stage);

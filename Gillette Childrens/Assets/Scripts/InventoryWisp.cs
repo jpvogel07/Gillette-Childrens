@@ -8,7 +8,7 @@ public class InventoryWisp : MonoBehaviour
     public GameObject start;
     public GameObject end;
     public Sprite image;
-    private float rate, speed=800;
+    private float rate, speed=820;
     private Vector3 origin;
 
     private void OnEnable()
@@ -17,6 +17,7 @@ public class InventoryWisp : MonoBehaviour
         end = GameObject.Find("Jade");
         start = GameObject.Find("inventory");
         //this.GetComponent<Image>().sprite = image;
+        this.GetComponent<Image>().sprite = GameObject.Find("mouse").GetComponent<PlayerMovement>().InventoryPics[end.GetComponent<Jade>().JadeSpeech.stage];
         this.GetComponent<Image>().color = Color.white;
         this.transform.position = start.transform.position;
         StartCoroutine(travelTime());
@@ -25,7 +26,7 @@ public class InventoryWisp : MonoBehaviour
     {
         //travel to end
         this.transform.position = Vector2.MoveTowards(this.transform.position, end.transform.position, Time.deltaTime * speed);
-        rate += Time.deltaTime * .3f;
+        rate += Time.deltaTime * .7f;
         rate = Mathf.Clamp(rate, 0, 1);
         transform.localScale = Vector3.Slerp(origin, Vector3.zero, rate);
     }
