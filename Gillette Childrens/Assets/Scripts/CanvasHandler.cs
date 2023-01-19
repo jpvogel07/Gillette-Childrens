@@ -9,7 +9,7 @@ public class CanvasHandler : MonoBehaviour
     public Sprite Art;
     public Sprite Map;
     public GameObject MiniMap;
-    private bool check=false;
+    public bool check=false;
     public GameObject AR;
     public GameObject[] doors;
 
@@ -48,4 +48,5 @@ public class CanvasHandler : MonoBehaviour
             check = true;
         }
     }
+
 }

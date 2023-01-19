@@ -104,6 +104,11 @@ public class PlayerMovement : MonoBehaviour
                 ClkObj.GetComponent<ClickableObject>().Obj.y = ClkObj.transform.position.y;
             }
         }
+        
+        if(collision.CompareTag("AR"))
+        {
+            
+        }
     }
     private void movment(InputAction.CallbackContext c)
     {
