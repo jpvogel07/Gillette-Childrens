@@ -180,6 +180,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: 1ba9c2bd59f88244f9de785a506b26ff, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &12623990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1090,6 +1091,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: 0ac807da482388c4593cd71a939ed7d3, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!1001 &115194119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1299,6 +1301,8 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 0
+  talking: []
+  SecretTalking: {fileID: 0}
 --- !u!114 &144138962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2068,7 +2072,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
   m_PrefabInstance: {fileID: 217126743}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &268939126
+--- !u!1 &246640338
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2076,43 +2080,43 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 268939127}
-  - component: {fileID: 268939129}
-  - component: {fileID: 268939128}
+  - component: {fileID: 246640339}
+  - component: {fileID: 246640341}
+  - component: {fileID: 246640340}
   m_Layer: 5
-  m_Name: Cab2
+  m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &268939127
+--- !u!224 &246640339
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 268939126}
+  m_GameObject: {fileID: 246640338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.8881126}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1508813890}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 327.9, y: -2.6}
-  m_SizeDelta: {x: 213, y: 640}
+  m_AnchoredPosition: {x: -60, y: -150.8}
+  m_SizeDelta: {x: 181, y: 214}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &268939128
+--- !u!114 &246640340
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 268939126}
+  m_GameObject: {fileID: 246640338}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -2126,7 +2130,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bbc7401ec88ece1488072790bc3ab632, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6311bfe671a8ef34d981ff68bf39fb83, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2136,13 +2140,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &268939129
+--- !u!222 &246640341
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 268939126}
+  m_GameObject: {fileID: 246640338}
   m_CullTransparentMesh: 1
 --- !u!1 &272013992
 GameObject:
@@ -2201,6 +2205,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: af9f7ffc2e95a1d4c81aed133f3b3273, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &272013995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2604,6 +2609,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: 7dd42c2180bbf684b8fce164b7e88a96, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &353691691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2886,6 +2892,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: 8d69edd8affc3c24383f3ddf333bf0be, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &390858189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3577,6 +3584,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: 591f60f8e05e00a40980fad1ee01cc42, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &479487334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4355,6 +4363,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: b72061087a1269a49817c71bbeae633f, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &575835145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5715,6 +5724,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: bab5cb21ae6a08a45a6b2c55aad07325, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &796301660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5835,6 +5845,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: b1bad9b047a81494aad72166f297587a, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &835483029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5959,6 +5970,8 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 1
+  talking: []
+  SecretTalking: {fileID: 0}
 --- !u!114 &856829621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6473,6 +6486,8 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 1
+  talking: []
+  SecretTalking: {fileID: 0}
 --- !u!95 &1007140255
 Animator:
   serializedVersion: 4
@@ -6506,6 +6521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   world: {fileID: 188230858}
+  JadeSpeech: {fileID: 0}
   winscreen: {fileID: 1617171894}
   HUD: {fileID: 62017302}
   item: {fileID: 1119530962}
@@ -7125,6 +7141,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: dac1ae2c78bb6b7418d70693da10f3ed, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &1058281672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8036,6 +8053,8 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 0
+  talking: []
+  SecretTalking: {fileID: 0}
 --- !u!114 &1159827075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8126,7 +8145,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 078912d20703bf34aa64c1ea9f799474, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d8d0bf50ed467c49ab4a4be288a33ed, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8151,18 +8170,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159827073}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1508813890}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13, y: -116}
-  m_SizeDelta: {x: 414, y: 623}
+  m_AnchoredPosition: {x: -33.2, y: -96}
+  m_SizeDelta: {x: 410, y: 630}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1202331372
 GameObject:
@@ -8221,6 +8240,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: aa30e3b221c3cee4bb56e43aec268827, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &1202331375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8395,6 +8415,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204664911}
+  m_CullTransparentMesh: 1
+--- !u!1 &1210870927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1210870928}
+  - component: {fileID: 1210870930}
+  - component: {fileID: 1210870929}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1210870928
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210870927}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1508813890}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 86, y: -137}
+  m_SizeDelta: {x: 284, y: 250}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1210870929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210870927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 48ef6a5809d386c4c9441834c43fc540, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1210870930
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210870927}
   m_CullTransparentMesh: 1
 --- !u!1001 &1211652088
 PrefabInstance:
@@ -9231,6 +9327,8 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 0
+  talking: []
+  SecretTalking: {fileID: 0}
 --- !u!114 &1448509909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9540,6 +9638,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: dc457eeecadaf494daa2527618855158, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &1490568498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9619,7 +9718,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1508813887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9637,6 +9736,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: 1890386b23a7c9543ac068c39903e307, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &1508813888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9657,7 +9757,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 59c5860416974ff45a0416de705bf0a5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d81b0070e11bae7449859e73040c757f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9689,7 +9789,8 @@ RectTransform:
   m_Children:
   - {fileID: 1007057607}
   - {fileID: 1159827079}
-  - {fileID: 268939127}
+  - {fileID: 1210870928}
+  - {fileID: 246640339}
   m_Father: {fileID: 62017306}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10699,6 +10800,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: 4cae1e560df63a9489c2a7f470041985, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &1740710297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10939,6 +11041,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: a1f9fb81f0cd40c4e81ec47a376a1c8f, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &1743442001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11152,6 +11255,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: 7f8adaed11af8654b8548dbdd08e1ef8, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &1777323681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11226,6 +11330,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: cd956e936b6780b4680862f7bbac5fcb, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &1797084482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11613,6 +11718,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: 06972ff05f83ed64695d852add44ecb2, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &1839212382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11918,6 +12024,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: eab3dea07339e3a4a9af6fc255d99d62, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &1890274172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12352,6 +12459,8 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 0
+  talking: []
+  SecretTalking: {fileID: 0}
 --- !u!1 &1921169905
 GameObject:
   m_ObjectHideFlags: 0
@@ -12388,6 +12497,7 @@ MonoBehaviour:
   Map: {fileID: 21300000, guid: 1f14fe9301a11fe409da4f3566357d10, type: 3}
   MiniMap: {fileID: 147451596}
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &1921169907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12563,6 +12673,8 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 1
+  talking: []
+  SecretTalking: {fileID: 0}
 --- !u!114 &1982292768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12760,6 +12872,8 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 1
+  talking: []
+  SecretTalking: {fileID: 0}
 --- !u!114 &2059890619
 MonoBehaviour:
   m_ObjectHideFlags: 0
