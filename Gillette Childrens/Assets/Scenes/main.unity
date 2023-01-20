@@ -6477,9 +6477,9 @@ MonoBehaviour:
   dialogue:
     name: Jade
     sentences:
-    - 'Great! This just what I needed. Here is you next task:'
+    - 'Great! This is just what I needed. Here is your next task:'
     - I need you to grab a hearing aid from the audiology room.
-    - The audiology room is down the hallway to the right of the check in counter
+    - The audiology room is down the hallway to the right of the check-in counter
   dialogue2:
     name: Jade
     sentences:
@@ -6489,7 +6489,7 @@ MonoBehaviour:
   dialogue3:
     name: Jade
     sentences:
-    - 'Great! This just what I needed. Here is you next task:'
+    - 'Great! This is just what I needed. Here is your next task:'
     - I need you to grab the crash cart that is in the outpatient clinic
     - The outpatient clinic is across the hallway from the audiology room
   dialogue4:
@@ -12697,16 +12697,16 @@ MonoBehaviour:
   dialogue2:
     name: Jade
     sentences:
-    - Great job. Now lets go up to the check in front desk. Use the mouse to click
+    - Great job. Now let's go up to the check-in front desk. Use the mouse to click
       on the front desk to go to it.
   dialogue3:
     name: Jade
     sentences:
-    - Great job. Now that you know how to interact with this enviorment lets get
-      you use to the layout of the hospital.
+    - Great job. Now that you know how to interact with this environment let's get
+      you used to the layout of the hospital.
     - 'Here is your first task that I need you to complete: '
-    - Grab a chart from the check in desk
-    - You can check your current task by checking the top right or asking me
+    - Grab a chart from the check-in desk
+    - You can check your current task by checking the top right or asking me.
   dialogue4:
     name: Jade
     sentences: []
