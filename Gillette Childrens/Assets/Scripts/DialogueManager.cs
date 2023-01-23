@@ -17,7 +17,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject textBox;
     public GameObject mouse;
     public GameObject continueButton;
-    public GameObject backButton;
+    //public GameObject backButton;
     public GameObject choice1;
     public GameObject choice2;
     public GameObject choice3;
@@ -104,7 +104,7 @@ public class DialogueManager : MonoBehaviour
         number++;
     }
 
-    public void back(Dialogue dialogue)
+    /*public void back(Dialogue dialogue)
     {
         Debug.LogError("We got here");
         sentences.Clear();
@@ -115,7 +115,7 @@ public class DialogueManager : MonoBehaviour
             //number--;
         }
         DisplayNextSentence();
-    }
+    }*/
 
     IEnumerator TypeSentence(string sentence) 
     {
@@ -126,12 +126,12 @@ public class DialogueManager : MonoBehaviour
             yield return null;
         }
         continueButton.SetActive(true);
-        backButton.SetActive(true);
+        //backButton.SetActive(true);
     }
     public void EndDialogue()
     {
         continueButton.SetActive(false);
-        backButton.SetActive(false);
+        //backButton.SetActive(false);
         animateBox.SetBool("IsOpen", false);
         animateName.SetBool("IsOpen", false);
         blocker.SetActive(false);

@@ -36,6 +36,7 @@ public class DialogueTrigger : MonoBehaviour
         if (secret)
         {
             FindObjectOfType<DialogueManager>().StartDialogue(secretMessage);
+            secret = false;
         }
         else if (stage == 0)
         { 
@@ -71,11 +72,6 @@ public class DialogueTrigger : MonoBehaviour
 
         }
 
-    }
-
-    public void Back()
-    {
-        FindObjectOfType<DialogueManager>().back(dialogue);
     }
 
     public void secretTrigger()
