@@ -8,6 +8,7 @@ TagManager:
   - key item
   - Blocker
   - AR
+  - wisp
   layers:
   - Default
   - TransparentFX
