@@ -16,9 +16,18 @@ public class DialogueTrigger : MonoBehaviour
     public bool[] tasks = new bool[3];
     public int  stage;
 
+    public AudioSource[] talking;
+    public AudioSource SecretTalking;
+
     private void Awake()
     {
         stage = 0;
+        DialogueManager.TriggerTalking += PlayTalking;
+    }
+
+    private void OnDisable()
+    {
+        DialogueManager.TriggerTalking -= PlayTalking;
     }
 
     public void TriggerDialogue()
@@ -73,5 +82,18 @@ public class DialogueTrigger : MonoBehaviour
     {
         secret = true;
         Debug.Log("The secret is active");
+    }
+
+    public void PlayTalking()
+    {
+        /*
+        if (secret)
+        {
+            SecretTalking.Play();
+            return;
+        }
+        talking[stage].Play();
+        */
+        Debug.Log("playertalking " + this.gameObject.name);
     }
 }

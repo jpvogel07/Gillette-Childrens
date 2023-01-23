@@ -7,6 +7,7 @@ TagManager:
   - clickable
   - key item
   - Blocker
+  - AR
   layers:
   - Default
   - TransparentFX

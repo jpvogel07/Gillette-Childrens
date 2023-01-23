@@ -33,6 +33,8 @@ public class DialogueManager : MonoBehaviour
     private int count = 0;
     private int number = 0;
 
+    public static Action TriggerTalking = delegate { };
+
     void Awake()
     {
         sentences = new Queue<string>();
@@ -78,6 +80,8 @@ public class DialogueManager : MonoBehaviour
             sentences.Enqueue(sentence);
             count++;
         }
+
+        TriggerTalking();
 
         /*for(int k = 0; k < count; k++) 
         {
