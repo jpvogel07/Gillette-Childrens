@@ -179,6 +179,7 @@ MonoBehaviour:
   Art: {fileID: 0}
   Map: {fileID: 21300000, guid: 1ba9c2bd59f88244f9de785a506b26ff, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
   doors: []
 --- !u!114 &12623990
@@ -1088,10 +1089,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RL: {fileID: 21300000, guid: d62a5aac6cda6284792d6e413a1bb10e, type: 3}
   Art: {fileID: 21300000, guid: 111d9b7af6ca1324db77906858a8af23, type: 3}
-  Map: {fileID: 21300000, guid: 0ac807da482388c4593cd71a939ed7d3, type: 3}
+  Map: {fileID: 21300000, guid: f4c165d0772df2642ad0690f9ac10a33, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
-  doors: []
+  doors:
+  - {fileID: 58647377}
+  - {fileID: 1007140249}
+  - {fileID: 1481454258}
+  - {fileID: 2065362535}
+  - {fileID: 39734829}
+  - {fileID: 1742929805}
 --- !u!1001 &115194119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1478,7 +1486,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0ac807da482388c4593cd71a939ed7d3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f4c165d0772df2642ad0690f9ac10a33, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2204,6 +2212,7 @@ MonoBehaviour:
   Art: {fileID: 0}
   Map: {fileID: 21300000, guid: af9f7ffc2e95a1d4c81aed133f3b3273, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
   doors: []
 --- !u!114 &272013995
@@ -2608,8 +2617,11 @@ MonoBehaviour:
   Art: {fileID: 21300000, guid: 111d9b7af6ca1324db77906858a8af23, type: 3}
   Map: {fileID: 21300000, guid: 7dd42c2180bbf684b8fce164b7e88a96, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
-  doors: []
+  doors:
+  - {fileID: 1017859970}
+  - {fileID: 53190137}
 --- !u!114 &353691691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2891,8 +2903,13 @@ MonoBehaviour:
   Art: {fileID: 21300000, guid: 4164f7a93093e1f49aeea5b2b936ec90, type: 3}
   Map: {fileID: 21300000, guid: 8d69edd8affc3c24383f3ddf333bf0be, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
-  doors: []
+  doors:
+  - {fileID: 484153118}
+  - {fileID: 719260927}
+  - {fileID: 1024796879}
+  - {fileID: 433197703}
 --- !u!114 &390858189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3583,6 +3600,7 @@ MonoBehaviour:
   Art: {fileID: 0}
   Map: {fileID: 21300000, guid: 591f60f8e05e00a40980fad1ee01cc42, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
   doors: []
 --- !u!114 &479487334
@@ -4362,6 +4380,7 @@ MonoBehaviour:
   Art: {fileID: 0}
   Map: {fileID: 21300000, guid: b72061087a1269a49817c71bbeae633f, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
   doors: []
 --- !u!114 &575835145
@@ -5723,8 +5742,13 @@ MonoBehaviour:
   Art: {fileID: 21300000, guid: 4164f7a93093e1f49aeea5b2b936ec90, type: 3}
   Map: {fileID: 21300000, guid: bab5cb21ae6a08a45a6b2c55aad07325, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
-  doors: []
+  doors:
+  - {fileID: 1042961976}
+  - {fileID: 1550215624}
+  - {fileID: 188683250}
+  - {fileID: 2059890616}
 --- !u!114 &796301660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5844,6 +5868,7 @@ MonoBehaviour:
   Art: {fileID: 0}
   Map: {fileID: 21300000, guid: b1bad9b047a81494aad72166f297587a, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
   doors: []
 --- !u!114 &835483029
@@ -6452,9 +6477,9 @@ MonoBehaviour:
   dialogue:
     name: Jade
     sentences:
-    - 'Great! This just what I needed. Here is you next task:'
+    - 'Great! This is just what I needed. Here is your next task:'
     - I need you to grab a hearing aid from the audiology room.
-    - The audiology room is down the hallway to the right of the check in counter
+    - The audiology room is down the hallway to the right of the check-in counter
   dialogue2:
     name: Jade
     sentences:
@@ -6464,7 +6489,7 @@ MonoBehaviour:
   dialogue3:
     name: Jade
     sentences:
-    - 'Great! This just what I needed. Here is you next task:'
+    - 'Great! This is just what I needed. Here is your next task:'
     - I need you to grab the crash cart that is in the outpatient clinic
     - The outpatient clinic is across the hallway from the audiology room
   dialogue4:
@@ -7140,8 +7165,10 @@ MonoBehaviour:
   Art: {fileID: 21300000, guid: a0f2715d705a5614883a85a7be5d7ae7, type: 3}
   Map: {fileID: 21300000, guid: dac1ae2c78bb6b7418d70693da10f3ed, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
-  doors: []
+  doors:
+  - {fileID: 144138959}
 --- !u!114 &1058281672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8239,6 +8266,7 @@ MonoBehaviour:
   Art: {fileID: 0}
   Map: {fileID: 21300000, guid: aa30e3b221c3cee4bb56e43aec268827, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
   doors: []
 --- !u!114 &1202331375
@@ -9637,8 +9665,11 @@ MonoBehaviour:
   Art: {fileID: 21300000, guid: 6120ed8ba1df1094eb312c43069f77f4, type: 3}
   Map: {fileID: 21300000, guid: dc457eeecadaf494daa2527618855158, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
-  doors: []
+  doors:
+  - {fileID: 1448509907}
+  - {fileID: 856829618}
 --- !u!114 &1490568498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9735,8 +9766,12 @@ MonoBehaviour:
   Art: {fileID: 21300000, guid: 59c5860416974ff45a0416de705bf0a5, type: 3}
   Map: {fileID: 21300000, guid: 1890386b23a7c9543ac068c39903e307, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
-  doors: []
+  doors:
+  - {fileID: 1159827073}
+  - {fileID: 1210870927}
+  - {fileID: 246640338}
 --- !u!114 &1508813888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10799,6 +10834,7 @@ MonoBehaviour:
   Art: {fileID: 0}
   Map: {fileID: 21300000, guid: 4cae1e560df63a9489c2a7f470041985, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
   doors: []
 --- !u!114 &1740710297
@@ -11040,6 +11076,7 @@ MonoBehaviour:
   Art: {fileID: 0}
   Map: {fileID: 21300000, guid: a1f9fb81f0cd40c4e81ec47a376a1c8f, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
   doors: []
 --- !u!114 &1743442001
@@ -11254,6 +11291,7 @@ MonoBehaviour:
   Art: {fileID: 0}
   Map: {fileID: 21300000, guid: 7f8adaed11af8654b8548dbdd08e1ef8, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
   doors: []
 --- !u!114 &1777323681
@@ -11329,8 +11367,10 @@ MonoBehaviour:
   Art: {fileID: 21300000, guid: b24bd0c8aaad7e149904e818c84169c0, type: 3}
   Map: {fileID: 21300000, guid: cd956e936b6780b4680862f7bbac5fcb, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
-  doors: []
+  doors:
+  - {fileID: 1920090150}
 --- !u!114 &1797084482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11717,6 +11757,7 @@ MonoBehaviour:
   Art: {fileID: 0}
   Map: {fileID: 21300000, guid: 06972ff05f83ed64695d852add44ecb2, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
   doors: []
 --- !u!114 &1839212382
@@ -12023,8 +12064,11 @@ MonoBehaviour:
   Art: {fileID: 0}
   Map: {fileID: 21300000, guid: eab3dea07339e3a4a9af6fc255d99d62, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
-  doors: []
+  doors:
+  - {fileID: 1368986301}
+  - {fileID: 2068018740}
 --- !u!114 &1890274172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12496,8 +12540,13 @@ MonoBehaviour:
   Art: {fileID: 21300000, guid: 4164f7a93093e1f49aeea5b2b936ec90, type: 3}
   Map: {fileID: 21300000, guid: 1f14fe9301a11fe409da4f3566357d10, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
-  doors: []
+  doors:
+  - {fileID: 942694778}
+  - {fileID: 1327847176}
+  - {fileID: 1256432927}
+  - {fileID: 2075812486}
 --- !u!114 &1921169907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12648,16 +12697,16 @@ MonoBehaviour:
   dialogue2:
     name: Jade
     sentences:
-    - Great job. Now lets go up to the check in front desk. Use the mouse to click
+    - Great job. Now let's go up to the check-in front desk. Use the mouse to click
       on the front desk to go to it.
   dialogue3:
     name: Jade
     sentences:
-    - Great job. Now that you know how to interact with this enviorment lets get
-      you use to the layout of the hospital.
+    - Great job. Now that you know how to interact with this environment let's get
+      you used to the layout of the hospital.
     - 'Here is your first task that I need you to complete: '
-    - Grab a chart from the check in desk
-    - You can check your current task by checking the top right or asking me
+    - Grab a chart from the check-in desk
+    - You can check your current task by checking the top right or asking me.
   dialogue4:
     name: Jade
     sentences: []
@@ -13837,8 +13886,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.2296143, y: 4.9870605}
-  m_SizeDelta: {x: 0, y: 7.507324}
+  m_AnchoredPosition: {x: 0.5128174, y: 4.312195}
+  m_SizeDelta: {x: 3.4337, y: 6.9283}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2119419496
 MonoBehaviour:
