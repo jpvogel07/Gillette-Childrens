@@ -45,6 +45,12 @@ public class Backpack_Inventory : MonoBehaviour
         }
 
     }
+
+    public void obtainItem(int position)
+    {
+        initialized[position].sprite = images[position];
+        obtained[position] = true;
+    }
     public void openInventory()
     {
         menu.SetActive(true);
