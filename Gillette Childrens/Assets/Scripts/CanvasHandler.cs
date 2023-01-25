@@ -37,14 +37,24 @@ public class CanvasHandler : MonoBehaviour
         {
             this.GetComponent<Image>().sprite = Art;
             foreach (GameObject door in doors)
-                door.SetActive(true);
+            {
+                if (door != null)
+                {
+                    door.SetActive(true);
+                }
+            }
             check = false;
         }
         else
         {
             this.GetComponent<Image>().sprite = RL;
             foreach (GameObject door in doors)
-                door.SetActive(false);
+            {
+                if (door != null)
+                {
+                    door.SetActive(false);
+                }
+            }
             check = true;
         }
     }

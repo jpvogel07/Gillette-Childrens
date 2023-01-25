@@ -49,4 +49,12 @@ public class Jade : MonoBehaviour
             NewIcon(JadeSpeech.stage);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("wisp"))
+        {
+            Destroy(collision.gameObject);
+        }
+    }
 }

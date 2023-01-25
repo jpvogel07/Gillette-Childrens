@@ -1,0 +1,29 @@
+Why, hello there! You must be the new hire, here for training. 
+
+My name is Jade. Nice to meet you!
+
+Welcome to your first day at Gilette's Children's Hospital. We're really happy to have you.
+
+First things first, let's get you used to working with this training program.
+
+Hovering over key items will highlight them. Clicking on one will add it to your inventory, over on the right side of the screen.
+
+A key item is about to pop up. Try clicking on it!
+
+--
+Well done! Key items like that can be found all around the hospital, in the form of different tools used by hospital personel.
+
+As a healthcare provider, yourself, you'll need to know where they are and what they do. 
+
+Don't worry, I'm here to teach you all about them, as well as the layout of the hospital. 
+
+I'll have you go around the hospital to find me some key items. I'm thinking one from each room. 
+
+But before we get to that, let's practice navigating around rooms. 
+
+Clicking on things like doors and arrows will take you from area to area, and some objects in the environment can be approached by clicking on them. Doors, arrows, and approachable objects will all highlight when you hover over them.
+
+As an example, why don't you approach the check-in desk back there?
+--
+
+

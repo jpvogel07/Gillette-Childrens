@@ -908,7 +908,7 @@ RectTransform:
   - {fileID: 1321291449}
   - {fileID: 735160295}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1093,8 +1093,8 @@ MonoBehaviour:
   check: 0
   AR: {fileID: 1065267473}
   doors:
-  - {fileID: 58647377}
   - {fileID: 1007140249}
+  - {fileID: 58647377}
   - {fileID: 1481454258}
   - {fileID: 2065362535}
   - {fileID: 39734829}
@@ -1665,7 +1665,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &188230861
 MonoBehaviour:
@@ -1687,6 +1687,7 @@ MonoBehaviour:
   - {fileID: 144138959}
   - {fileID: 1448509907}
   - {fileID: 1159827073}
+  - {fileID: 1065267473}
 --- !u!82 &188230862
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4849,7 +4850,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &607123657
 AudioSource:
@@ -6328,13 +6329,15 @@ GameObject:
   - component: {fileID: 1007140256}
   - component: {fileID: 1007140254}
   - component: {fileID: 1007140255}
+  - component: {fileID: 1007140258}
+  - component: {fileID: 1007140257}
   m_Layer: 5
   m_Name: Jade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1007140250
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6551,6 +6554,53 @@ MonoBehaviour:
   item: {fileID: 1119530962}
   BlackBox: {fileID: 21300000, guid: ecb4c0ab179cf3543ae1e93d62ff73f8, type: 3}
   InvWisp: {fileID: 7208266561982394908, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
+--- !u!61 &1007140257
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007140249}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!50 &1007140258
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007140249}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1017859970
 GameObject:
   m_ObjectHideFlags: 0
@@ -7220,7 +7270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1065267474
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10265,131 +10315,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586587640}
   m_CullTransparentMesh: 1
---- !u!1001 &1594785937
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 109.46828
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 109.46828
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 109.46828
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -144
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 223.77
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982938751238091729, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5937334370961686017, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5937334370961686017, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_UseSpriteMesh
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7208266561982394908, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_Name
-      value: Inventory Wisp
-      objectReference: {fileID: 0}
-    - target: {fileID: 7208266561982394908, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_Layer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7208266561982394908, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
 --- !u!1 &1617171894
 GameObject:
   m_ObjectHideFlags: 0
@@ -10525,7 +10450,7 @@ RectTransform:
   - {fileID: 2081736194}
   - {fileID: 582055046}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -12432,15 +12357,31 @@ MonoBehaviour:
   dialogue:
     name: Jade
     sentences:
-    - Hello new hire!
-    - This is your first day at Gilette's Children's Hospital
-    - First of all, lets get you used to working in this space
-    - Try picking this up. Use your mouse to click on the key item.
+    - 'Why, hello there! You must be the new hire, here for training. '
+    - My name is Jade. Nice to meet you!
+    - Welcome to your first day at Gilette's Children's Hospital. We're really happy
+      to have you.
+    - First things first, let's get you used to working with this training program.
+    - Hovering over key items will highlight them. Clicking on one will add it to
+      your inventory, over on the right side of the screen.
+    - A key item is about to pop up. Try clicking on it!
   dialogue2:
     name: Jade
     sentences:
-    - Great job. Now let's go up to the check-in front desk. Use the mouse to click
-      on the front desk to go to it.
+    - Well done! Key items like that can be found all around the hospital, in the
+      form of different tools used by hospital personel.
+    - 'As a healthcare provider, yourself, you''ll need to know where they are and
+      what they do. '
+    - 'Don''t worry, I''m here to teach you all about them, as well as the layout
+      of the hospital. '
+    - 'I''ll have you go around the hospital to find me some key items. I''m thinking
+      one from each room. '
+    - But before we get to that, let's practice navigating around rooms.
+    - 'Clicking on things like doors and arrows will take you from area to area,
+      and some objects in the environment can be approached by clicking on them. '
+    - Doors, arrows, and approachable objects will all highlight when you hover over
+      them.
+    - As an example, why don't you approach the check-in desk back there?
   dialogue3:
     name: Jade
     sentences:
@@ -13727,7 +13668,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2137446525
 GameObject:
@@ -13775,7 +13716,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2137446529
 MonoBehaviour:
