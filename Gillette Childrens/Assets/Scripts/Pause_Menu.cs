@@ -12,14 +12,14 @@ public class Pause_Menu : MonoBehaviour
     {
         pauseMenu.SetActive(true);
         pauseButton.SetActive(false);
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
     }
 
     public void Resume()
     {
         pauseMenu.SetActive(false);
         pauseButton.SetActive(true);
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
     }
 
     public void mainMenu()
