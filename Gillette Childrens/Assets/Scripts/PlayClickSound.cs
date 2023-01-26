@@ -22,6 +22,7 @@ public class PlayClickSound : MonoBehaviour
     private void playSound()
     {
         //Debug.Log("Recieved");
-        aSource.Play(0);
+        if(aSource)
+            aSource.Play(0);
     }
 }
