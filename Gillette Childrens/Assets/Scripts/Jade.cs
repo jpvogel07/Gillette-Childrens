@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using TMPro;
 
 public class Jade : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class Jade : MonoBehaviour
     public Sprite BlackBox;
     public GameObject InvWisp;
     private GameObject wisp;
+    public  TextMeshProUGUI obj;
+    public string[] TaskList;
+    
 
     public static Action<int> NewIcon = delegate { };
 
@@ -22,6 +26,7 @@ public class Jade : MonoBehaviour
         GameObject.Find("dialogue manager").gameObject.GetComponent<DialogueManager>().tut = false;
         JadeSpeech = this.GetComponent<DialogueTrigger>();
         NewIcon(0);
+        obj.text = " Obtain " + TaskList[JadeSpeech.stage];
     }
 
     public void flip()
@@ -47,6 +52,7 @@ public class Jade : MonoBehaviour
             //InvWisp.gameObject.GetComponent<InventoryWisp>().image = GameObject.Find("mouse").gameObject.GetComponent<PlayerMovement>().InventoryPics[JadeSpeech.stage - 1];
             //set new inventory item
             NewIcon(JadeSpeech.stage);
+
         }
     }
 

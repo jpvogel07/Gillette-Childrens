@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public Dialogue dialogue;
-    public Dialogue dialogue2;
-    public Dialogue dialogue3;
-    public Dialogue dialogue4;
+    public Dialogue[] dialogues;
     public bool hasChoices;
     public Animation animation;
-    public Dialogue secretMessage;
+    public Dialogue[] secretMessages;
     public string[] decisionText = new string[3];
     public bool secret = false;
     public bool[] tasks = new bool[3];
@@ -35,29 +32,12 @@ public class DialogueTrigger : MonoBehaviour
 
         if (secret)
         {
-            FindObjectOfType<DialogueManager>().StartDialogue(secretMessage);
+            FindObjectOfType<DialogueManager>().StartDialogue(secretMessages[stage]);
             secret = false;
         }
-        else if (stage == 0)
-        { 
-            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-        }
-        else if (stage == 1)
-        {
-            FindObjectOfType<DialogueManager>().StartDialogue(dialogue2);
-        }
-        else if (stage == 2)
-        {
-            FindObjectOfType<DialogueManager>().StartDialogue(dialogue3);
-        }
-        else if (stage == 3)
-        {
-            FindObjectOfType<DialogueManager>().StartDialogue(dialogue4);
-        }
         else
-        {
-            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-            hasChoices = false;
+        { 
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogues[stage]);
         }
 
 
