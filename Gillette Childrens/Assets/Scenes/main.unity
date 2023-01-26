@@ -6318,7 +6318,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   dialogues: []
+=======
+  dialogue:
+    name: Jade
+    sentences:
+    - Great, this is just what I needed! And now you know how to navigate around
+      this training simulator.
+    - 'Let''s start exploring the halls. The first hall we''ll explore is the clinic
+      hall, where we perform our non-invasive proceedures. '
+    - For your first task, I'd like you to go to the audiology lab and pick up some
+      hearing aids.
+    - The audiology lab is where we test and treat any ailments related to our patients'
+      hearing.
+    - 'The hallway that leads to the audiology lab, the infusion room, and the outpatient
+      clinic is just to the right of the check-in desk. '
+    - 'From there, audiology lab is the second door on the right. '
+    - If you're lost, check the map in the top right corner of your screen. You got
+      this!
+  dialogue2:
+    name: Jade
+    sentences:
+    - Fantastic! Next, I need you to grab an IV stand from the infusion center.
+    - 'The infusion center is where patients go to recieve medicines that have to
+      be administered intravenously. This process is known as infusion therapy. '
+    - The infusion center is in the same hall as the audiology lab and outpatient
+      clinic, first door on the right.
+  dialogue3:
+    name: Jade
+    sentences:
+    - Wonderful! The last room in the clinic hall that I'll have you explore is the
+      outpatient clinic itself.
+    - The clinic is where patients go to get care for more minor ailments, ones which
+      don't require an overnight stay.
+    - 'The rooms of the outpatient clinic are across the hallway from the audiology
+      and infusion rooms. '
+    - 'This is probably the busiest area of the hospital. We have multiple rooms
+      so we can treat multiple patients at once. '
+    - No one's using the first clinic room on the left. Would you please bring me
+      a crash cart from there?
+  dialogue4:
+    name: Jade
+    sentences:
+    - Fantasic! Well, thats all for now. You can go take another look around, and
+      then talk to me when you are ready to leave.
+>>>>>>> Stashed changes
   hasChoices: 0
   animation: {fileID: 0}
   secretMessages:
@@ -12269,10 +12314,41 @@ MonoBehaviour:
     - hi
   - name: Jade
     sentences:
+<<<<<<< Updated upstream
     - hello
   - name: Jade
     sentences:
     - huh
+=======
+    - Well done! Key items like that can be found all around the hospital, in the
+      form of different tools used by hospital personel.
+    - 'As a healthcare provider, yourself, you''ll need to know where they are and
+      what they do. '
+    - 'Don''t worry, I''m here to teach you all about them, as well as the layout
+      of the hospital. '
+    - 'I''ll have you go around the hospital to find me some key items. I''m thinking
+      one from each room. '
+    - 'We''ll go hall by hall, so you know where things are in relation to each other. '
+    - But before we get to that, let's practice navigating around rooms.
+    - 'Clicking on things like doors and arrows will take you from area to area,
+      and some objects in the environment can be approached by clicking on them. '
+    - Doors, arrows, and approachable objects will all highlight when you hover over
+      them.
+    - As an example, why don't you approach the check-in desk back there?
+  dialogue3:
+    name: Jade
+    sentences:
+    - Awesome! Now let's put it all together.
+    - Kai, back at the check-in desk, just set down a patient's chart. Would you
+      please go get it for me?
+    - 'A silhouette of the item you''re looking for will appear on the right side
+      of the screen, where your inventory is. '
+    - 'Referencing the silhouette can give you a hint towards your task, or come
+      visit me again if you need a full reminder. '
+  dialogue4:
+    name: Jade
+    sentences: []
+>>>>>>> Stashed changes
   hasChoices: 0
   animation: {fileID: 0}
   secretMessages: []
