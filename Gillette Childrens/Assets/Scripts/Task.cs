@@ -41,7 +41,7 @@ public class Task : MonoBehaviour
             item.GetComponent<RectTransform>().localScale = new Vector3(1,ratio,1);*/
 
             //this.gameObject.SetActive(false);
-            World.Jade.gameObject.GetComponent<DialogueTrigger>().secret = false;
+            World.Jade.gameObject.GetComponent<DialogueTrigger>().secret = true;
             Destroy(this.gameObject);
         }
         else

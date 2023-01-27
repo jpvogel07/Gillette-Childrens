@@ -26,17 +26,19 @@ public class Jade : MonoBehaviour
         GameObject.Find("dialogue manager").gameObject.GetComponent<DialogueManager>().tut = false;
         JadeSpeech = this.GetComponent<DialogueTrigger>();
         NewIcon(0);
-        obj.text = " Obtain " + TaskList[JadeSpeech.stage];
+        obj.text = " Obtain " + TaskList[0];
     }
 
     public void flip()
     {
-        if (!this.GetComponent<DialogueTrigger>().secret)
+        Debug.Log(this.GetComponent<DialogueTrigger>().secret);
+        if (this.GetComponent<DialogueTrigger>().secret)
         {
             wisp = Instantiate(InvWisp);
             wisp.transform.SetParent(HUD.transform);
             //InvWisp.gameObject.GetComponent<InventoryWisp>().image = GameObject.Find("mouse").gameObject.GetComponent<PlayerMovement>().InventoryPics[JadeSpeech.stage];
             Debug.Log(JadeSpeech.stage);
+            Debug.Log("haha");
 
             JadeSpeech.stage++;
             if (JadeSpeech.stage == 4)
@@ -44,7 +46,7 @@ public class Jade : MonoBehaviour
                 HUD.SetActive(false);
                 winscreen.SetActive(true);
             }
-            JadeSpeech.secret = true;
+            JadeSpeech.secret = false;
             item.GetComponent<Image>().sprite = BlackBox;
             item.transform.localScale = new Vector3(1, 1, 1);
             Debug.Log("Resized");
@@ -52,7 +54,7 @@ public class Jade : MonoBehaviour
             //InvWisp.gameObject.GetComponent<InventoryWisp>().image = GameObject.Find("mouse").gameObject.GetComponent<PlayerMovement>().InventoryPics[JadeSpeech.stage - 1];
             //set new inventory item
             NewIcon(JadeSpeech.stage);
-
+            obj.text = " Obtain " + TaskList[JadeSpeech.stage];
         }
     }
 

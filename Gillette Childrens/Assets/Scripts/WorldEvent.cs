@@ -51,7 +51,7 @@ public class WorldEvent : MonoBehaviour
 
             StartJade.SetActive(false);
             Jade.SetActive(true);
-            Jade.GetComponent<DialogueTrigger>().secret = true;
+            //Jade.GetComponent<DialogueTrigger>().secret = true;
             TutDone();
             DestoryTut();
         }
