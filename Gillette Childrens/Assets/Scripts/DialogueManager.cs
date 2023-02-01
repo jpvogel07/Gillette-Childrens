@@ -25,6 +25,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject blocker3;
     public GameObject blocker4;
     public bool hasChoice;
+    public bool dialogueOpen = false;
 
     private Queue<string> sentences;
     private string[] backer;
@@ -38,6 +39,21 @@ public class DialogueManager : MonoBehaviour
     {
         sentences = new Queue<string>();
         mouse = GameObject.Find("mouse")?.gameObject;
+    }
+
+    private void Update()
+    {
+        if(dialogueOpen == false)
+        {
+            dialogueText.enabled = false;
+            textBox.SetActive(false);
+            nameText.enabled = false;
+        } else if(dialogueOpen == true)
+        {
+            dialogueText.enabled = true;
+            textBox.SetActive(true);
+            nameText.enabled = true;
+        }
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -61,6 +77,7 @@ public class DialogueManager : MonoBehaviour
         blocker2.SetActive(true);
         blocker3.SetActive(true);
         blocker4.SetActive(true);
+        dialogueOpen = true;
 
         if (animateBox != null)
         {
@@ -107,6 +124,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void EndDialogue()
     {
+        
         continueButton.SetActive(false);
         animateBox.SetBool("IsOpen", false);
         animateName.SetBool("IsOpen", false);
@@ -124,6 +142,7 @@ public class DialogueManager : MonoBehaviour
         if (tut) { 
         DialogueDone();
         }
+        dialogueOpen = false;
     }
 
     void DisplayChoices()
