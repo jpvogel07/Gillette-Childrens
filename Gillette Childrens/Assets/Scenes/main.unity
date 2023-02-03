@@ -1506,7 +1506,9 @@ MonoBehaviour:
   secretMessages:
   - name: 
     sentences:
-    - These are the hearing aids you were looking for. Go give it to Jade.
+    - You found the hearing aids!
+    - Hearing aids amplify sounds in the environment so their wearer can hear better.
+    - Time to get them back to Jade.
   decisionText:
   - 
   - 
@@ -2931,7 +2933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.121568635, g: 0.5686275, b: 0.6039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6613,7 +6615,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - name: Marshal
+    sentences:
+    - Howdy! My name's Marshal, it's a pleasure.
+    - This here's the infusion center. Need an IV? There's one right over there.
   hasChoices: 0
   animation: {fileID: 0}
   secretMessages: []
@@ -7108,40 +7114,86 @@ MonoBehaviour:
   dialogues:
   - name: Jade
     sentences:
-    - You do not have the clipboard that I asked for.
-    - The clipboard can be found on the front desk.
+    - Need a refresher? No problem.
+    - Your task right now is to get the chart from the check-in desk.
+    - The check-in desk is right over there, behind me. It's the one you just visited.
+    - Speak with me again once you have it, or if you need another refresher.
   - name: Jade
     sentences:
-    - You do not have the hearing aids that I asked for.
-    - The hearing aids can be found on the audiology room.
+    - Need a refresher? No problem.
+    - Right now, you're looking for the hearing aids, which can be found in the audiology
+      room.
+    - The hearing aids are pretty small, so they may be hard to see. Try looking
+      on the desk in the audiology lab.
+    - 'The hallway leading to the audiology lab is just to the right of the check-in
+      desk. '
+    - Hallways you can walk through will turn yellow when you hover over them. Then
+      you can click on them to go that way.
+    - Then, the audiology lab is the second door on the right.
+    - Speak with me again once you have them, or if you need another refresher.
   - name: Jade
     sentences:
-    - You do not have the IV stand that I asked for.
-    - The IV stand can be found on the infusion center.
+    - Need a refresher? No problem.
+    - 'I need you to bring me the IV stand, which can be found in the infusion center. '
+    - 'The infusion center is in the same hall as the audiology lab. '
+    - 'In fact, it''s the room right next to it: first door on the right.'
+    - Speak with me again once you have the IV stand, or if you need another refresher.
   - name: Jade
     sentences:
-    - You do not have the crash kart that I asked for.
-    - The crash kart stand can be found on the outpatient clinic.
+    - Need a refresher? No problem.
+    - Your last task is to get the crash cart from the clinic room that's not being
+      used right now.
+    - The empty clinic room is down the hall, first door on the left.
+    - The cart itself is bright red so that it's easy for doctors to find it in the
+      event of an emergency,
+    - Speak with me again once you have the it, or if you need another refresher.
   hasChoices: 0
   animation: {fileID: 0}
   secretMessages:
   - name: Jade
     sentences:
-    - Great! This is the item that I needed.
-    - But now I need some hearing aids from the audiology room.
-    - 'We keep the hearing aids in the audiology room for ease of access when we
-      are testing '
+    - Great, this chart is just what I needed! And now you know how to navigate around
+      this training simulator.
+    - Let's start exploring the halls. The first hall we'll explore is the outpatient
+      hall, where we perform our non-invasive proceedures.
+    - For your first task, I'd like you to go to the audiology lab and pick up some
+      hearing aids.
+    - The audiology lab is where we test and treat any ailments related to our patients'
+      hearing.
+    - The hallway that leads to the audiology lab, the infusion room, and the outpatient
+      clinic is just to the right of the check-in desk.
+    - From there, the audiology lab is the second door on the right.
+    - If you're lost, check the map in the top right corner of your screen, or come
+      speak to me and I'll give you a refresher.
   - name: Jade
     sentences:
-    - Great! This is the item that I needed.
-    - But now I need the IV stand from the infusion center.
-    - We keep the IV stand in the infusion center because it is used in the infusion
-      process.
+    - Fantastic! Thanks for the hearing aids. Next, I need you to grab an IV stand
+      from the infusion center.
+    - The infusion center is where patients go to recieve medicines that have to
+      be administered intravenously. This process is known as infusion therapy.
+    - The infusion center is in the same hall as the audiology lab and outpatient
+      clinic, first door on the right.
   - name: Jade
     sentences:
-    - Great! This is the item that I needed.
-    - But now I need a crash kart from the outpatient clinic.
-    - We keep the crash kart in the outpatient clinic because
+    - Wonderful! Now I've got one more task for you.
+    - Or should I say IV got on more task for you!
+    - ...Get it?
+    - Anyway, the last room in the outpatient hall that I'll have you explore is
+      the outpatient clinic itself.
+    - "\rThe clinic is where patients go to get care for more minor ailments, ones
+      which don't require an overnight stay."
+    - The rooms of the outpatient clinic are across the hallway from the audiology
+      and infusion rooms.
+    - This is probably the busiest area of the hospital. We have multiple rooms so
+      we can treat multiple patients at once.
+    - No one's using the first clinic room on the left. Would you please bring me
+      a crash cart from there?
+  - name: Jade
+    sentences:
+    - You seem to be catching on fast. Way to go, superstar! Thank you for the crash
+      cart.
+    - The next wing we'll explore is the inpatient wing, but we'll save that for
+      the next level.
   decisionText:
   - 
   - 
@@ -9011,7 +9063,11 @@ MonoBehaviour:
   secretMessages:
   - name: 
     sentences:
-    - This is the crash kart you were looking for. Go give it to Jade.
+    - You found the crash cart!
+    - Crash carts are used during sudden emergency situations.
+    - ' They carry equipment and medicines that can be used to stabilize a patient
+      at risk of dying.'
+    - Let's bring it back to Jade.
   decisionText:
   - 
   - 
@@ -10742,7 +10798,9 @@ MonoBehaviour:
   secretMessages:
   - name: 
     sentences:
-    - This is the IV stand you were looking for. Go give it to Jade.
+    - You found the IV stand!
+    - IV's are used to administer medicine intravenously over a period of time.
+    - Time to bring it back to Jade.
   decisionText:
   - 
   - 
@@ -14473,7 +14531,9 @@ MonoBehaviour:
   secretMessages:
   - name: 
     sentences:
-    - This is the chart you were looking for. Go give it to Jade.
+    - You found the chart!
+    - 'Charts like these contains information about a patient and their health. '
+    - Go ahead and bring it back to Jade.
   decisionText:
   - 
   - 
@@ -14669,32 +14729,42 @@ MonoBehaviour:
   - name: Jade
     sentences:
     - Why, hello there! You must be the new hire, here for training.
-    - My name is Jade. Nice to meet you!
+    - My name is Jade. It's so nice to meet you!
     - Welcome to your first day at Gilette's Children's Hospital. We're really happy
       to have you.
     - First things first, let's get you used to working with this training program.
     - Hovering over key items will highlight them. Clicking on one will add it to
       your inventory, over on the right side of the screen.
+    - To check which items you've seen before, you can look in your backpack. Clicking
+      on items in your backpack will tell you their names.
     - A key item is about to pop up. Try clicking on it!
   - name: Jade
     sentences:
     - Well done! Key items like that can be found all around the hospital, in the
       form of different tools used by hospital personel.
-    - 'As a healthcare provider, yourself, you''ll need to know where they are and
+    - 'As a healthcare provider yourself, you''ll need to know where they are and
       what they do. '
     - Don't worry, I'm here to teach you all about them, as well as the layout of
       the hospital.
     - I'll have you go around the hospital to find me some key items. I'm thinking
       one from each room.
+    - We'll explore each wing one at a time, so you can get used to which rooms are
+      in what wing.
     - 'But before we get to that, let''s practice navigating around rooms. '
-    - Clicking on things like doors and arrows will take you from area to area, and
-      some objects in the environment can be approached by clicking on them. Doors,
-      arrows, and approachable objects will all highlight when you hover over them.
+    - 'Clicking on things like doors and arrows will take you from area to area,
+      and some objects in the environment can be approached by clicking on them. '
+    - Doors, arrows, and approachable objects will all highlight when you hover over
+      them.
     - As an example, why don't you approach the check-in desk back there?
   - name: Jade
     sentences:
-    - Good job! Now for your first task, I need you to grab a clipboard from the
-      front desk. We will be go back to the lobby to start though.
+    - Awesome! Now let's head back to the lobby.
+    - 'From there, I''d like you to put it all together: approach the check-in desk
+      again, and pick up the chart that was just set down.'
+    - A silhouette of the item you're looking for will appear on the right side of
+      the screen, where your inventory is.
+    - Your current objective will appear at the top of the screen, or you can come
+      speak to me again and I'll remind you.
   hasChoices: 0
   animation: {fileID: 0}
   secretMessages: []
@@ -14796,7 +14866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.121568635, g: 0.57254905, b: 0.60784316, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15005,7 +15075,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - name: Julia
+    sentences:
+    - Hi there! I'm Julia. This is the outpatient hall.
+    - To your left are clinic rooms, and to your right is the audiology lab and the
+      infusion center.
   hasChoices: 0
   animation: {fileID: 0}
   secretMessages: []
