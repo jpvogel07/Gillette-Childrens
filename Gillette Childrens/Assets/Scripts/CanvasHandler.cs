@@ -9,13 +9,15 @@ public class CanvasHandler : MonoBehaviour
     public Sprite Art;
     public Sprite Map;
     public GameObject MiniMap;
-    private bool check=false;
+    public bool check=false;
     public GameObject AR;
+    public GameObject[] doors;
 
     private void Start()
     {
         //AR = GameObject.Find("AR switch").gameObject;
         Art = this.GetComponent<Image>().sprite; //<-- does not grab source image from image component 
+
     }
 
     public void On()
@@ -34,12 +36,27 @@ public class CanvasHandler : MonoBehaviour
         if (check)
         {
             this.GetComponent<Image>().sprite = Art;
+            foreach (GameObject door in doors)
+            {
+                if (door != null)
+                {
+                    door.SetActive(true);
+                }
+            }
             check = false;
         }
         else
         {
             this.GetComponent<Image>().sprite = RL;
+            foreach (GameObject door in doors)
+            {
+                if (door != null)
+                {
+                    door.SetActive(false);
+                }
+            }
             check = true;
         }
     }
+
 }

@@ -51,8 +51,9 @@ public class WorldEvent : MonoBehaviour
 
             StartJade.SetActive(false);
             Jade.SetActive(true);
-            Jade.GetComponent<DialogueTrigger>().secret = true;
+            //Jade.GetComponent<DialogueTrigger>().secret = true;
             TutDone();
+            DestoryTut();
         }
         /*else if (EventCounter==4)
         {
@@ -87,5 +88,12 @@ public class WorldEvent : MonoBehaviour
         Jade.GetComponent<DialogueTrigger>().stage = EventCounter-3;
         Jade.GetComponent<DialogueTrigger>().TriggerDialogue();
         Jade.GetComponent<DialogueTrigger>().stage = 100;
+    }
+
+    public void DestoryTut()
+    {
+        Destroy(StartJade);
+        Destroy(StartDoor);
+        Destroy(StartKey);
     }
 }

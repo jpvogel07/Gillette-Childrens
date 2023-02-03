@@ -17,7 +17,6 @@ public class DialogueManager : MonoBehaviour
     public GameObject textBox;
     public GameObject mouse;
     public GameObject continueButton;
-    public GameObject backButton;
     public GameObject choice1;
     public GameObject choice2;
     public GameObject choice3;
@@ -26,6 +25,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject blocker3;
     public GameObject blocker4;
     public bool hasChoice;
+    public bool dialogueOpen = false;
 
     private Queue<string> sentences;
     private string[] backer;
@@ -38,7 +38,22 @@ public class DialogueManager : MonoBehaviour
     void Awake()
     {
         sentences = new Queue<string>();
-        mouse = GameObject.Find("mouse")?.gameObject; 
+        mouse = GameObject.Find("mouse")?.gameObject;
+    }
+
+    private void Update()
+    {
+        if(dialogueOpen == false)
+        {
+            dialogueText.enabled = false;
+            textBox.SetActive(false);
+            nameText.enabled = false;
+        } else if(dialogueOpen == true)
+        {
+            dialogueText.enabled = true;
+            textBox.SetActive(true);
+            nameText.enabled = true;
+        }
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -54,8 +69,6 @@ public class DialogueManager : MonoBehaviour
 
         dialogueText.enabled = true;
         textBox.SetActive(true);
-        //continueButton.SetActive(true);
-        //backButton.SetActive(true);
         nameText.enabled = true;
         choice1.SetActive(false);
         choice2.SetActive(false);
@@ -64,6 +77,7 @@ public class DialogueManager : MonoBehaviour
         blocker2.SetActive(true);
         blocker3.SetActive(true);
         blocker4.SetActive(true);
+        dialogueOpen = true;
 
         if (animateBox != null)
         {
@@ -81,13 +95,7 @@ public class DialogueManager : MonoBehaviour
             count++;
         }
 
-        TriggerTalking();
-
-        /*for(int k = 0; k < count; k++) 
-        {
-            backer[k] = dialogue.sentences[k];
-        }*/
-        
+        TriggerTalking();        
         DisplayNextSentence();
     } 
     public void DisplayNextSentence()
@@ -104,19 +112,6 @@ public class DialogueManager : MonoBehaviour
         number++;
     }
 
-    public void back(Dialogue dialogue)
-    {
-        Debug.LogError("We got here");
-        sentences.Clear();
-
-        foreach(string sentence in dialogue.sentences)
-        {
-            sentences.Enqueue(sentence);
-            //number--;
-        }
-        DisplayNextSentence();
-    }
-
     IEnumerator TypeSentence(string sentence) 
     {
         dialogueText.text = "";
@@ -126,12 +121,11 @@ public class DialogueManager : MonoBehaviour
             yield return null;
         }
         continueButton.SetActive(true);
-        backButton.SetActive(true);
     }
     public void EndDialogue()
     {
+        
         continueButton.SetActive(false);
-        backButton.SetActive(false);
         animateBox.SetBool("IsOpen", false);
         animateName.SetBool("IsOpen", false);
         blocker.SetActive(false);
@@ -144,11 +138,11 @@ public class DialogueManager : MonoBehaviour
             DisplayChoices();
             hasChoice = false;
         }
-
         //end of dialogue
         if (tut) { 
         DialogueDone();
         }
+        dialogueOpen = false;
     }
 
     void DisplayChoices()

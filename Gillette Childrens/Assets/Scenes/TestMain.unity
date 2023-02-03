@@ -485,27 +485,20 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 76761944}
-  - {fileID: 371438041}
-  - {fileID: 2048299890}
+  - {fileID: 1711255488}
+  - {fileID: 1145912266}
+  - {fileID: 1602938482}
   - {fileID: 74764292}
   - {fileID: 1918131482}
   - {fileID: 1321291449}
   - {fileID: 735160295}
   - {fileID: 892914255}
-  - {fileID: 690220354}
-  - {fileID: 1063310787}
-  - {fileID: 493168126}
-  - {fileID: 2117773732}
   - {fileID: 1047257659}
   - {fileID: 1058281674}
   - {fileID: 1490568500}
   - {fileID: 1508813890}
   - {fileID: 796301662}
   - {fileID: 1797084484}
-  - {fileID: 1065267474}
-  - {fileID: 147451597}
-  - {fileID: 1119530963}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -614,19 +607,18 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76761943}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.46288}
-  m_LocalScale: {x: 0.76566875, y: 0.76566875, z: 1.0771478}
+  m_LocalPosition: {x: 0, y: 0, z: 0.4628779}
+  m_LocalScale: {x: 0.7656688, y: 0.7656688, z: 1.077148}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 58647378}
-  - {fileID: 8271099126267153521}
   - {fileID: 1007140250}
   - {fileID: 1481454259}
   - {fileID: 760601937}
   - {fileID: 339286872}
   - {fileID: 1982292763}
   - {fileID: 2065362536}
-  m_Father: {fileID: 62017306}
+  m_Father: {fileID: 1711255488}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -648,7 +640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -688,7 +680,9 @@ MonoBehaviour:
   Art: {fileID: 21300000, guid: 111d9b7af6ca1324db77906858a8af23, type: 3}
   Map: {fileID: 21300000, guid: 39c5752b58063c648aae34c4556c3938, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!1 &144138959
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,25 +736,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences:
-    - 'This is not the item you are looking for '
-  dialogue2:
-    name: 
-    sentences: []
-  dialogue3:
-    name: 
-    sentences: []
-  dialogue4:
-    name: 
-    sentences: []
+  dialogues: []
   hasChoices: 0
   animation: {fileID: 0}
-  secretMessage:
-    name: 
-    sentences:
-    - 'Fantasic! This is the Hearing aid you were looking for! '
+  secretMessages: []
   decisionText:
   - 
   - 
@@ -768,6 +747,8 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 0
+  talking: []
+  SecretTalking: {fileID: 0}
 --- !u!114 &144138962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -887,7 +868,7 @@ GameObject:
   - component: {fileID: 147451597}
   - component: {fileID: 147451599}
   - component: {fileID: 147451600}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MiniMap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -901,13 +882,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147451596}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 62017306}
-  m_RootOrder: 19
+  m_Father: {fileID: 1602938482}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1456,7 +1437,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 76761944}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1619,13 +1600,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371438040}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8, y: 1.0829369, z: 1}
+  m_LocalScale: {x: 8, y: 1.082937, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 62017306}
-  m_RootOrder: 1
+  m_Father: {fileID: 1602938482}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2098,13 +2079,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493168125}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 62017306}
-  m_RootOrder: 10
+  m_Father: {fileID: 1602938482}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3011,18 +2992,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690220353}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 387861190}
-  m_Father: {fileID: 62017306}
-  m_RootOrder: 8
+  m_Father: {fileID: 1602938482}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -371, y: 196}
+  m_AnchoredPosition: {x: -371.00208, y: 196.00137}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &690220355
@@ -3244,7 +3225,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 76761944}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3398,7 +3379,9 @@ MonoBehaviour:
   Art: {fileID: 21300000, guid: 4164f7a93093e1f49aeea5b2b936ec90, type: 3}
   Map: {fileID: 21300000, guid: bab5cb21ae6a08a45a6b2c55aad07325, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &796301660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3455,7 +3438,7 @@ RectTransform:
   - {fileID: 2059890617}
   - {fileID: 1943480466}
   m_Father: {fileID: 62017306}
-  m_RootOrder: 16
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3514,33 +3497,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Marshal
-    sentences:
-    - Hey! My name is Marshal. This is the infusion room. It usually has the IV stand
-      in it.
-  dialogue2:
-    name: Jade
-    sentences:
-    - 'Great! This just what I needed. Here is you next task: '
-    - I need you to grab an IV stand from the infusion room
-    - The infusion room is right next to the audiology room
-  dialogue3:
-    name: Jade
-    sentences:
-    - 'Great! This just what I needed. Here is you next task:'
-    - I need you to grab the crash cart that is in the outpatient clinic
-    - The outpatient clinic is across the hallway from the audiology room
-  dialogue4:
-    name: Jade
-    sentences:
-    - Fantasic! Well, thats all for now. You can go take another look around, and
-      then talk to me when you are ready to leave.
+  dialogues: []
   hasChoices: 0
   animation: {fileID: 0}
-  secretMessage:
-    name: 
-    sentences: []
+  secretMessages: []
   decisionText:
   - 
   - 
@@ -3548,6 +3508,8 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 1
+  talking: []
+  SecretTalking: {fileID: 0}
 --- !u!114 &856829621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3755,7 +3717,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 76761944}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.19239828, y: 0.35200003}
   m_AnchorMax: {x: 0.19239828, y: 0.35200003}
@@ -3880,36 +3842,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Jade
-    sentences:
-    - 'Great! This just what I needed. Here is you next task:'
-    - I need you to grab a hearing aid from the audiology room.
-    - The audiology room is down the hallway to the right of the check in counter
-  dialogue2:
-    name: Jade
-    sentences:
-    - 'Great! This just what I needed. Here is you next task: '
-    - I need you to grab an IV stand from the infusion room
-    - The infusion room is right next to the audiology room
-  dialogue3:
-    name: Jade
-    sentences:
-    - 'Great! This just what I needed. Here is you next task:'
-    - I need you to grab the crash cart that is in the outpatient clinic
-    - The outpatient clinic is across the hallway from the audiology room
-  dialogue4:
-    name: Jade
-    sentences:
-    - Fantasic! Well, thats all for now. You can go take another look around, and
-      then talk to me when you are ready to leave.
+  dialogues: []
   hasChoices: 0
   animation: {fileID: 0}
-  secretMessage:
-    name: Jade
-    sentences:
-    - 'You do not have the item I asked for right now can you go and grab it for
-      me? '
+  secretMessages: []
   decisionText:
   - 
   - 
@@ -3917,6 +3853,8 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 1
+  talking: []
+  SecretTalking: {fileID: 0}
 --- !u!95 &1007140255
 Animator:
   serializedVersion: 4
@@ -3950,11 +3888,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   world: {fileID: 188230858}
+  JadeSpeech: {fileID: 0}
   winscreen: {fileID: 1617171894}
   HUD: {fileID: 62017302}
   item: {fileID: 1119530962}
   BlackBox: {fileID: 21300000, guid: ecb4c0ab179cf3543ae1e93d62ff73f8, type: 3}
   InvWisp: {fileID: 0}
+  obj: {fileID: 0}
+  TaskList: []
 --- !u!1 &1042961976
 GameObject:
   m_ObjectHideFlags: 0
@@ -4133,7 +4074,7 @@ RectTransform:
   m_Children:
   - {fileID: 1807814567}
   m_Father: {fileID: 62017306}
-  m_RootOrder: 12
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4257,7 +4198,9 @@ MonoBehaviour:
   Art: {fileID: 21300000, guid: a0f2715d705a5614883a85a7be5d7ae7, type: 3}
   Map: {fileID: 21300000, guid: dac1ae2c78bb6b7418d70693da10f3ed, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &1058281672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4311,7 +4254,7 @@ RectTransform:
   - {fileID: 751824008}
   - {fileID: 144138960}
   m_Father: {fileID: 62017306}
-  m_RootOrder: 13
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4379,14 +4322,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063310784}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1586587641}
-  m_Father: {fileID: 62017306}
-  m_RootOrder: 9
+  m_Father: {fileID: 1602938482}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4426,7 +4369,7 @@ GameObject:
   - component: {fileID: 1065267477}
   - component: {fileID: 1065267476}
   - component: {fileID: 1065267475}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: AR swich
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4445,8 +4388,8 @@ RectTransform:
   m_LocalScale: {x: 75, y: 60, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 62017306}
-  m_RootOrder: 18
+  m_Father: {fileID: 1602938482}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4539,7 +4482,7 @@ GameObject:
   - component: {fileID: 1119530963}
   - component: {fileID: 1119530965}
   - component: {fileID: 1119530964}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4553,13 +4496,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119530962}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 75, y: 75, z: 75}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 62017306}
-  m_RootOrder: 20
+  m_Father: {fileID: 1602938482}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4604,6 +4547,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119530962}
   m_CullTransparentMesh: 1
+--- !u!1 &1145912265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1145912266}
+  - component: {fileID: 1145912267}
+  m_Layer: 5
+  m_Name: Character
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1145912266
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145912265}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8271099126267153521}
+  m_Father: {fileID: 62017306}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!223 &1145912267
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145912265}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: -1087555933
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1146006297
 GameObject:
   m_ObjectHideFlags: 0
@@ -4906,25 +4908,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences:
-    - 'This is not the item you are looking for '
-  dialogue2:
-    name: 
-    sentences: []
-  dialogue3:
-    name: 
-    sentences: []
-  dialogue4:
-    name: 
-    sentences: []
+  dialogues: []
   hasChoices: 0
   animation: {fileID: 0}
-  secretMessage:
-    name: 
-    sentences:
-    - 'Fantasic! This is the crash kart you were looking for! '
+  secretMessages: []
   decisionText:
   - 
   - 
@@ -4932,6 +4919,8 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 0
+  talking: []
+  SecretTalking: {fileID: 0}
 --- !u!114 &1159827075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5529,25 +5518,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences:
-    - 'This is not the item you are looking for '
-  dialogue2:
-    name: 
-    sentences: []
-  dialogue3:
-    name: 
-    sentences: []
-  dialogue4:
-    name: 
-    sentences: []
+  dialogues: []
   hasChoices: 0
   animation: {fileID: 0}
-  secretMessage:
-    name: 
-    sentences:
-    - 'Fantasic! This is the IV stand you were looking for! '
+  secretMessages: []
   decisionText:
   - 
   - 
@@ -5555,6 +5529,8 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 0
+  talking: []
+  SecretTalking: {fileID: 0}
 --- !u!114 &1448509909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5715,7 +5691,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 76761944}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5863,7 +5839,9 @@ MonoBehaviour:
   Art: {fileID: 21300000, guid: 6120ed8ba1df1094eb312c43069f77f4, type: 3}
   Map: {fileID: 21300000, guid: dc457eeecadaf494daa2527618855158, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &1490568498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5918,7 +5896,7 @@ RectTransform:
   - {fileID: 1448509913}
   - {fileID: 856829619}
   m_Father: {fileID: 62017306}
-  m_RootOrder: 14
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5960,7 +5938,9 @@ MonoBehaviour:
   Art: {fileID: 21300000, guid: 59c5860416974ff45a0416de705bf0a5, type: 3}
   Map: {fileID: 21300000, guid: 1890386b23a7c9543ac068c39903e307, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &1508813888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6014,7 +5994,7 @@ RectTransform:
   - {fileID: 1007057607}
   - {fileID: 1159827079}
   m_Father: {fileID: 62017306}
-  m_RootOrder: 15
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6322,6 +6302,91 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586587640}
   m_CullTransparentMesh: 1
+--- !u!1 &1602938481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1602938482}
+  - component: {fileID: 1602938483}
+  - component: {fileID: 1602938484}
+  m_Layer: 5
+  m_Name: UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1602938482
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602938481}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 371438041}
+  - {fileID: 2048299890}
+  - {fileID: 690220354}
+  - {fileID: 1063310787}
+  - {fileID: 2117773732}
+  - {fileID: 493168126}
+  - {fileID: 1065267474}
+  - {fileID: 147451597}
+  - {fileID: 1119530963}
+  m_Father: {fileID: 62017306}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!223 &1602938483
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602938481}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 17472683
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &1602938484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602938481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &1617171894
 GameObject:
   m_ObjectHideFlags: 0
@@ -6464,6 +6529,65 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1711255487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1711255488}
+  - component: {fileID: 1711255489}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1711255488
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711255487}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 76761944}
+  m_Father: {fileID: 62017306}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!223 &1711255489
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711255487}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 332311927
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!224 &1718978718 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
@@ -6504,7 +6628,9 @@ MonoBehaviour:
   Art: {fileID: 21300000, guid: b24bd0c8aaad7e149904e818c84169c0, type: 3}
   Map: {fileID: 21300000, guid: cd956e936b6780b4680862f7bbac5fcb, type: 3}
   MiniMap: {fileID: 147451596}
+  check: 0
   AR: {fileID: 1065267473}
+  doors: []
 --- !u!114 &1797084482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6558,7 +6684,7 @@ RectTransform:
   - {fileID: 761155935}
   - {fileID: 1920090151}
   m_Father: {fileID: 62017306}
-  m_RootOrder: 17
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7295,25 +7421,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences:
-    - 'This is not the item you are looking for '
-  dialogue2:
-    name: 
-    sentences: []
-  dialogue3:
-    name: 
-    sentences: []
-  dialogue4:
-    name: 
-    sentences: []
+  dialogues: []
   hasChoices: 0
   animation: {fileID: 0}
-  secretMessage:
-    name: 
-    sentences:
-    - 'Fantasic! This is the chart you were looking for! '
+  secretMessages: []
   decisionText:
   - 
   - 
@@ -7321,6 +7432,8 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 0
+  talking: []
+  SecretTalking: {fileID: 0}
 --- !u!224 &1943480466 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
@@ -7359,7 +7472,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 76761944}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.19239828, y: 0.35200003}
   m_AnchorMax: {x: 0.19239828, y: 0.35200003}
@@ -7398,34 +7511,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Jade
-    sentences:
-    - Hello new hire!
-    - This is your first day at Gilette's Children's Hospital
-    - First of all, lets get you used to working in this space
-    - Try picking this up. Use your mouse to click on the key item.
-  dialogue2:
-    name: Jade
-    sentences:
-    - Great job. Now lets go up to the check in front desk. Use the mouse to click
-      on the front desk to go to it.
-  dialogue3:
-    name: Jade
-    sentences:
-    - Great job. Now that you know how to interact with this enviorment lets get
-      you use to the layout of the hospital.
-    - 'Here is your first task that I need you to complete: '
-    - Grab a chart from the check in desk
-    - You can check your current task by checking the top right or asking me
-  dialogue4:
-    name: Jade
-    sentences: []
+  dialogues: []
   hasChoices: 0
   animation: {fileID: 0}
-  secretMessage:
-    name: 
-    sentences: []
+  secretMessages: []
   decisionText:
   - 
   - 
@@ -7433,6 +7522,8 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 1
+  talking: []
+  SecretTalking: {fileID: 0}
 --- !u!114 &1982292768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7496,13 +7587,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048299889}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.70048, y: 4.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 62017306}
-  m_RootOrder: 2
+  m_Father: {fileID: 1602938482}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7596,33 +7687,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Julia
-    sentences:
-    - Hey! My name is Julia. This is the hallway to the infusion center, audiology
-      room, and the outpatient rooms.
-  dialogue2:
-    name: Jade
-    sentences:
-    - 'Great! This just what I needed. Here is you next task: '
-    - I need you to grab an IV stand from the infusion room
-    - The infusion room is right next to the audiology room
-  dialogue3:
-    name: Jade
-    sentences:
-    - 'Great! This just what I needed. Here is you next task:'
-    - I need you to grab the crash cart that is in the outpatient clinic
-    - The outpatient clinic is across the hallway from the audiology room
-  dialogue4:
-    name: Jade
-    sentences:
-    - Fantasic! Well, thats all for now. You can go take another look around, and
-      then talk to me when you are ready to leave.
+  dialogues: []
   hasChoices: 0
   animation: {fileID: 0}
-  secretMessage:
-    name: 
-    sentences: []
+  secretMessages: []
   decisionText:
   - 
   - 
@@ -7630,6 +7698,8 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 1
+  talking: []
+  SecretTalking: {fileID: 0}
 --- !u!114 &2059890619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7755,7 +7825,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 76761944}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7900,14 +7970,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2117773731}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1204664912}
-  m_Father: {fileID: 62017306}
-  m_RootOrder: 11
+  m_Father: {fileID: 1602938482}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8124,7 +8194,6 @@ MonoBehaviour:
   textBox: {fileID: 1063310784}
   mouse: {fileID: 0}
   continueButton: {fileID: 2117773731}
-  backButton: {fileID: 1047257658}
   choice1: {fileID: 1918131481}
   choice2: {fileID: 1918131481}
   choice3: {fileID: 735160294}
@@ -8249,16 +8318,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8271099126267153520}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -59, y: -2, z: 0.47}
-  m_LocalScale: {x: 52.478, y: 52.478, z: 52.478}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -139.11745, y: 52.904644, z: 0.9691396}
+  m_LocalScale: {x: 40.180763, y: 40.180763, z: 56.526566}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8271099126822269252}
   - {fileID: 8271099126834195528}
+  - {fileID: 8271099126822269252}
   - {fileID: 8271099126321721043}
-  m_Father: {fileID: 76761944}
-  m_RootOrder: 1
+  m_Father: {fileID: 1145912266}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8271099126321721042
 GameObject:
@@ -8272,7 +8341,7 @@ GameObject:
   - component: {fileID: 8271099126321721045}
   - component: {fileID: 8271099126321721044}
   m_Layer: 0
-  m_Name: FEyes_01_Blink01 (1)
+  m_Name: 'FEyes_01_Blink01 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8351,9 +8420,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingLayerID: -1087555933
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e461a83e3cf1d3344a62bbd0d67fb5c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8441,8 +8510,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1087555933
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 949d6a67be0cdb3418409e8017c6b1e0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8468,7 +8537,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8271099126267153521}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8271099126834195526
 GameObject:
@@ -8525,9 +8594,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: -1087555933
+  m_SortingLayer: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e120af5b13751254a8fc68dbfaf04e07, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8547,10 +8616,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8271099126834195526}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.4842086, y: -2.276607, z: 0.01198669}
-  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1.0000001}
+  m_LocalPosition: {x: -2.49, y: -2.3, z: 0.01198669}
+  m_LocalScale: {x: 0.97453, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8271099126267153521}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -7,6 +7,8 @@ TagManager:
   - clickable
   - key item
   - Blocker
+  - AR
+  - wisp
   layers:
   - Default
   - TransparentFX
@@ -43,6 +45,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 332311927
+    locked: 0
+  - name: Character
+    uniqueID: 3207411363
     locked: 0
   - name: UI
     uniqueID: 17472683
