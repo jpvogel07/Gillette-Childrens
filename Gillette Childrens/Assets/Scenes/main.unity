@@ -1011,11 +1011,11 @@ RectTransform:
   - {fileID: 2119419495}
   - {fileID: 690220354}
   - {fileID: 603936417}
-  - {fileID: 1443691936}
   - {fileID: 892914255}
   - {fileID: 1918131482}
   - {fileID: 1321291449}
   - {fileID: 735160295}
+  - {fileID: 1443691936}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5189,6 +5189,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 1443691935}
   descMenu: {fileID: 1435023571}
+  closeButton: {fileID: 1550479773}
+  blocker: {fileID: 1918131481}
+  blocker2: {fileID: 1321291448}
+  blocker3: {fileID: 735160294}
+  blocker4: {fileID: 892914252}
   text: {fileID: 1520115789}
   lostDescriptions:
   - Unknown Item 1
@@ -6160,7 +6165,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 62017306}
-  m_RootOrder: 37
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6786,7 +6791,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 62017306}
-  m_RootOrder: 34
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9933,7 +9938,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 62017306}
-  m_RootOrder: 36
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10655,7 +10660,7 @@ RectTransform:
   - {fileID: 1513681416}
   - {fileID: 1435023572}
   m_Father: {fileID: 62017306}
-  m_RootOrder: 33
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -14249,7 +14254,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 62017306}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
