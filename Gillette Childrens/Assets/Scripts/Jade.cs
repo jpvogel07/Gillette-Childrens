@@ -32,6 +32,7 @@ public class Jade : MonoBehaviour
     public void flip()
     {
         Debug.Log(this.GetComponent<DialogueTrigger>().secret);
+        Debug.Log("next thing");
         if (this.GetComponent<DialogueTrigger>().secret)
         {
             wisp = Instantiate(InvWisp);
