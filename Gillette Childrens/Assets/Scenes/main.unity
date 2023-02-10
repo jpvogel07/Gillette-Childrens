@@ -14763,7 +14763,7 @@ MonoBehaviour:
     sentences:
     - Why, hello there! You must be the new hire, here for training.
     - My name is Jade. It's so nice to meet you!
-    - Welcome to your first day at Gilette's Children's Hospital. We're really happy
+    - Welcome to your first day at Gillette's Children's Hospital. We're really happy
       to have you.
     - First things first, let's get you used to working with this training program.
     - Hovering over key items will highlight them. Clicking on one will add it to
@@ -14774,7 +14774,7 @@ MonoBehaviour:
   - name: Jade
     sentences:
     - Well done! Key items like that can be found all around the hospital, in the
-      form of different tools used by hospital personel.
+      form of different tools used by hospital personnel.
     - 'As a healthcare provider yourself, you''ll need to know where they are and
       what they do. '
     - Don't worry, I'm here to teach you all about them, as well as the layout of
