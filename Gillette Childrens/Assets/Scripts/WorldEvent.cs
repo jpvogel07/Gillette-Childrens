@@ -45,13 +45,12 @@ public class WorldEvent : MonoBehaviour
         }
         else if (EventCounter==3)
         {
-            lobby.GetComponent<CanvasHandler>().On();
-            checkin.SetActive(false);
+            //lobby.GetComponent<CanvasHandler>().On();
+            //checkin.SetActive(false);
 
-
-            StartJade.SetActive(false);
             Jade.SetActive(true);
             //Jade.GetComponent<DialogueTrigger>().secret = true;
+            Jade.GetComponent<Jade>().mouse.InventorySwitch(0);
             TutDone();
             DestoryTut();
         }
@@ -95,5 +94,6 @@ public class WorldEvent : MonoBehaviour
         Destroy(StartJade);
         Destroy(StartDoor);
         Destroy(StartKey);
+        Destroy(this.gameObject);
     }
 }

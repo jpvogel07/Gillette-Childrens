@@ -6,9 +6,69 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
+    path: Assets/Scenes/Game/Main Menu.unity
     guid: ccc032a4d07e4d94ea8c48eae28ac449
   - enabled: 1
-    path: Assets/Scenes/main.unity
-    guid: 0b3512f5fc6f3684c85cd6d3b0f404ca
+    path: Assets/Scenes/Game/MainL1.unity
+    guid: c796ceca1caf0154a84f5c137797fa2e
+  - enabled: 1
+    path: Assets/Scenes/Game/CheckIn.unity
+    guid: 7f48374e4f80bd64794b1107c5da63b8
+  - enabled: 1
+    path: Assets/Scenes/Game/HallwayN.unity
+    guid: ed7365a479602de43969a7a60f240dc9
+  - enabled: 1
+    path: Assets/Scenes/Game/OutpatientClinic.unity
+    guid: 1f9ab95a72d162a44bc9175e834f9a05
+  - enabled: 1
+    path: Assets/Scenes/Game/Audiology.unity
+    guid: 2110ff31a3bda9c448199bfe60851c46
+  - enabled: 1
+    path: Assets/Scenes/Game/Infusion.unity
+    guid: b06f8b7da42a79943ac5f72885624352
+  - enabled: 1
+    path: Assets/Scenes/Game/HallwayE.unity
+    guid: f46a3b3a2e6735a409747d966a057e35
+  - enabled: 1
+    path: Assets/Scenes/Game/RehabUnit.unity
+    guid: 3e36099fb5be8634db86d4ecbb833588
+  - enabled: 1
+    path: Assets/Scenes/Game/AssistiveTech.unity
+    guid: db02d9f0867de024780082bb7136d109
+  - enabled: 1
+    path: Assets/Scenes/Game/PICU.unity
+    guid: 5e1dfc633c605644e90611bec9543e46
+  - enabled: 1
+    path: Assets/Scenes/Game/HallwayE2.unity
+    guid: 07bdee3eadee0ba4a98e36a2c86b75bd
+  - enabled: 1
+    path: Assets/Scenes/Game/Pharmacy.unity
+    guid: 93447e4fe4e5b484598821bffd89c05c
+  - enabled: 1
+    path: Assets/Scenes/Game/OrthopedicsE.unity
+    guid: c03a0aef2fa884946938af89bb5794f3
+  - enabled: 1
+    path: Assets/Scenes/Game/OrthopedicsW.unity
+    guid: b4e33d3a0c3e7324cb414a577041f8ea
+  - enabled: 1
+    path: Assets/Scenes/Game/Neuroscience.unity
+    guid: 0ffbf2ea90289fd47afc8220b5671b70
+  - enabled: 1
+    path: Assets/Scenes/Game/MainL2.unity
+    guid: ebb0f4406f2210b44ac7fdd2ec00068a
+  - enabled: 1
+    path: Assets/Scenes/Game/Imaging.unity
+    guid: bdf4df46b7145fc44a50706eb283c1bd
+  - enabled: 1
+    path: Assets/Scenes/Game/Skyway.unity
+    guid: f1b0e283ec7f82940ad9e9e8ad2d4131
+  - enabled: 1
+    path: Assets/Scenes/Game/GatewalkPlaza.unity
+    guid: ad30ec9fbb954cf4580e3594194b6808
+  - enabled: 1
+    path: Assets/Scenes/Game/SpecialtyCenter.unity
+    guid: 6f1c83ae94c5c7647a9f3b8e122ebe9f
+  - enabled: 1
+    path: Assets/Scenes/Game/HUD.unity
+    guid: a23e3b74e29193440bd1747eaf39ac41
   m_configObjects: {}

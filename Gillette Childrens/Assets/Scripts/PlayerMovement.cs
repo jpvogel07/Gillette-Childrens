@@ -10,16 +10,25 @@ public class PlayerMovement : MonoBehaviour
 {
     private int i;
     private Inputs pinputs;
-    private bool highlighted;
-    private GameObject grabbed;
-    public ClickableObject ClkObj;
+    //private bool highlighted;
+    //private GameObject grabbed;
+    //public ClickableObject ClkObj;
+
     public bool AR;
     public GameObject ARHandler;
-    public int taskNum;
+    public GameObject Objective;
+
+    public GameObject HUD;
+    public GameObject winner;
+
+    public int CurrTask;
+    public int EndTask = 4;
+    public bool JadeSecret;
     public bool[] keys = new bool[3];
+    
     public Sprite[] InventoryPics = new Sprite[3];
-    public GameObject inventory;
-    public GameObject WES;
+    public Image inventory;
+    //public GameObject WES;
 
     public static Action playClick = delegate { };
 
@@ -28,19 +37,22 @@ public class PlayerMovement : MonoBehaviour
         pinputs = new Inputs();
         pinputs.Enable();
         //pinputs.player.movement.started += movment;
-        Jade.NewIcon += InventorySwitch;
+        Jade.NextTask += NewTask;
+        WorldEvent.TutDone += afterTut;
         /*
         for (i=1;i<taskNum;i++)
         {
             InventoryPics[i--] = WES.GetComponent<AfterTut>().TaskItems[i].GetComponent<Image>().sprite;
         }
         */
+        //inventory = GameObject.Find("inventory").GetComponent<Image>();
     }
     private void OnDisable()
     {
         pinputs.Disable();
         //pinputs.player.movement.started -= movment;
-        Jade.NewIcon -= InventorySwitch;
+        Jade.NextTask -= NewTask;
+        WorldEvent.TutDone -= afterTut;
     }
 
     void Start()
@@ -54,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
         //Vector3 mousePos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
         mousePos.z = 0;
         this.gameObject.transform.position = mousePos;
+        /*
         if (Input.GetMouseButtonUp(0)&&ClkObj)
         {
             ClkObj.MovedCheck();
@@ -61,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
             foreach (ClickableObject item in cObjects)
                 item.PutDown();
         }
+        */
 
         if (Input.GetMouseButtonDown(0) && AR)
         {
@@ -78,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-
+    /*
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("clickable"))
@@ -124,19 +138,45 @@ public class PlayerMovement : MonoBehaviour
             grabbed.gameObject.transform.parent = null;
         }
     }
+    */
 
     public void InventorySwitch(int i)
     {
         //i--;
-        
-        inventory.GetComponent<Image>().sprite = InventoryPics[i];
+
+        //inventory.GetComponent<Image>().sprite = InventoryPics[i];
+        //inventory.sprite = InventoryPics[i];
+
+        Debug.Log(inventory + this.name);
 
         float ratio = 0.0f;
         ratio = (float)InventoryPics[i].texture.width / (float)InventoryPics[i].texture.height;
         Debug.Log(ratio);
         ratio = 1 / ratio;
-        inventory.GetComponent<RectTransform>().localScale = new Vector3(1, ratio, 1);
+        //inventory.GetComponent<RectTransform>().localScale = new Vector3(1, ratio, 1);
 
-        inventory.GetComponent<Image>().color = Color.grey;
+        inventory.color = Color.grey;
+        //inventory.GetComponent<Image>().color = Color.grey;
+    }
+
+    public void NewTask()
+    {
+        CurrTask++;
+        if (CurrTask == EndTask)
+        {
+            HUD.SetActive(false);
+            winner.SetActive(true);
+        }
+        JadeSecret = false;
+
+
+        InventorySwitch(CurrTask);
+    }
+
+    public void afterTut()
+    {
+        //inventory.SetActive(true);
+        ARHandler.SetActive(true);
+        Objective.SetActive(true);
     }
 }

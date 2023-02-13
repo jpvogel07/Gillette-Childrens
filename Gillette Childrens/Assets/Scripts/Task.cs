@@ -9,23 +9,28 @@ public class Task : MonoBehaviour
     public int TaskNum;
     public GameObject mouse;
     private GameObject item;
-    private WorldEvent World;
-    private GameObject Jade;
+    //private WorldEvent World;
+    public GameObject Jade;
     //private Transform Popup;
     //public string name;
 
     private void OnEnable()
     {
-        World = GameObject.Find("World Event System").gameObject.GetComponent<WorldEvent>();
+        //World = GameObject.Find("World Event System").gameObject.GetComponent<WorldEvent>();
         mouse = GameObject.Find("mouse").gameObject;
         item = GameObject.Find("inventory");
-        Jade = World.GetComponent<WorldEvent>().Jade;
+        //Jade = World.GetComponent<WorldEvent>().Jade;
+        Jade = GameObject.Find("Jade");
         //Popup = GameObject.Find("PopupParent").transform.GetChild(0);
+        if (mouse.GetComponent<PlayerMovement>().CurrTask > TaskNum)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     public void DoTask()
     {
-        if (TaskNum == Jade.GetComponent<DialogueTrigger>().stage)
+        if (TaskNum == mouse.GetComponent<PlayerMovement>().CurrTask)
         {
             //ItemPopup();
             this.gameObject.GetComponent<DialogueTrigger>().secret = true;
@@ -41,7 +46,8 @@ public class Task : MonoBehaviour
             item.GetComponent<RectTransform>().localScale = new Vector3(1,ratio,1);*/
 
             //this.gameObject.SetActive(false);
-            World.Jade.gameObject.GetComponent<DialogueTrigger>().secret = true;
+            //World.Jade.gameObject.GetComponent<DialogueTrigger>().secret = true;
+            mouse.gameObject.GetComponent<PlayerMovement>().JadeSecret = true;
             Destroy(this.gameObject);
         }
         else

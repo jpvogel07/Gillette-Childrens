@@ -20,7 +20,7 @@ public class InventoryWisp : MonoBehaviour
         this.GetComponent<Image>().sprite = GameObject.Find("mouse").GetComponent<PlayerMovement>().InventoryPics[end.GetComponent<Jade>().JadeSpeech.stage];
         this.GetComponent<Image>().color = Color.white;
         this.transform.position = start.transform.position;
-        //StartCoroutine(travelTime());
+        StartCoroutine(travelTime());
     }
     private void Update()
     {
@@ -33,7 +33,7 @@ public class InventoryWisp : MonoBehaviour
 
     IEnumerator travelTime()
     {
-        yield return new WaitForSeconds(1);
-        Destroy(gameObject);
+        yield return new WaitForSeconds(5);
+        Destroy(this.gameObject);
     }
 }
