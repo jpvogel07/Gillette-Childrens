@@ -736,25 +736,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences:
-    - 'This is not the item you are looking for '
-  dialogue2:
-    name: 
-    sentences: []
-  dialogue3:
-    name: 
-    sentences: []
-  dialogue4:
-    name: 
-    sentences: []
+  dialogues: []
   hasChoices: 0
   animation: {fileID: 0}
-  secretMessage:
-    name: 
-    sentences:
-    - 'Fantasic! This is the Hearing aid you were looking for! '
+  secretMessages: []
   decisionText:
   - 
   - 
@@ -3512,33 +3497,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Marshal
-    sentences:
-    - Hey! My name is Marshal. This is the infusion room. It usually has the IV stand
-      in it.
-  dialogue2:
-    name: Jade
-    sentences:
-    - 'Great! This just what I needed. Here is you next task: '
-    - I need you to grab an IV stand from the infusion room
-    - The infusion room is right next to the audiology room
-  dialogue3:
-    name: Jade
-    sentences:
-    - 'Great! This just what I needed. Here is you next task:'
-    - I need you to grab the crash cart that is in the outpatient clinic
-    - The outpatient clinic is across the hallway from the audiology room
-  dialogue4:
-    name: Jade
-    sentences:
-    - Fantasic! Well, thats all for now. You can go take another look around, and
-      then talk to me when you are ready to leave.
+  dialogues: []
   hasChoices: 0
   animation: {fileID: 0}
-  secretMessage:
-    name: 
-    sentences: []
+  secretMessages: []
   decisionText:
   - 
   - 
@@ -3880,36 +3842,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Jade
-    sentences:
-    - 'Great! This just what I needed. Here is you next task:'
-    - I need you to grab a hearing aid from the audiology room.
-    - The audiology room is down the hallway to the right of the check in counter
-  dialogue2:
-    name: Jade
-    sentences:
-    - 'Great! This just what I needed. Here is you next task: '
-    - I need you to grab an IV stand from the infusion room
-    - The infusion room is right next to the audiology room
-  dialogue3:
-    name: Jade
-    sentences:
-    - 'Great! This just what I needed. Here is you next task:'
-    - I need you to grab the crash cart that is in the outpatient clinic
-    - The outpatient clinic is across the hallway from the audiology room
-  dialogue4:
-    name: Jade
-    sentences:
-    - Fantasic! Well, thats all for now. You can go take another look around, and
-      then talk to me when you are ready to leave.
+  dialogues: []
   hasChoices: 0
   animation: {fileID: 0}
-  secretMessage:
-    name: Jade
-    sentences:
-    - 'You do not have the item I asked for right now can you go and grab it for
-      me? '
+  secretMessages: []
   decisionText:
   - 
   - 
@@ -3958,6 +3894,8 @@ MonoBehaviour:
   item: {fileID: 1119530962}
   BlackBox: {fileID: 21300000, guid: ecb4c0ab179cf3543ae1e93d62ff73f8, type: 3}
   InvWisp: {fileID: 0}
+  obj: {fileID: 0}
+  TaskList: []
 --- !u!1 &1042961976
 GameObject:
   m_ObjectHideFlags: 0
@@ -4970,25 +4908,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences:
-    - 'This is not the item you are looking for '
-  dialogue2:
-    name: 
-    sentences: []
-  dialogue3:
-    name: 
-    sentences: []
-  dialogue4:
-    name: 
-    sentences: []
+  dialogues: []
   hasChoices: 0
   animation: {fileID: 0}
-  secretMessage:
-    name: 
-    sentences:
-    - 'Fantasic! This is the crash kart you were looking for! '
+  secretMessages: []
   decisionText:
   - 
   - 
@@ -5595,25 +5518,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences:
-    - 'This is not the item you are looking for '
-  dialogue2:
-    name: 
-    sentences: []
-  dialogue3:
-    name: 
-    sentences: []
-  dialogue4:
-    name: 
-    sentences: []
+  dialogues: []
   hasChoices: 0
   animation: {fileID: 0}
-  secretMessage:
-    name: 
-    sentences:
-    - 'Fantasic! This is the IV stand you were looking for! '
+  secretMessages: []
   decisionText:
   - 
   - 
@@ -7513,25 +7421,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences:
-    - 'This is not the item you are looking for '
-  dialogue2:
-    name: 
-    sentences: []
-  dialogue3:
-    name: 
-    sentences: []
-  dialogue4:
-    name: 
-    sentences: []
+  dialogues: []
   hasChoices: 0
   animation: {fileID: 0}
-  secretMessage:
-    name: 
-    sentences:
-    - 'Fantasic! This is the chart you were looking for! '
+  secretMessages: []
   decisionText:
   - 
   - 
@@ -7618,34 +7511,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Jade
-    sentences:
-    - Hello new hire!
-    - This is your first day at Gilette's Children's Hospital
-    - First of all, lets get you used to working in this space
-    - Try picking this up. Use your mouse to click on the key item.
-  dialogue2:
-    name: Jade
-    sentences:
-    - Great job. Now lets go up to the check in front desk. Use the mouse to click
-      on the front desk to go to it.
-  dialogue3:
-    name: Jade
-    sentences:
-    - Great job. Now that you know how to interact with this enviorment lets get
-      you use to the layout of the hospital.
-    - 'Here is your first task that I need you to complete: '
-    - Grab a chart from the check in desk
-    - You can check your current task by checking the top right or asking me
-  dialogue4:
-    name: Jade
-    sentences: []
+  dialogues: []
   hasChoices: 0
   animation: {fileID: 0}
-  secretMessage:
-    name: 
-    sentences: []
+  secretMessages: []
   decisionText:
   - 
   - 
@@ -7818,33 +7687,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Julia
-    sentences:
-    - Hey! My name is Julia. This is the hallway to the infusion center, audiology
-      room, and the outpatient rooms.
-  dialogue2:
-    name: Jade
-    sentences:
-    - 'Great! This just what I needed. Here is you next task: '
-    - I need you to grab an IV stand from the infusion room
-    - The infusion room is right next to the audiology room
-  dialogue3:
-    name: Jade
-    sentences:
-    - 'Great! This just what I needed. Here is you next task:'
-    - I need you to grab the crash cart that is in the outpatient clinic
-    - The outpatient clinic is across the hallway from the audiology room
-  dialogue4:
-    name: Jade
-    sentences:
-    - Fantasic! Well, thats all for now. You can go take another look around, and
-      then talk to me when you are ready to leave.
+  dialogues: []
   hasChoices: 0
   animation: {fileID: 0}
-  secretMessage:
-    name: 
-    sentences: []
+  secretMessages: []
   decisionText:
   - 
   - 

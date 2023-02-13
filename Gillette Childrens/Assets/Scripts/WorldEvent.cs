@@ -15,6 +15,9 @@ public class WorldEvent : MonoBehaviour
     public bool check;
     private int TutCount = 3;
 
+    public GameObject Highlight;
+    public GameObject Highlight2;
+
     public static Action TutDone = delegate { };
     public static Action TaskDone = delegate { };
 
@@ -38,10 +41,12 @@ public class WorldEvent : MonoBehaviour
         if (EventCounter==1)
         {
             StartKey.SetActive(true);//picking up key handles rest of event
+            Highlight.SetActive(true);
         }
         else if (EventCounter==2)
         {
             StartDoor.SetActive(true);//going through door handles rest of event
+            Highlight2.SetActive(true);
         }
         else if (EventCounter==3)
         {
