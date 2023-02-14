@@ -15,6 +15,9 @@ public class WorldEvent : MonoBehaviour
     public bool check;
     private int TutCount = 3;
 
+    public GameObject Highlight;
+    public GameObject Highlight2;
+
     public static Action TutDone = delegate { };
     public static Action TaskDone = delegate { };
 
@@ -38,20 +41,21 @@ public class WorldEvent : MonoBehaviour
         if (EventCounter==1)
         {
             StartKey.SetActive(true);//picking up key handles rest of event
+            Highlight.SetActive(true);
         }
         else if (EventCounter==2)
         {
             StartDoor.SetActive(true);//going through door handles rest of event
+            Highlight2.SetActive(true);
         }
         else if (EventCounter==3)
         {
-            lobby.GetComponent<CanvasHandler>().On();
-            checkin.SetActive(false);
+            //lobby.GetComponent<CanvasHandler>().On();
+            //checkin.SetActive(false);
 
-
-            StartJade.SetActive(false);
             Jade.SetActive(true);
             //Jade.GetComponent<DialogueTrigger>().secret = true;
+            Jade.GetComponent<Jade>().mouse.InventorySwitch(0);
             TutDone();
             DestoryTut();
         }
@@ -95,5 +99,6 @@ public class WorldEvent : MonoBehaviour
         Destroy(StartJade);
         Destroy(StartDoor);
         Destroy(StartKey);
+        Destroy(this.gameObject);
     }
 }

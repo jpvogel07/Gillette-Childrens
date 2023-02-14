@@ -17,13 +17,12 @@ public class DialogueManager : MonoBehaviour
     public GameObject textBox;
     public GameObject mouse;
     public GameObject continueButton;
+    /*
     public GameObject choice1;
     public GameObject choice2;
     public GameObject choice3;
+    */
     public GameObject blocker;
-    public GameObject blocker2;
-    public GameObject blocker3;
-    public GameObject blocker4;
     public bool hasChoice;
     public bool dialogueOpen = false;
 
@@ -70,13 +69,14 @@ public class DialogueManager : MonoBehaviour
         dialogueText.enabled = true;
         textBox.SetActive(true);
         nameText.enabled = true;
+        /*
         choice1.SetActive(false);
         choice2.SetActive(false);
         choice3.SetActive(false);
+        */
         blocker.SetActive(true);
-        blocker2.SetActive(true);
-        blocker3.SetActive(true);
-        blocker4.SetActive(true);
+
+        blocker.SetActive(true);
         dialogueOpen = true;
 
         if (animateBox != null)
@@ -129,9 +129,6 @@ public class DialogueManager : MonoBehaviour
         animateBox.SetBool("IsOpen", false);
         animateName.SetBool("IsOpen", false);
         blocker.SetActive(false);
-        blocker2.SetActive(false);
-        blocker3.SetActive(false);
-        blocker4.SetActive(false);
 
         if (hasChoice == true)
         {
@@ -140,15 +137,17 @@ public class DialogueManager : MonoBehaviour
         }
         //end of dialogue
         if (tut) { 
-        DialogueDone();
+            DialogueDone();
         }
         dialogueOpen = false;
     }
 
     void DisplayChoices()
     {
+        /*
         choice1.SetActive(true);
         choice2.SetActive(true);
         choice3.SetActive(true);
+        */
     }
 }

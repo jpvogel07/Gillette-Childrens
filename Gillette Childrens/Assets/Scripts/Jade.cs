@@ -17,44 +17,31 @@ public class Jade : MonoBehaviour
     private GameObject wisp;
     public  TextMeshProUGUI obj;
     public string[] TaskList;
+    public PlayerMovement mouse;
     
 
-    public static Action<int> NewIcon = delegate { };
+    public static Action NextTask = delegate { };
 
     private void Awake()
     {
         GameObject.Find("dialogue manager").gameObject.GetComponent<DialogueManager>().tut = false;
         JadeSpeech = this.GetComponent<DialogueTrigger>();
-        NewIcon(0);
         obj.text = " Obtain " + TaskList[0];
+        mouse = GameObject.Find("mouse").gameObject.GetComponent<PlayerMovement>();
+        JadeSpeech.secret = mouse.JadeSecret;
     }
 
     public void flip()
     {
-        Debug.Log(this.GetComponent<DialogueTrigger>().secret);
-        Debug.Log("next thing");
         if (this.GetComponent<DialogueTrigger>().secret)
         {
+            NextTask();
             wisp = Instantiate(InvWisp);
-            wisp.transform.SetParent(HUD.transform);
-            //InvWisp.gameObject.GetComponent<InventoryWisp>().image = GameObject.Find("mouse").gameObject.GetComponent<PlayerMovement>().InventoryPics[JadeSpeech.stage];
-            Debug.Log(JadeSpeech.stage);
-            Debug.Log("haha");
+            wisp.transform.SetParent(this.transform.parent.transform);
 
-            JadeSpeech.stage++;
-            if (JadeSpeech.stage == 4)
-            {
-                HUD.SetActive(false);
-                winscreen.SetActive(true);
-            }
-            JadeSpeech.secret = false;
-            item.GetComponent<Image>().sprite = BlackBox;
-            item.transform.localScale = new Vector3(1, 1, 1);
-            Debug.Log("Resized");
-            //wisp effect
-            //InvWisp.gameObject.GetComponent<InventoryWisp>().image = GameObject.Find("mouse").gameObject.GetComponent<PlayerMovement>().InventoryPics[JadeSpeech.stage - 1];
-            //set new inventory item
-            NewIcon(JadeSpeech.stage);
+            //item.GetComponent<Image>().sprite = BlackBox;
+            //item.transform.localScale = new Vector3(1, 1, 1);
+
             obj.text = " Obtain " + TaskList[JadeSpeech.stage];
         }
     }

@@ -8,7 +8,7 @@ public class Main_Menu : MonoBehaviour
     public void Play()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(21);//loads hud that then goes to main lobby
     }
 
     public void Quit()

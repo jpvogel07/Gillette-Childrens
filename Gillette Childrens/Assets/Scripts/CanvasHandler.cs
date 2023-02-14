@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CanvasHandler : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class CanvasHandler : MonoBehaviour
     public Sprite Art;
     public Sprite Map;
     public GameObject MiniMap;
-    public bool check=false;
+    public bool check = false;
     public GameObject AR;
     public GameObject[] doors;
 
@@ -20,12 +21,25 @@ public class CanvasHandler : MonoBehaviour
 
     }
 
+    private void Awake()
+    {
+        MiniMap.GetComponent<Image>().sprite = Map;
+        AR.GetComponent<ARHandler>().scene = this.gameObject;
+
+    }
+
     public void On()
     {
         this.gameObject.SetActive(true);
         MiniMap.GetComponent<Image>().sprite = Map;
         AR.GetComponent<ARHandler>().scene = this.gameObject;
     }
+
+    public void Next(int NextScene)
+    {
+        SceneManager.LoadScene(sceneBuildIndex: NextScene);
+    }
+
     public void Off()
     {
         this.gameObject.SetActive(false);
