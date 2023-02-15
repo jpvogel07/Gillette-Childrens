@@ -75,8 +75,6 @@ public class DialogueManager : MonoBehaviour
         choice3.SetActive(false);
         */
         blocker.SetActive(true);
-
-        blocker.SetActive(true);
         dialogueOpen = true;
 
         if (animateBox != null)
