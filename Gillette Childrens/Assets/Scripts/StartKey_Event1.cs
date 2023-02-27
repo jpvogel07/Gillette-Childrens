@@ -5,7 +5,6 @@ using UnityEngine;
 public class StartKey_Event1 : MonoBehaviour
 {
     public GameObject Events;
-    public GameObject highlight;
 
     public void DoThing()
     {
@@ -14,6 +13,5 @@ public class StartKey_Event1 : MonoBehaviour
         Events.GetComponent<WorldEvent>().check = true;
         Events.GetComponent<WorldEvent>().Start_DTrigger();
         this.gameObject.SetActive(false);
-        highlight.SetActive(false);
     }
 }
