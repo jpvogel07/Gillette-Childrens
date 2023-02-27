@@ -1965,8 +1965,6 @@ MonoBehaviour:
   lobby: {fileID: 76761943}
   checkin: {fileID: 1797084480}
   check: 1
-  Highlight: {fileID: 942355270}
-  Highlight2: {fileID: 1371336552}
 --- !u!4 &188230860
 Transform:
   m_ObjectHideFlags: 0
@@ -3133,7 +3131,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: {fileID: 188230858}
-  highlight: {fileID: 942355270}
 --- !u!114 &339286874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4331,7 +4328,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &457666043
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6837,7 +6834,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: {fileID: 188230858}
-  highlight: {fileID: 942355270}
 --- !u!224 &761155935 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
