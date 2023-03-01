@@ -786,7 +786,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - name: Marshal
+    sentences:
+    - Hello, my name is Marshal. And I am a co-worker of yours.
+    - Just as a refresher, this is the infusion room. Which has access to the northern
+      hallway and has the IV stand in it.
   hasChoices: 0
   animation: {fileID: 0}
   secretMessages: []
