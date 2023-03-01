@@ -15,20 +15,29 @@ public class Jade : MonoBehaviour
     public Sprite BlackBox;
     public GameObject InvWisp;
     private GameObject wisp;
-    public  TextMeshProUGUI obj;
-    public string[] TaskList;
+    //public  TextMeshProUGUI obj;
+    //public string[] TaskList;
     public PlayerMovement mouse;
     
 
     public static Action NextTask = delegate { };
 
+    private void OnEnable()
+    {
+        mouse = GameObject.Find("mouse").GetComponent<PlayerMovement>();
+        HUD = GameObject.Find("HUD");
+    }
+
     private void Awake()
     {
         GameObject.Find("dialogue manager").gameObject.GetComponent<DialogueManager>().tut = false;
         JadeSpeech = this.GetComponent<DialogueTrigger>();
-        obj.text = " Obtain " + TaskList[0];
-        mouse = GameObject.Find("mouse").gameObject.GetComponent<PlayerMovement>();
+        mouse = GameObject.Find("mouse").GetComponent<PlayerMovement>();
+        HUD = GameObject.Find("HUD");
+        //obj.text = " Obtain " + TaskList[0];
+        //mouse = GameObject.Find("mouse").gameObject.GetComponent<PlayerMovement>();
         JadeSpeech.secret = mouse.JadeSecret;
+
     }
 
     public void flip()
@@ -42,7 +51,7 @@ public class Jade : MonoBehaviour
             //item.GetComponent<Image>().sprite = BlackBox;
             //item.transform.localScale = new Vector3(1, 1, 1);
 
-            obj.text = " Obtain " + TaskList[JadeSpeech.stage];
+            //obj.text = " Obtain " + TaskList[JadeSpeech.stage];
         }
     }
 

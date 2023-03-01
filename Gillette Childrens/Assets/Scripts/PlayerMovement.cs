@@ -4,12 +4,14 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System;
+using TMPro;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
     private int i;
     private Inputs pinputs;
+    public bool tut;
     //private bool highlighted;
     //private GameObject grabbed;
     //public ClickableObject ClkObj;
@@ -25,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
     public int EndTask = 4;
     public bool JadeSecret;
     public bool[] keys = new bool[3];
+    public string[] taskList;
+    public TextMeshProUGUI objectiveTXT;
     
     public Sprite[] InventoryPics = new Sprite[3];
     public Image inventory;
@@ -39,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
         //pinputs.player.movement.started += movment;
         Jade.NextTask += NewTask;
         WorldEvent.TutDone += afterTut;
+        objectiveTXT = Objective.GetComponentInChildren<TextMeshProUGUI>();
         /*
         for (i=1;i<taskNum;i++)
         {
@@ -145,9 +150,7 @@ public class PlayerMovement : MonoBehaviour
         //i--;
 
         //inventory.GetComponent<Image>().sprite = InventoryPics[i];
-        //inventory.sprite = InventoryPics[i];
-
-        Debug.Log(inventory + this.name);
+        inventory.sprite = InventoryPics[i];
 
         float ratio = 0.0f;
         ratio = (float)InventoryPics[i].texture.width / (float)InventoryPics[i].texture.height;
@@ -156,6 +159,7 @@ public class PlayerMovement : MonoBehaviour
         //inventory.GetComponent<RectTransform>().localScale = new Vector3(1, ratio, 1);
 
         inventory.color = Color.grey;
+        objectiveTXT.text = "Obtain the " + taskList[CurrTask];
         //inventory.GetComponent<Image>().color = Color.grey;
     }
 
@@ -168,7 +172,6 @@ public class PlayerMovement : MonoBehaviour
             winner.SetActive(true);
         }
         JadeSecret = false;
-
 
         InventorySwitch(CurrTask);
     }

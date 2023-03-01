@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -586,14 +586,9 @@ MonoBehaviour:
   textBox: {fileID: 0}
   mouse: {fileID: 0}
   continueButton: {fileID: 0}
-  choice1: {fileID: 0}
-  choice2: {fileID: 0}
-  choice3: {fileID: 0}
   blocker: {fileID: 0}
-  blocker2: {fileID: 0}
-  blocker3: {fileID: 0}
-  blocker4: {fileID: 0}
   hasChoice: 0
+  dialogueOpen: 0
 --- !u!4 &2135326363
 Transform:
   m_ObjectHideFlags: 0

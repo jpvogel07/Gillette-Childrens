@@ -196,11 +196,35 @@ PrefabInstance:
     - target: {fileID: 3323689054231655626, guid: d41b4b65177161447ac8d9880ce1015c, type: 3}
       propertyPath: Objective
       value: 
-      objectReference: {fileID: 1261707988}
+      objectReference: {fileID: 1506502271}
     - target: {fileID: 3323689054231655626, guid: d41b4b65177161447ac8d9880ce1015c, type: 3}
       propertyPath: inventory
       value: 
       objectReference: {fileID: 94128089}
+    - target: {fileID: 3323689054231655626, guid: d41b4b65177161447ac8d9880ce1015c, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 2065489708}
+    - target: {fileID: 3323689054231655626, guid: d41b4b65177161447ac8d9880ce1015c, type: 3}
+      propertyPath: taskList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323689054231655626, guid: d41b4b65177161447ac8d9880ce1015c, type: 3}
+      propertyPath: taskList.Array.data[0]
+      value: 'Chart '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323689054231655626, guid: d41b4b65177161447ac8d9880ce1015c, type: 3}
+      propertyPath: taskList.Array.data[1]
+      value: Hearing Aid
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323689054231655626, guid: d41b4b65177161447ac8d9880ce1015c, type: 3}
+      propertyPath: taskList.Array.data[2]
+      value: IV
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323689054231655626, guid: d41b4b65177161447ac8d9880ce1015c, type: 3}
+      propertyPath: taskList.Array.data[3]
+      value: Crash Cart
+      objectReference: {fileID: 0}
     - target: {fileID: 3323689054231655630, guid: d41b4b65177161447ac8d9880ce1015c, type: 3}
       propertyPath: m_Name
       value: mouse
@@ -350,11 +374,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8075163276651354885, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
   m_PrefabInstance: {fileID: 2012762238}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1261707988 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8075163275716647747, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
-  m_PrefabInstance: {fileID: 2012762238}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1415403467 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3313665996726227240, guid: 5519e2aea36d23d4abcddc2eb5e07d8a, type: 3}
@@ -366,6 +385,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c37a6c6fd45872c42840931cbdc37341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1506502271 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8075163276119426244, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
+  m_PrefabInstance: {fileID: 2012762238}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2012762238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -542,6 +566,17 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 8075163276629127698, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
   m_PrefabInstance: {fileID: 2012762238}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2065489708 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8075163276119426250, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
+  m_PrefabInstance: {fileID: 2012762238}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506502271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3313665995321968355
 PrefabInstance:
   m_ObjectHideFlags: 0

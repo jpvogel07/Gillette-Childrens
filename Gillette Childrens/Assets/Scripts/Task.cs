@@ -22,7 +22,7 @@ public class Task : MonoBehaviour
         //Jade = World.GetComponent<WorldEvent>().Jade;
         Jade = GameObject.Find("Jade");
         //Popup = GameObject.Find("PopupParent").transform.GetChild(0);
-        if (mouse.GetComponent<PlayerMovement>().CurrTask > TaskNum)
+        if (mouse.GetComponent<PlayerMovement>().keys[TaskNum])
         {
             Destroy(this.gameObject);
         }
@@ -48,6 +48,7 @@ public class Task : MonoBehaviour
             //this.gameObject.SetActive(false);
             //World.Jade.gameObject.GetComponent<DialogueTrigger>().secret = true;
             mouse.gameObject.GetComponent<PlayerMovement>().JadeSecret = true;
+            mouse.GetComponent<PlayerMovement>().keys[TaskNum] = true;
             Destroy(this.gameObject);
         }
         else
