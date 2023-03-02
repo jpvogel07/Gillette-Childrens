@@ -1816,6 +1816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 8075163276078797429}
   pauseButton: {fileID: 8075163277363312978}
+  backpackButton: {fileID: 0}
 --- !u!1001 &225208532677875192
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool AR;
     public GameObject ARHandler;
+    public GameObject MiniMap;
     public GameObject Objective;
 
     public GameObject HUD;
@@ -43,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
         //pinputs.player.movement.started += movment;
         Jade.NextTask += NewTask;
         WorldEvent.TutDone += afterTut;
+        CanvasHandler.GetThings += PassThings;
         objectiveTXT = Objective.GetComponentInChildren<TextMeshProUGUI>();
         /*
         for (i=1;i<taskNum;i++)
@@ -58,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
         //pinputs.player.movement.started -= movment;
         Jade.NextTask -= NewTask;
         WorldEvent.TutDone -= afterTut;
+        CanvasHandler.GetThings -= PassThings;
     }
 
     void Start()
@@ -181,5 +184,12 @@ public class PlayerMovement : MonoBehaviour
         //inventory.SetActive(true);
         ARHandler.SetActive(true);
         Objective.SetActive(true);
+    }
+
+    public void PassThings(CanvasHandler scene)
+    {
+        scene.MiniMap = MiniMap;
+        scene.AR = ARHandler;
+        ARHandler.GetComponent<ARHandler>().scene = scene.gameObject;
     }
 }

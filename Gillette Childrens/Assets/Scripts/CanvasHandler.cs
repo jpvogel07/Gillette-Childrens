@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class CanvasHandler : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class CanvasHandler : MonoBehaviour
     public GameObject AR;
     public GameObject[] doors;
 
+    public static Action<CanvasHandler> GetThings = delegate { };
+
     private void Start()
     {
         //AR = GameObject.Find("AR switch").gameObject;
@@ -23,6 +26,8 @@ public class CanvasHandler : MonoBehaviour
 
     private void Awake()
     {
+        GetThings(this.gameObject.GetComponent<CanvasHandler>());
+
         MiniMap = GameObject.Find("MiniMap");
         AR = GameObject.Find("AR switch");
         MiniMap.GetComponent<Image>().sprite = Map;

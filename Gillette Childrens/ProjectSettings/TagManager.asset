@@ -16,7 +16,7 @@ TagManager:
   - Buttons
   - Water
   - UI
-  - 
+  - HUD
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: HUD
+    uniqueID: 3490770365
+    locked: 0
   - name: UI
     uniqueID: 17472683
     locked: 0
