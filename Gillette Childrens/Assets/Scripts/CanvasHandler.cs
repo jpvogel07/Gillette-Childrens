@@ -23,8 +23,10 @@ public class CanvasHandler : MonoBehaviour
 
     private void Awake()
     {
+        MiniMap = GameObject.Find("MiniMap");
+        AR = GameObject.Find("AR switch");
         MiniMap.GetComponent<Image>().sprite = Map;
-        AR.GetComponent<ARHandler>().scene = this.gameObject;
+        //AR.GetComponent<ARHandler>().scene = this.gameObject;
 
     }
 
@@ -32,7 +34,7 @@ public class CanvasHandler : MonoBehaviour
     {
         this.gameObject.SetActive(true);
         MiniMap.GetComponent<Image>().sprite = Map;
-        AR.GetComponent<ARHandler>().scene = this.gameObject;
+        //AR.GetComponent<ARHandler>().scene = this.gameObject;
     }
 
     public void Next(int NextScene)

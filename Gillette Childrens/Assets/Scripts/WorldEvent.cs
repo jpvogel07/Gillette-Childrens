@@ -14,16 +14,25 @@ public class WorldEvent : MonoBehaviour
     public GameObject checkin;
     public bool check;
     private int TutCount = 3;
+    public PlayerMovement mouse;
 
     public static Action TutDone = delegate { };
     public static Action TaskDone = delegate { };
 
     void Start()
     {
-        check = true;
-        DialogueManager.DialogueDone += ProgressCheck;
-        Start_DTrigger();
-        GameObject.Find("dialogue manager").gameObject.GetComponent<DialogueManager>().tut = true;
+        mouse = GameObject.Find("mouse").GetComponent<PlayerMovement>();
+        if (mouse.tut)
+        {
+            NoReload();
+        }
+        else
+        {
+            check = true;
+            DialogueManager.DialogueDone += ProgressCheck;
+            Start_DTrigger();
+            GameObject.Find("dialogue manager").gameObject.GetComponent<DialogueManager>().tut = true;
+        }
     }
 
     private void OnDisable()
@@ -38,10 +47,16 @@ public class WorldEvent : MonoBehaviour
         if (EventCounter==1)
         {
             StartKey.SetActive(true);//picking up key handles rest of event
+
+            
+
         }
         else if (EventCounter==2)
         {
             StartDoor.SetActive(true);//going through door handles rest of event
+
+            
+
         }
         else if (EventCounter==3)
         {
@@ -50,8 +65,9 @@ public class WorldEvent : MonoBehaviour
 
             Jade.SetActive(true);
             //Jade.GetComponent<DialogueTrigger>().secret = true;
-            Jade.GetComponent<Jade>().mouse.InventorySwitch(0);
+            mouse.InventorySwitch(0);
             TutDone();
+            mouse.tut = true;
             DestoryTut();
         }
         /*else if (EventCounter==4)
@@ -95,5 +111,15 @@ public class WorldEvent : MonoBehaviour
         Destroy(StartDoor);
         Destroy(StartKey);
         Destroy(this.gameObject);
+    }
+
+    private void NoReload()
+    {
+        Debug.Log("tut gone");
+        Jade.SetActive(true);
+        TutDone();
+        mouse.tut = true;
+        Destroy(checkin);
+        DestoryTut();
     }
 }

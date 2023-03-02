@@ -874,6 +874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: {fileID: 1385772489}
+  highlight: {fileID: 0}
 --- !u!114 &938242853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1402,6 +1403,9 @@ MonoBehaviour:
   lobby: {fileID: 1544238501}
   checkin: {fileID: 1000466394}
   check: 1
+  mouse: {fileID: 0}
+  Highlight: {fileID: 0}
+  Highlight2: {fileID: 0}
 --- !u!4 &1385772493
 Transform:
   m_ObjectHideFlags: 0
@@ -1429,6 +1433,7 @@ GameObject:
   - component: {fileID: 1544238505}
   - component: {fileID: 1544238504}
   - component: {fileID: 1544238502}
+  - component: {fileID: 1544238506}
   m_Layer: 5
   m_Name: main lobby
   m_TagString: Untagged
@@ -1528,6 +1533,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544238501}
   m_CullTransparentMesh: 1
+--- !u!114 &1544238506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544238501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86244825282f19a4cb573093af3679f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1757801746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,6 +1598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events: {fileID: 1385772489}
+  highlight: {fileID: 0}
 --- !u!114 &1757801749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2131,17 +2149,11 @@ MonoBehaviour:
   world: {fileID: 1385772489}
   JadeSpeech: {fileID: 1821595780}
   winscreen: {fileID: 2010222385}
-  HUD: {fileID: 8075163276651354885, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
+  HUD: {fileID: 0}
   item: {fileID: 0}
   BlackBox: {fileID: 21300000, guid: ecb4c0ab179cf3543ae1e93d62ff73f8, type: 3}
   InvWisp: {fileID: 7208266561982394908, guid: 59e38eb2d8d725345a85c8e0a83f5c53, type: 3}
-  obj: {fileID: 0}
-  TaskList:
-  - Clipboard
-  - Hearing Aids
-  - IV Stand
-  - Crash Kart
-  mouse: {fileID: 3323689054231655626, guid: d41b4b65177161447ac8d9880ce1015c, type: 3}
+  mouse: {fileID: 0}
 --- !u!114 &1821595782
 MonoBehaviour:
   m_ObjectHideFlags: 0
