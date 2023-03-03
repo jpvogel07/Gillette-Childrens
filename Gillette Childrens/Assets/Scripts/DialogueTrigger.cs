@@ -11,7 +11,7 @@ public class DialogueTrigger : MonoBehaviour
     public string[] decisionText = new string[3];
     public bool secret = false;
     public bool[] tasks = new bool[3];
-    public int  stage;
+    public int stage;
 
     public AudioSource[] talking;
     public AudioSource SecretTalking;
@@ -51,7 +51,7 @@ public class DialogueTrigger : MonoBehaviour
             FindObjectOfType<DialogueManager>().hasChoice = true;
 
         }
-
+        stage++;
     }
 
     public void secretTrigger()

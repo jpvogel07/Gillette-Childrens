@@ -17,7 +17,7 @@ public class InventoryWisp : MonoBehaviour
         end = GameObject.Find("Jade");
         start = GameObject.Find("inventory");
         //this.GetComponent<Image>().sprite = image;
-        this.GetComponent<Image>().sprite = GameObject.Find("mouse").GetComponent<PlayerMovement>().InventoryPics[end.GetComponent<Jade>().JadeSpeech.stage];
+        this.GetComponent<Image>().sprite = GameObject.Find("mouse").GetComponent<PlayerMovement>().InventoryPics[end.GetComponent<Jade>().JadeSpeech.stage-1];
         this.GetComponent<Image>().color = Color.white;
         this.transform.position = start.transform.position;
         StartCoroutine(travelTime());

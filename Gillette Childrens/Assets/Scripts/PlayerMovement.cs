@@ -37,6 +37,8 @@ public class PlayerMovement : MonoBehaviour
 
     public static Action playClick = delegate { };
 
+    private Vector3 OGpos;
+
     private void OnEnable()
     {
         pinputs = new Inputs();
@@ -53,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
         }
         */
         //inventory = GameObject.Find("inventory").GetComponent<Image>();
+        OGpos = inventory.GetComponent<RectTransform>().position;
     }
     private void OnDisable()
     {
@@ -150,20 +153,21 @@ public class PlayerMovement : MonoBehaviour
 
     public void InventorySwitch(int i)
     {
-        //i--;
-
-        //inventory.GetComponent<Image>().sprite = InventoryPics[i];
+        inventory.GetComponent<Image>().sprite = InventoryPics[i];
         inventory.sprite = InventoryPics[i];
 
         float ratio = 0.0f;
         ratio = (float)InventoryPics[i].texture.width / (float)InventoryPics[i].texture.height;
         Debug.Log(ratio);
         ratio = 1 / ratio;
-        //inventory.GetComponent<RectTransform>().localScale = new Vector3(1, ratio, 1);
+        inventory.GetComponent<RectTransform>().localScale = new Vector3(1, ratio, 1);
+        inventory.GetComponent<RectTransform>().position = OGpos;
+        inventory.GetComponent<RectTransform>().position -= new Vector3(0, 15f*inventory.GetComponent<RectTransform>().localScale.y, 0);
 
         inventory.color = Color.grey;
         objectiveTXT.text = "Obtain the " + taskList[CurrTask];
-        //inventory.GetComponent<Image>().color = Color.grey;
+        inventory.GetComponent<Image>().color = Color.grey;
+        
     }
 
     public void NewTask()
