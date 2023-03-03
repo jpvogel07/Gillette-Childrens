@@ -5,7 +5,6 @@ using System;
 
 public class WorldEvent : MonoBehaviour
 {
-    public GameObject win;
     public GameObject Jade;
     public int EventCounter=0;
     public GameObject StartKey;
@@ -33,7 +32,6 @@ public class WorldEvent : MonoBehaviour
             DialogueManager.DialogueDone += ProgressCheck;
             Start_DTrigger();
             GameObject.Find("dialogue manager").gameObject.GetComponent<DialogueManager>().tut = true;
-            mouse.winner = win;
         }
     }
 
