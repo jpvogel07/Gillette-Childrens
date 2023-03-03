@@ -8,7 +8,7 @@ public class Task : MonoBehaviour
 {
     public int TaskNum;
     public GameObject mouse;
-    private GameObject item;
+    public GameObject item;
     //private WorldEvent World;
     public GameObject Jade;
     //private Transform Popup;
@@ -17,10 +17,10 @@ public class Task : MonoBehaviour
     private void OnEnable()
     {
         //World = GameObject.Find("World Event System").gameObject.GetComponent<WorldEvent>();
-        mouse = GameObject.Find("mouse").gameObject;
-        item = GameObject.Find("inventory");
+        //mouse = GameObject.Find("mouse").gameObject;
+        //item = GameObject.Find("inventory");
         //Jade = World.GetComponent<WorldEvent>().Jade;
-        Jade = GameObject.Find("Jade");
+        //Jade = GameObject.Find("Jade");
         //Popup = GameObject.Find("PopupParent").transform.GetChild(0);
         if (mouse.GetComponent<PlayerMovement>().keys[TaskNum])
         {
@@ -48,6 +48,7 @@ public class Task : MonoBehaviour
             //this.gameObject.SetActive(false);
             //World.Jade.gameObject.GetComponent<DialogueTrigger>().secret = true;
             mouse.gameObject.GetComponent<PlayerMovement>().JadeSecret = true;
+            Jade.GetComponent<DialogueTrigger>().secret = true;
             mouse.GetComponent<PlayerMovement>().keys[TaskNum] = true;
             Destroy(this.gameObject);
         }
