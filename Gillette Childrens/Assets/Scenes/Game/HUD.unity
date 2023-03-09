@@ -186,6 +186,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3323689054231655626, guid: d41b4b65177161447ac8d9880ce1015c, type: 3}
+      propertyPath: Go
+      value: 
+      objectReference: {fileID: 495597029}
+    - target: {fileID: 3323689054231655626, guid: d41b4b65177161447ac8d9880ce1015c, type: 3}
       propertyPath: HUD
       value: 
       objectReference: {fileID: 1060175286}
@@ -207,6 +211,10 @@ PrefabInstance:
       objectReference: {fileID: 94128089}
     - target: {fileID: 3323689054231655626, guid: d41b4b65177161447ac8d9880ce1015c, type: 3}
       propertyPath: objective
+      value: 
+      objectReference: {fileID: 2065489708}
+    - target: {fileID: 3323689054231655626, guid: d41b4b65177161447ac8d9880ce1015c, type: 3}
+      propertyPath: objectiveTXT
       value: 
       objectReference: {fileID: 2065489708}
     - target: {fileID: 3323689054231655626, guid: d41b4b65177161447ac8d9880ce1015c, type: 3}
@@ -627,12 +635,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 97173731}
     - target: {fileID: 8075163277133980930, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
+      propertyPath: m_Name
+      value: ARSwich
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075163277133980930, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8075163277133980930, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8075163277211327942, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
       propertyPath: m_Layer

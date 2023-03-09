@@ -23,7 +23,7 @@ public class AfterTut : MonoBehaviour
         WorldEvent.TutDone -= TurnOff;
     }
 
-    private void TurnOff()
+    public void TurnOff()
     {
         i = 0;
         while (i!=TaskItems.Length)

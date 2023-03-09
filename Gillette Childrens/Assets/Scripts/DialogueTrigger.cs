@@ -70,6 +70,6 @@ public class DialogueTrigger : MonoBehaviour
         }
         talking[stage].Play();
         */
-        Debug.Log("playertalking " + this.gameObject.name);
+        //Debug.Log("playertalking " + this.gameObject.name);
     }
 }

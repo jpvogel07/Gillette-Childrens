@@ -603,6 +603,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
   m_PrefabInstance: {fileID: 555756066}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &555756068 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4613375757883793419, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
+  m_PrefabInstance: {fileID: 555756066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &628634803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,8 +1170,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TaskNum: 0
-  mouse: {fileID: 0}
-  Jade: {fileID: 1821595775}
+  mouse: {fileID: 555756068}
+  item: {fileID: 0}
 --- !u!114 &1294384131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1986,7 +1991,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1821595776
 RectTransform:
   m_ObjectHideFlags: 0

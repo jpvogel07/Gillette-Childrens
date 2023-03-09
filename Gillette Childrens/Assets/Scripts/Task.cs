@@ -8,28 +8,32 @@ public class Task : MonoBehaviour
 {
     public int TaskNum;
     public GameObject mouse;
-    public GameObject item;
-    //private WorldEvent World;
-    public GameObject Jade;
+    public Image item;
+    private WorldEvent World;
     //private Transform Popup;
     //public string name;
 
+    public static Action<GameObject> NeedNow = delegate { };
+
     private void OnEnable()
     {
-        //World = GameObject.Find("World Event System").gameObject.GetComponent<WorldEvent>();
+        NeedNow(this.gameObject);
+        Debug.Log(mouse);
         //mouse = GameObject.Find("mouse").gameObject;
-        //item = GameObject.Find("inventory");
-        //Jade = World.GetComponent<WorldEvent>().Jade;
-        //Jade = GameObject.Find("Jade");
-        //Popup = GameObject.Find("PopupParent").transform.GetChild(0);
+        item = mouse.GetComponent<PlayerMovement>().inventory;
         if (mouse.GetComponent<PlayerMovement>().keys[TaskNum])
         {
             Destroy(this.gameObject);
         }
     }
 
+    private void OnDisable()
+    {
+    }
+
     public void DoTask()
     {
+        Debug.Log("the mouse is "+mouse);
         if (TaskNum == mouse.GetComponent<PlayerMovement>().CurrTask)
         {
             //ItemPopup();
@@ -37,7 +41,8 @@ public class Task : MonoBehaviour
             this.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
             mouse.GetComponent<PlayerMovement>().keys[TaskNum] = true;
             //item.GetComponent<Image>().sprite = mouse.gameObject.GetComponent<PlayerMovement>().InventoryPics[TaskNum];
-            item.GetComponent<Image>().color = Color.white;
+            Debug.Log(item);
+            item.color = Color.white;
 
             /*float ratio = 0.0f;
             ratio = (float)this.gameObject.GetComponent<Image>().sprite.texture.width / (float)this.gameObject.GetComponent<Image>().sprite.texture.height;
@@ -48,7 +53,6 @@ public class Task : MonoBehaviour
             //this.gameObject.SetActive(false);
             //World.Jade.gameObject.GetComponent<DialogueTrigger>().secret = true;
             mouse.gameObject.GetComponent<PlayerMovement>().JadeSecret = true;
-            Jade.GetComponent<DialogueTrigger>().secret = true;
             mouse.GetComponent<PlayerMovement>().keys[TaskNum] = true;
             Destroy(this.gameObject);
         }
@@ -62,4 +66,5 @@ public class Task : MonoBehaviour
     /*private void ItemPopup() {
         Popup.gameObject.SetActive(true);
     }*/
+
 }

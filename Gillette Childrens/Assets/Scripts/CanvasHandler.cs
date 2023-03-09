@@ -17,21 +17,20 @@ public class CanvasHandler : MonoBehaviour
 
     public static Action<CanvasHandler> GetThings = delegate { };
 
+
+    private void Awake()
+    {
+        GetThings(this.gameObject.GetComponent<CanvasHandler>());
+
+        //MiniMap = GameObject.Find("MiniMap");
+        //AR = GameObject.Find("ARSwitch");
+        MiniMap.GetComponent<Image>().sprite = Map;
+        AR.GetComponent<ARHandler>().scene = this.gameObject;
+    }
     private void Start()
     {
         //AR = GameObject.Find("AR switch").gameObject;
         Art = this.GetComponent<Image>().sprite; //<-- does not grab source image from image component 
-
-    }
-
-    private void Awake()
-    {
-        //GetThings(this.gameObject.GetComponent<CanvasHandler>());
-
-        MiniMap = GameObject.Find("MiniMap");
-        AR = GameObject.Find("AR switch");
-        //MiniMap.GetComponent<Image>().sprite = Map;
-        //AR.GetComponent<ARHandler>().scene = this.gameObject;
 
     }
 

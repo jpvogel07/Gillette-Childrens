@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GoMainL1 : MonoBehaviour
 {
-    private void Awake()
+    public void enable()
     {
         SceneManager.LoadScene(sceneBuildIndex: 1);
     }
