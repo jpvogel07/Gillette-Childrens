@@ -11,7 +11,7 @@ public class Jade : MonoBehaviour
     public DialogueTrigger JadeSpeech;
     public GameObject winscreen;
     public GameObject HUD;
-    public Image item;
+    public GameObject item;
     public Sprite BlackBox;
     public GameObject InvWisp;
     private GameObject wisp;
@@ -21,21 +21,23 @@ public class Jade : MonoBehaviour
     
 
     public static Action NextTask = delegate { };
-    public static Action<GameObject> GiveThis = delegate { };
 
     private void OnEnable()
-    { 
-        GiveThis(this.gameObject);
+    {
+        mouse = GameObject.Find("mouse").GetComponent<PlayerMovement>();
+        HUD = GameObject.Find("HUD");
     }
 
-    private void Start()
+    private void Awake()
     {
+        GameObject.Find("dialogue manager").gameObject.GetComponent<DialogueManager>().tut = false;
         JadeSpeech = this.GetComponent<DialogueTrigger>();
-
-        Debug.Log("mouse is " + mouse);
+        mouse = GameObject.Find("mouse").GetComponent<PlayerMovement>();
+        HUD = GameObject.Find("HUD");
+        //obj.text = " Obtain " + TaskList[0];
+        //mouse = GameObject.Find("mouse").gameObject.GetComponent<PlayerMovement>();
         JadeSpeech.secret = mouse.JadeSecret;
-        item = mouse.inventory;
-        this.GetComponent<DialogueTrigger>().secret = mouse.JadeSecret;
+
     }
 
     public void flip()
@@ -59,11 +61,5 @@ public class Jade : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
-    }
-
-    public void passThis(GameObject Tmouse)
-    {
-        mouse = Tmouse.GetComponent<PlayerMovement>();
-        mouse.JadeO = this.gameObject;
     }
 }

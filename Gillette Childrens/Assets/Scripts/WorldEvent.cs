@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-using UnityEngine.UI;
 
 public class WorldEvent : MonoBehaviour
 {
@@ -13,16 +12,15 @@ public class WorldEvent : MonoBehaviour
     public GameObject StartDoor;
     public GameObject StartJade;
     public GameObject lobby;
-    public GameObject[] doors;
+    public GameObject checkin;
     public bool check;
     private int TutCount = 3;
     public PlayerMovement mouse;
 
     public static Action TutDone = delegate { };
     public static Action TaskDone = delegate { };
-    public static Action<GameObject> ThisPass = delegate { };
 
-    void Awake()
+    void Start()
     {
         mouse = GameObject.Find("mouse").GetComponent<PlayerMovement>();
         if (mouse.tut)
@@ -36,7 +34,6 @@ public class WorldEvent : MonoBehaviour
             Start_DTrigger();
             GameObject.Find("dialogue manager").gameObject.GetComponent<DialogueManager>().tut = true;
             mouse.winner = win;
-            ThisPass(gameObject);
         }
     }
 
@@ -68,12 +65,11 @@ public class WorldEvent : MonoBehaviour
             //lobby.GetComponent<CanvasHandler>().On();
             //checkin.SetActive(false);
 
-            Jade.GetComponent<Image>().enabled = true;
+            Jade.SetActive(true);
             //Jade.GetComponent<DialogueTrigger>().secret = true;
             mouse.InventorySwitch(0);
             TutDone();
             mouse.tut = true;
-
             DestoryTut();
         }
         /*else if (EventCounter==4)
@@ -122,12 +118,10 @@ public class WorldEvent : MonoBehaviour
     private void NoReload()
     {
         Debug.Log("tut gone");
-        Jade.GetComponent<Image>().enabled = true;
+        Jade.SetActive(true);
         TutDone();
         mouse.tut = true;
-        this.gameObject.GetComponent<AfterTut>().TurnOff();
-
-        Destroy(StartDoor);
+        Destroy(checkin);
         DestoryTut();
     }
 }

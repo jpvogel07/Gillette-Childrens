@@ -560,6 +560,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2085449179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 1124c6664d4f1404db0333c8866b3540, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &39734832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1079,6 +1091,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2085449179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 1124c6664d4f1404db0333c8866b3540, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1771,7 +1795,6 @@ MonoBehaviour:
   TaskNum: 1
   mouse: {fileID: 607123650}
   item: {fileID: 1119530962}
-  Jade: {fileID: 1007140249}
 --- !u!114 &144138963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2470,7 +2493,7 @@ MonoBehaviour:
   StartDoor: {fileID: 339286871}
   StartJade: {fileID: 1982292762}
   lobby: {fileID: 76761943}
-  checkin: {fileID: 1797084480}
+  doors: []
   check: 1
   mouse: {fileID: 0}
 --- !u!4 &188230860
@@ -3754,6 +3777,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2085449179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 1124c6664d4f1404db0333c8866b3540, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7106,6 +7141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cf5895f8d58bd4c81949e157173d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Go: {fileID: 0}
   tut: 0
   AR: 0
   ARHandler: {fileID: 1065267473}
@@ -7129,6 +7165,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fe761acf608c6d945857931a32f88321, type: 3}
   - {fileID: 21300000, guid: 078912d20703bf34aa64c1ea9f799474, type: 3}
   inventory: {fileID: 1119530964}
+  JadeO: {fileID: 0}
 --- !u!212 &607123655
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12343,7 +12380,6 @@ MonoBehaviour:
   TaskNum: 3
   mouse: {fileID: 607123650}
   item: {fileID: 1119530962}
-  Jade: {fileID: 1007140249}
 --- !u!114 &1159827076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14432,7 +14468,6 @@ MonoBehaviour:
   TaskNum: 2
   mouse: {fileID: 607123650}
   item: {fileID: 1119530962}
-  Jade: {fileID: 1007140249}
 --- !u!114 &1448509910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14804,6 +14839,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2085449179}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 1124c6664d4f1404db0333c8866b3540, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -18721,7 +18768,6 @@ MonoBehaviour:
   TaskNum: 0
   mouse: {fileID: 607123650}
   item: {fileID: 1119530962}
-  Jade: {fileID: 1007140249}
 --- !u!114 &1920090156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20596,7 +20642,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea41c15123292341af9bb60c622c5d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 0}
 --- !u!82 &2085449179
 AudioSource:
   m_ObjectHideFlags: 0

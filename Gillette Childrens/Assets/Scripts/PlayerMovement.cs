@@ -9,9 +9,12 @@ using TMPro;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    public GoMainL1 Go;
+    private int i;
     private Inputs pinputs;
     public bool tut;
+    //private bool highlighted;
+    //private GameObject grabbed;
+    //public ClickableObject ClkObj;
 
     public bool AR;
     public GameObject ARHandler;
@@ -23,46 +26,35 @@ public class PlayerMovement : MonoBehaviour
 
     public int CurrTask;
     public int EndTask = 4;
-    
     public bool JadeSecret;
-   
     public bool[] keys = new bool[3];
     public string[] taskList;
-
     public TextMeshProUGUI objectiveTXT;
-    public Sprite[] InventoryPics = new Sprite[3];
     
+    public Sprite[] InventoryPics = new Sprite[3];
     public Image inventory;
-    public GameObject JadeO;
     //public GameObject WES;
 
     public static Action playClick = delegate { };
 
     private Vector3 OGpos;
 
-    private void Awake()
+    private void OnEnable()
     {
-        Go.enable();
-        Task.NeedNow += GiveThis;
-        WorldEvent.ThisPass += takeThat;
-        Jade.NextTask += NewTask;
-        Jade.GiveThis += herego;
-        WorldEvent.TutDone += afterTut;
-        CanvasHandler.GetThings += PassThings;        
         pinputs = new Inputs();
         pinputs.Enable();
-    }
-
-    private void Start()
-    {
-        JadeO.GetComponent<Image>().enabled = false;
-        JadeO.GetComponent<Jade>().passThis(this.gameObject);
-        JadeO.GetComponent<Jade>().HUD = HUD;
-        JadeO.GetComponent<Jade>().item = inventory;
-
-        inventory = JadeO.GetComponent<Jade>().item;
-
+        //pinputs.player.movement.started += movment;
+        Jade.NextTask += NewTask;
+        WorldEvent.TutDone += afterTut;
+        CanvasHandler.GetThings += PassThings;
         objectiveTXT = Objective.GetComponentInChildren<TextMeshProUGUI>();
+        /*
+        for (i=1;i<taskNum;i++)
+        {
+            InventoryPics[i--] = WES.GetComponent<AfterTut>().TaskItems[i].GetComponent<Image>().sprite;
+        }
+        */
+        //inventory = GameObject.Find("inventory").GetComponent<Image>();
         OGpos = inventory.GetComponent<RectTransform>().position;
     }
     private void OnDisable()
@@ -70,18 +62,30 @@ public class PlayerMovement : MonoBehaviour
         pinputs.Disable();
         //pinputs.player.movement.started -= movment;
         Jade.NextTask -= NewTask;
-        Jade.GiveThis -= herego;
         WorldEvent.TutDone -= afterTut;
         CanvasHandler.GetThings -= PassThings;
-        WorldEvent.ThisPass -= takeThat;
-        Task.NeedNow -= GiveThis;
+    }
+
+    void Start()
+    {
+        
     }
 
     void Update()
     {
         Vector3 mousePos = Input.mousePosition;
+        //Vector3 mousePos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
         mousePos.z = 0;
         this.gameObject.transform.position = mousePos;
+        /*
+        if (Input.GetMouseButtonUp(0)&&ClkObj)
+        {
+            ClkObj.MovedCheck();
+            ClickableObject[] cObjects = transform.GetComponentsInChildren<ClickableObject>();
+            foreach (ClickableObject item in cObjects)
+                item.PutDown();
+        }
+        */
 
         if (Input.GetMouseButtonDown(0) && AR)
         {
@@ -94,9 +98,58 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            //Debug.Log("Click");
             playClick();
         }
     }
+
+    /*
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("clickable"))
+        {
+            pinputs.player.movement.started += movment;
+            highlighted = true;
+            grabbed = collision.gameObject;
+            ClkObj = collision.GetComponent<ClickableObject>();
+            ClkObj.GetComponent<ClickableObject>().highlighted();
+        } 
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("clickable"))
+        {
+            pinputs.player.movement.started -= movment;
+            highlighted = false;
+            grabbed = null;
+            if (ClkObj.GetComponent<ClickableObject>() != null)
+            {
+                ClkObj.GetComponent<ClickableObject>().nonhighlighted();
+                ClkObj.GetComponent<ClickableObject>().Obj.x = ClkObj.transform.position.x;
+                ClkObj.GetComponent<ClickableObject>().Obj.y = ClkObj.transform.position.y;
+            }
+        }
+        
+        if(collision.CompareTag("AR"))
+        {
+            
+        }
+    }
+    private void movment(InputAction.CallbackContext c)
+    {
+        if (highlighted)
+        {
+            grabbed.gameObject.transform.parent = this.transform;
+            highlighted = false;
+            ClkObj.MovedCheck();
+            Debug.Log("picked up");
+        }
+        else if(!highlighted&&grabbed.gameObject.transform.parent!=null)
+        {
+            grabbed.gameObject.transform.parent = null;
+        }
+    }
+    */
 
     public void InventorySwitch(int i)
     {
@@ -126,13 +179,13 @@ public class PlayerMovement : MonoBehaviour
             winner.SetActive(true);
         }
         JadeSecret = false;
-        secretSwitch();
 
         InventorySwitch(CurrTask);
     }
 
     public void afterTut()
     {
+        //inventory.SetActive(true);
         ARHandler.SetActive(true);
         Objective.SetActive(true);
     }
@@ -142,31 +195,5 @@ public class PlayerMovement : MonoBehaviour
         scene.MiniMap = MiniMap;
         scene.AR = ARHandler;
         ARHandler.GetComponent<ARHandler>().scene = scene.gameObject;
-        //JadeO.GetComponent<DialogueTrigger>().secret = JadeSecret;
-    }
-
-    public void takeThat(GameObject wes)
-    {
-        Debug.Log("Jade is "+wes);
-        JadeO = wes.GetComponent<WorldEvent>().Jade;
-        JadeO.GetComponent<DialogueTrigger>().secret = JadeSecret;
-    }
-
-    public void secretSwitch()
-    {
-        JadeO.GetComponent<DialogueTrigger>().secret = JadeSecret;
-    }
-
-    public void herego(GameObject jj)
-    {
-        jj.GetComponent<Jade>().mouse = this.gameObject.GetComponent<PlayerMovement>();
-    }
-
-    private void GiveThis(GameObject thing)
-    {
-        Debug.Log("this is " + this.gameObject);
-        Debug.Log("the thing is "+thing);
-        Debug.Log("the mouse in thing is "+thing.GetComponent<Task>().mouse);
-        thing.GetComponent<Task>().mouse = this.gameObject;
     }
 }
