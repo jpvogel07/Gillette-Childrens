@@ -26,17 +26,17 @@ public class Jade : MonoBehaviour
     {
         mouse = GameObject.Find("mouse").GetComponent<PlayerMovement>();
         HUD = GameObject.Find("HUD");
+        JadeSpeech = this.GetComponent<DialogueTrigger>();
+        JadeSpeech.secret = mouse.JadeSecret;
     }
 
     private void Awake()
     {
         GameObject.Find("dialogue manager").gameObject.GetComponent<DialogueManager>().tut = false;
-        JadeSpeech = this.GetComponent<DialogueTrigger>();
         mouse = GameObject.Find("mouse").GetComponent<PlayerMovement>();
         HUD = GameObject.Find("HUD");
         //obj.text = " Obtain " + TaskList[0];
         //mouse = GameObject.Find("mouse").gameObject.GetComponent<PlayerMovement>();
-        JadeSpeech.secret = mouse.JadeSecret;
 
     }
 

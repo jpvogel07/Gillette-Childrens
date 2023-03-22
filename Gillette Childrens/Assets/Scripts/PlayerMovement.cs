@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
     public int CurrTask;
     public int EndTask = 4;
+    public GameObject jade;
     public bool JadeSecret;
     public bool[] keys = new bool[3];
     public string[] taskList;

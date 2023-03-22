@@ -8,7 +8,7 @@ public class Task : MonoBehaviour
 {
     public int TaskNum;
     public GameObject mouse;
-    public GameObject item;
+    public Image item;
     //private WorldEvent World;
     public GameObject Jade;
     //private Transform Popup;
@@ -17,7 +17,9 @@ public class Task : MonoBehaviour
     private void OnEnable()
     {
         //World = GameObject.Find("World Event System").gameObject.GetComponent<WorldEvent>();
-        //mouse = GameObject.Find("mouse").gameObject;
+        mouse = GameObject.Find("mouse").gameObject;
+        item = mouse.GetComponent<PlayerMovement>().inventory;
+        Jade = mouse.GetComponent<PlayerMovement>().jade;
         //item = GameObject.Find("inventory");
         //Jade = World.GetComponent<WorldEvent>().Jade;
         //Jade = GameObject.Find("Jade");
@@ -37,7 +39,7 @@ public class Task : MonoBehaviour
             this.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
             mouse.GetComponent<PlayerMovement>().keys[TaskNum] = true;
             //item.GetComponent<Image>().sprite = mouse.gameObject.GetComponent<PlayerMovement>().InventoryPics[TaskNum];
-            item.GetComponent<Image>().color = Color.white;
+            item.color = Color.white;
 
             /*float ratio = 0.0f;
             ratio = (float)this.gameObject.GetComponent<Image>().sprite.texture.width / (float)this.gameObject.GetComponent<Image>().sprite.texture.height;
@@ -48,7 +50,7 @@ public class Task : MonoBehaviour
             //this.gameObject.SetActive(false);
             //World.Jade.gameObject.GetComponent<DialogueTrigger>().secret = true;
             mouse.gameObject.GetComponent<PlayerMovement>().JadeSecret = true;
-            Jade.GetComponent<DialogueTrigger>().secret = true;
+            //Jade.GetComponent<DialogueTrigger>().secret = true;
             mouse.GetComponent<PlayerMovement>().keys[TaskNum] = true;
             Destroy(this.gameObject);
         }

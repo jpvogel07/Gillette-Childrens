@@ -1455,7 +1455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RL: {fileID: 21300000, guid: d62a5aac6cda6284792d6e413a1bb10e, type: 3}
-  Art: {fileID: 21300000, guid: 111d9b7af6ca1324db77906858a8af23, type: 3}
+  Art: {fileID: 21300000, guid: 81aba35797207a646b41fa4dcf5e1f72, type: 3}
   Map: {fileID: 21300000, guid: f4c165d0772df2642ad0690f9ac10a33, type: 3}
   MiniMap: {fileID: 147451596}
   check: 0
@@ -7150,6 +7150,7 @@ MonoBehaviour:
   winner: {fileID: 0}
   CurrTask: 0
   EndTask: 4
+  jade: {fileID: 0}
   JadeSecret: 0
   keys: 00000000
   taskList:

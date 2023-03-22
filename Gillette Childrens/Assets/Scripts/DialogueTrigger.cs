@@ -33,11 +33,11 @@ public class DialogueTrigger : MonoBehaviour
         if (secret)
         {
             FindObjectOfType<DialogueManager>().StartDialogue(secretMessages[stage]);
-            //secret = false;
         }
         else
         { 
             FindObjectOfType<DialogueManager>().StartDialogue(dialogues[stage]);
+
         }
 
 

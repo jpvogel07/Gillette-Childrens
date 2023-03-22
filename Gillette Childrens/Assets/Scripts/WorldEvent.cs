@@ -49,16 +49,11 @@ public class WorldEvent : MonoBehaviour
         if (EventCounter==1)
         {
             StartKey.SetActive(true);//picking up key handles rest of event
-
-            
-
+            Debug.Log("event 1");
         }
         else if (EventCounter==2)
         {
             StartDoor.SetActive(true);//going through door handles rest of event
-
-            
-
         }
         else if (EventCounter==3)
         {
@@ -70,6 +65,7 @@ public class WorldEvent : MonoBehaviour
             mouse.InventorySwitch(0);
             TutDone();
             mouse.tut = true;
+            mouse.inventory.gameObject.SetActive(true);
             DestoryTut();
         }
         /*else if (EventCounter==4)
@@ -87,6 +83,7 @@ public class WorldEvent : MonoBehaviour
 
     private void ProgressCheck()
     {
+        Debug.Log("prog");
         if (check)
         {
             WorldScript();
