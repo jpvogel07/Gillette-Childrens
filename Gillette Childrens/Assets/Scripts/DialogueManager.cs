@@ -17,6 +17,7 @@ public class DialogueManager : MonoBehaviour
     public Animator animateName;
     public GameObject textBox;
     public GameObject mouse;
+    public GameObject continueButton;
     /*
     public GameObject choice1;
     public GameObject choice2;
@@ -27,6 +28,10 @@ public class DialogueManager : MonoBehaviour
     public bool dialogueOpen = false;
 
     private Queue<string> sentences;
+    private string[] backer;
+    
+    private int count = 0;
+    private int number = 0;
 
     public static Action TriggerTalking = delegate { };
 
@@ -88,6 +93,7 @@ public class DialogueManager : MonoBehaviour
         foreach(string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
+            count++;
         }
 
         TriggerTalking();        
@@ -104,6 +110,7 @@ public class DialogueManager : MonoBehaviour
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
+        number++;
     }
 
     IEnumerator TypeSentence(string sentence) 
@@ -114,9 +121,12 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text += letter;
             yield return null;
         }
+        continueButton.SetActive(true);
     }
     public void EndDialogue()
     {
+        
+        continueButton.SetActive(false);
         animateBox.SetBool("IsOpen", false);
         animateName.SetBool("IsOpen", false);
         blocker.SetActive(false);
