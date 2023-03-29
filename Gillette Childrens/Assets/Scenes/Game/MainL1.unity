@@ -831,7 +831,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &931350935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1734,6 +1734,7 @@ MonoBehaviour:
   StartJade: {fileID: 1255183435}
   lobby: {fileID: 237165683}
   checkin: {fileID: 1000466394}
+  checkdoor: {fileID: 931350934}
   check: 1
   mouse: {fileID: 0}
 --- !u!4 &1385772493

@@ -13,6 +13,7 @@ public class WorldEvent : MonoBehaviour
     public GameObject StartJade;
     public GameObject lobby;
     public GameObject checkin;
+    public GameObject checkdoor;
     public bool check;
     private int TutCount = 3;
     public PlayerMovement mouse;
@@ -29,6 +30,7 @@ public class WorldEvent : MonoBehaviour
         }
         else
         {
+            checkdoor.SetActive(false);
             check = true;
             DialogueManager.DialogueDone += ProgressCheck;
             Start_DTrigger();
@@ -59,7 +61,7 @@ public class WorldEvent : MonoBehaviour
         {
             //lobby.GetComponent<CanvasHandler>().On();
             //checkin.SetActive(false);
-
+            checkdoor.SetActive(true);
             Jade.SetActive(true);
             //Jade.GetComponent<DialogueTrigger>().secret = true;
             mouse.InventorySwitch(0);
