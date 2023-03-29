@@ -49,7 +49,8 @@ public class DialogueManager : MonoBehaviour
             dialogueText.enabled = false;
             textBox.SetActive(false);
             nameText.enabled = false;
-        } else if(dialogueOpen == true)
+        } 
+        else if(dialogueOpen == true)
         {
             dialogueText.enabled = true;
             textBox.SetActive(true);
@@ -140,6 +141,7 @@ public class DialogueManager : MonoBehaviour
             DialogueDone();
         }
         dialogueOpen = false;
+        speech.Stop();
     }
 
     void DisplayChoices()
