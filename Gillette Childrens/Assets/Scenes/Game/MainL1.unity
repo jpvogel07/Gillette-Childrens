@@ -636,7 +636,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &847595783
 RectTransform:
   m_ObjectHideFlags: 0
@@ -646,7 +646,7 @@ RectTransform:
   m_GameObject: {fileID: 847595782}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.955, y: 5.962147, z: 1.207523}
+  m_LocalScale: {x: 0.6050606, y: 3.7774456, z: 0.76505196}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 237165684}
@@ -654,8 +654,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25.1, y: 1.4}
-  m_SizeDelta: {x: 450.7693, y: 40.2398}
+  m_AnchoredPosition: {x: -43.7, y: 2.4771}
+  m_SizeDelta: {x: 416.8497, y: 39.0356}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &847595784
 MonoBehaviour:
@@ -947,7 +947,7 @@ RectTransform:
   m_GameObject: {fileID: 931350934}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 6.089115, z: 1.1204479}
+  m_LocalScale: {x: 0.66139144, y: 4.0272884, z: 0.74105465}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 237165684}
@@ -955,8 +955,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -24.5, y: 0.5}
-  m_SizeDelta: {x: 450.7693, y: 40.2398}
+  m_AnchoredPosition: {x: -43.457787, y: 3}
+  m_SizeDelta: {x: 379.7442, y: 36.9888}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1000466394
 GameObject:
@@ -1390,7 +1390,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talking: []
+  talking:
+  - sentence:
+    - {fileID: 8300000, guid: 07e85e0730dd85a439bbebf809d5933e, type: 3}
+    - {fileID: 8300000, guid: 034ae79c1032e29488ab8392192b772b, type: 3}
+    - {fileID: 8300000, guid: d1fd15f5ef50d074ea3fb547f6cdfec8, type: 3}
+    - {fileID: 8300000, guid: 569088510eddcf5409f0883148cd0646, type: 3}
+    - {fileID: 8300000, guid: d02e6c01f11df524f977bb6e418c5f83, type: 3}
+    - {fileID: 8300000, guid: c9dec675d912f224b924a636228af7e1, type: 3}
+    - {fileID: 8300000, guid: 3e2949cb6931bda4e84b65fe106e61a4, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: cd10c0a80f94aaf479f05bfe62dd1241, type: 3}
+    - {fileID: 8300000, guid: d17404e9e1d47ca4eaf8400fdac31fe7, type: 3}
+    - {fileID: 8300000, guid: 3d437c25a78bd1340ad7faeee6b5dbca, type: 3}
+    - {fileID: 8300000, guid: e9825884da019074d8970b123921fe20, type: 3}
+    - {fileID: 8300000, guid: c8ec95637baa74749a25dce3b91815ae, type: 3}
+    - {fileID: 8300000, guid: 9ccfab954d200d24ca86388198609c44, type: 3}
+    - {fileID: 8300000, guid: f37c61651a4bb724ea52c60692f42a4d, type: 3}
+    - {fileID: 8300000, guid: 9af5ba1e155a5ea469ce64039d36f029, type: 3}
+    - {fileID: 8300000, guid: 181380616e806b44e91af40143aa595e, type: 3}
   SecretTalking: []
   dialogues:
   - name: Jade
@@ -1985,7 +2003,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talking: []
+  talking:
+  - sentence:
+    - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
+    - {fileID: 8300000, guid: 6cc2de048800c734cba36802befa07af, type: 3}
+    - {fileID: 8300000, guid: 7b1cb98a799dca34b8ed7efb10a985d6, type: 3}
+    - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
+    - {fileID: 8300000, guid: d5321e230c8e45b4eac57def0c086b17, type: 3}
   SecretTalking: []
   dialogues:
   - name: Jade
