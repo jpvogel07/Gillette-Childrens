@@ -155,8 +155,10 @@ public class DialogueManager : MonoBehaviour
 
     void PlayVoices()
     {
+        /*
         speech.Stop();
         speech.clip = talk[number];
         speech.Play();
-    }
+        */
+        }
 }

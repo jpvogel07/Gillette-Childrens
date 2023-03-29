@@ -8,4 +8,20 @@ public class DoNotDestroy : MonoBehaviour
     {
         DontDestroyOnLoad(this);
     }
+
+    private void OnEnable()
+    {
+        Pause_Menu.GoMain += D;
+    }
+
+    private void OnDisable()
+    {
+        Pause_Menu.GoMain -= D;
+    }
+
+    private void D()
+    {
+        Debug.Log("D");
+        Destroy(this);
+    }
 }

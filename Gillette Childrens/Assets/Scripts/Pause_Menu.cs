@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Pause_Menu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject pauseButton;
     [SerializeField] GameObject backpackButton;
+
+    public static Action GoMain = delegate { };
 
     public void Pause()
     {
@@ -38,5 +41,10 @@ public class Pause_Menu : MonoBehaviour
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
         #endif
+    }
+
+    public void OnDestroy()
+    {
+        GoMain();
     }
 }
