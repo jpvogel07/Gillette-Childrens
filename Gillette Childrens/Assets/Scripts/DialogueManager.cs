@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour
     public static Action DialogueDone = delegate { };
 
     public bool tut;
+    public AudioSource speech;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     public Animator animateBox;
@@ -38,6 +39,7 @@ public class DialogueManager : MonoBehaviour
     {
         sentences = new Queue<string>();
         mouse = GameObject.Find("mouse")?.gameObject;
+        speech = this.gameObject.GetComponent<AudioSource>();
     }
 
     private void Update()

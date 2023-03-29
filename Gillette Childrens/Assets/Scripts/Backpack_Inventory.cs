@@ -23,7 +23,7 @@ public class Backpack_Inventory : MonoBehaviour
         int k = 0;
         foreach (Image item in initialized)
         {
-            initialized[k].sprite = silhouettes[k];
+            //initialized[k].sprite = silhouettes[k];
             obtained[k] = false;
             k++;
         }

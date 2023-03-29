@@ -187,7 +187,7 @@ public class PlayerMovement : MonoBehaviour
     public void afterTut()
     {
         //inventory.SetActive(true);
-        ARHandler.SetActive(true);
+        //ARHandler.SetActive(true);
         Objective.SetActive(true);
     }
 
