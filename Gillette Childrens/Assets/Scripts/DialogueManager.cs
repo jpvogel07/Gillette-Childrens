@@ -29,7 +29,8 @@ public class DialogueManager : MonoBehaviour
 
     private Queue<string> sentences;
     private string[] backer;
-    
+
+    public AudioClip[] talk;
     private int count = 0;
     private int number = 0;
 
@@ -110,6 +111,7 @@ public class DialogueManager : MonoBehaviour
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
+        PlayVoices();
         number++;
     }
 
@@ -151,5 +153,12 @@ public class DialogueManager : MonoBehaviour
         choice2.SetActive(true);
         choice3.SetActive(true);
         */
+    }
+
+    void PlayVoices()
+    {
+        speech.Stop();
+        speech.clip = talk[number];
+        speech.Play();
     }
 }

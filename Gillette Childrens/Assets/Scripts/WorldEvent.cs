@@ -6,6 +6,7 @@ using System;
 public class WorldEvent : MonoBehaviour
 {
     public GameObject win;
+    public GameObject toggle;
     public GameObject Jade;
     public int EventCounter=0;
     public GameObject StartKey;
@@ -24,6 +25,7 @@ public class WorldEvent : MonoBehaviour
     void Start()
     {
         mouse = GameObject.Find("mouse").GetComponent<PlayerMovement>();
+        toggle = mouse.toggler;
         if (mouse.tut)
         {
             NoReload();
@@ -68,6 +70,7 @@ public class WorldEvent : MonoBehaviour
             TutDone();
             mouse.tut = true;
             mouse.inventory.gameObject.SetActive(true);
+            toggle.SetActive(true);
             DestoryTut();
         }
         /*else if (EventCounter==4)
@@ -118,6 +121,7 @@ public class WorldEvent : MonoBehaviour
     {
         Debug.Log("tut gone");
         Jade.SetActive(true);
+        toggle.SetActive(true);
         TutDone();
         mouse.tut = true;
         Destroy(checkin);

@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject ARHandler;
     public GameObject MiniMap;
     public GameObject Objective;
+    public GameObject toggler;
 
     public GameObject HUD;
     public GameObject winner;

@@ -202,6 +202,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1540009685}
     - target: {fileID: 3323689054231655626, guid: d41b4b65177161447ac8d9880ce1015c, type: 3}
+      propertyPath: toggler
+      value: 
+      objectReference: {fileID: 687706381}
+    - target: {fileID: 3323689054231655626, guid: d41b4b65177161447ac8d9880ce1015c, type: 3}
       propertyPath: ARHandler
       value: 
       objectReference: {fileID: 2012762240}
@@ -2562,6 +2566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   win: {fileID: 0}
+  toggle: {fileID: 0}
   Jade: {fileID: 0}
   EventCounter: 0
   StartKey: {fileID: 0}
@@ -2569,6 +2574,7 @@ MonoBehaviour:
   StartJade: {fileID: 0}
   lobby: {fileID: 0}
   checkin: {fileID: 0}
+  checkdoor: {fileID: 0}
   check: 1
   mouse: {fileID: 0}
 --- !u!4 &1393935048
@@ -3464,6 +3470,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6275115308097630243, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6379033489164811536, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -3727,7 +3737,7 @@ PrefabInstance:
     - target: {fileID: 8075163276841777859, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f4c165d0772df2642ad0690f9ac10a33, type: 3}
+      objectReference: {fileID: 21300000, guid: cd956e936b6780b4680862f7bbac5fcb, type: 3}
     - target: {fileID: 8075163276841777887, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
       propertyPath: m_Layer
       value: 5

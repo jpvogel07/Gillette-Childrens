@@ -13,15 +13,13 @@ public class DialogueTrigger : MonoBehaviour
     public bool[] tasks = new bool[3];
     public int stage;
 
-    public AudioClip[] talking;
-    public AudioClip[] SecretTalking;
-    public AudioSource audio;
+    public AudioClip[][] talking;
+    public AudioClip[][] SecretTalking;
 
     private void Awake()
     {
         stage = 0;
         DialogueManager.TriggerTalking += PlayTalking;
-        audio = FindObjectOfType<DialogueManager>().speech;
     }
 
     private void OnDisable()
@@ -31,16 +29,15 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        audio.Stop();
         if (secret)
         {
             FindObjectOfType<DialogueManager>().StartDialogue(secretMessages[stage]);
-            audio.clip = SecretTalking[stage];
+            FindObjectOfType<DialogueManager>().talk = SecretTalking[stage];
         }
         else
         { 
             FindObjectOfType<DialogueManager>().StartDialogue(dialogues[stage]);
-            //audio.clip = talking[stage];
+            FindObjectOfType<DialogueManager>().talk = talking[stage];
         }
 
 
@@ -54,7 +51,6 @@ public class DialogueTrigger : MonoBehaviour
             FindObjectOfType<DialogueManager>().hasChoice = true;
 
         }
-        audio.Play();
         stage++;
     }
 
