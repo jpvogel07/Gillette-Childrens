@@ -396,6 +396,14 @@ PrefabInstance:
       value: UnityEngine.AudioClip, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1374673373026055110, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 92
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374673373026055110, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374673373026055110, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -437,11 +445,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 953
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 536
+      value: 58
       objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_LocalScale.x
@@ -469,27 +477,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 50
+      value: 513
       objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 53
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -501,7 +509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
