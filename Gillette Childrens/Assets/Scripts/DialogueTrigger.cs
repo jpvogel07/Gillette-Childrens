@@ -40,7 +40,7 @@ public class DialogueTrigger : MonoBehaviour
         else
         { 
             FindObjectOfType<DialogueManager>().StartDialogue(dialogues[stage]);
-            audio.clip = talking[stage];
+            //audio.clip = talking[stage];
         }
 
 
