@@ -1,9 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+
+    [Serializable]
+    public struct Talk
+    {
+        public List<AudioClip> sentence;
+    }
 
 public class DialogueTrigger : MonoBehaviour
 {
+    public List<Talk> talking;
+    public List<Talk> SecretTalking;
     public Dialogue[] dialogues;
     public bool hasChoices;
     public Animation animation;
@@ -13,8 +22,7 @@ public class DialogueTrigger : MonoBehaviour
     public bool[] tasks = new bool[3];
     public int stage;
 
-    public AudioClip[][] talking;
-    public AudioClip[][] SecretTalking;
+    
 
     private void Awake()
     {
@@ -32,12 +40,12 @@ public class DialogueTrigger : MonoBehaviour
         if (secret)
         {
             FindObjectOfType<DialogueManager>().StartDialogue(secretMessages[stage]);
-            FindObjectOfType<DialogueManager>().talk = SecretTalking[stage];
+            FindObjectOfType<DialogueManager>().talk = SecretTalking[stage].sentence;
         }
         else
         { 
             FindObjectOfType<DialogueManager>().StartDialogue(dialogues[stage]);
-            FindObjectOfType<DialogueManager>().talk = talking[stage];
+            FindObjectOfType<DialogueManager>().talk = talking[stage].sentence;
         }
 
 

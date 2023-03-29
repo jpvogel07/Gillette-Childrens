@@ -1390,6 +1390,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  talking: []
+  SecretTalking: []
   dialogues:
   - name: Jade
     sentences:
@@ -1439,10 +1441,6 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 1
-  talking: []
-  SecretTalking:
-  - {fileID: 0}
-  audio: {fileID: 0}
 --- !u!114 &1255183439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1534,6 +1532,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  talking: []
+  SecretTalking: []
   dialogues:
   - name: 
     sentences:
@@ -1551,10 +1551,6 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 0
-  talking: []
-  SecretTalking:
-  - {fileID: 0}
-  audio: {fileID: 0}
 --- !u!114 &1294384130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1727,6 +1723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   win: {fileID: 2010222385}
+  toggle: {fileID: 0}
   Jade: {fileID: 1592663465}
   EventCounter: 0
   StartKey: {fileID: 1739766654}
@@ -1988,6 +1985,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  talking: []
+  SecretTalking: []
   dialogues:
   - name: Jade
     sentences:
@@ -2078,11 +2077,6 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 2
-  talking:
-  - {fileID: 0}
-  SecretTalking:
-  - {fileID: 0}
-  audio: {fileID: 0}
 --- !u!114 &1592663470
 MonoBehaviour:
   m_ObjectHideFlags: 0

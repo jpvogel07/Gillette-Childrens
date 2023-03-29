@@ -30,8 +30,7 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences;
     private string[] backer;
 
-    public AudioClip[] talk;
-    private int count = 0;
+    public List<AudioClip> talk;
     private int number = 0;
 
     public static Action TriggerTalking = delegate { };
@@ -94,7 +93,6 @@ public class DialogueManager : MonoBehaviour
         foreach(string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
-            count++;
         }
 
         TriggerTalking();        
