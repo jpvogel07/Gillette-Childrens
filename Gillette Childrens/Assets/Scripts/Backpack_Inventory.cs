@@ -10,6 +10,7 @@ public class Backpack_Inventory : MonoBehaviour
     [SerializeField] GameObject descMenu;
     [SerializeField] GameObject closeButton;
     [SerializeField] GameObject backpackCloser;
+    [SerializeField] GameObject backpackBlocker;
     public TextMeshProUGUI text;
     [SerializeField] string[] lostDescriptions;
     [SerializeField] string[] foundDescriptions;
@@ -59,6 +60,7 @@ public class Backpack_Inventory : MonoBehaviour
     {
         menu.SetActive(true);
         backpackCloser.SetActive(true);
+        backpackBlocker.SetActive(true);
     }
 
     public void closeInventory()
@@ -66,6 +68,7 @@ public class Backpack_Inventory : MonoBehaviour
         closeDesc();
         menu.SetActive(false);
         backpackCloser.SetActive(false);
+        backpackBlocker.SetActive(false);
     }
 
     public void openDesc(int position)
