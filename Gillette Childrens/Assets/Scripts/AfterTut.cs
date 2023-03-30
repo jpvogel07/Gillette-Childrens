@@ -15,13 +15,13 @@ public class AfterTut : MonoBehaviour
         i = 0;
         while (i != TurnOn.Length)
         {
-            TurnOn[i].SetActive(false) ;
+            TurnOn[i].SetActive(true) ;
             i++;
         }
         f = 0;
         while (f != TurnOff.Length)
         {
-            TurnOff[f].SetActive(true);
+            TurnOff[f].SetActive(false);
             f++;
         }
     }
@@ -36,13 +36,15 @@ public class AfterTut : MonoBehaviour
         i = 0;
         while (f != TurnOff.Length)
         {
+            
+            TurnOff[f].SetActive(true);
             f++;
-            TurnOff[f].SetActive(false);
         }
         while (i != TurnOn.Length)
         {
+            
+            TurnOn[i].SetActive(false);
             i++;
-            TurnOn[i].SetActive(true);
         }
     }
 }
