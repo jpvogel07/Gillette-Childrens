@@ -35,8 +35,8 @@ public class Task : MonoBehaviour
         if (TaskNum == mouse.GetComponent<PlayerMovement>().CurrTask)
         {
             //ItemPopup();
-            this.gameObject.GetComponent<DialogueTrigger>().secret = true;
-            this.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
+            //this.gameObject.GetComponent<DialogueTrigger>().secret = true;
+            //this.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
             mouse.GetComponent<PlayerMovement>().keys[TaskNum] = true;
             //item.GetComponent<Image>().sprite = mouse.gameObject.GetComponent<PlayerMovement>().InventoryPics[TaskNum];
             item.color = Color.white;

@@ -142,6 +142,7 @@ public class DialogueManager : MonoBehaviour
         }
         dialogueOpen = false;
         speech.Stop();
+        talk = null;
     }
 
     void DisplayChoices()
@@ -155,7 +156,6 @@ public class DialogueManager : MonoBehaviour
 
     void PlayVoices()
     {
-        Debug.Log("Audio playing " + number);
         speech.Stop();
         speech.clip = talk[number];
         speech.Play();

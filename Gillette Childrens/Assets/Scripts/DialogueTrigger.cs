@@ -40,7 +40,14 @@ public class DialogueTrigger : MonoBehaviour
         if (secret)
         {
             FindObjectOfType<DialogueManager>().StartDialogue(secretMessages[stage]);
-            FindObjectOfType<DialogueManager>().talk = SecretTalking[stage].sentence;
+            if (SecretTalking[stage].sentence!=null)
+            {
+                FindObjectOfType<DialogueManager>().talk = SecretTalking[stage].sentence;
+            }
+            else
+            {
+                Debug.Log("empty");
+            }
         }
         else
         {

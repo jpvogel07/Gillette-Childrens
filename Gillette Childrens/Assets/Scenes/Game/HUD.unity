@@ -4143,7 +4143,7 @@ PrefabInstance:
       objectReference: {fileID: 2012762242}
     - target: {fileID: 3313665996726227240, guid: 5519e2aea36d23d4abcddc2eb5e07d8a, type: 3}
       propertyPath: talk.Array.size
-      value: 15
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3313665996726227241, guid: 5519e2aea36d23d4abcddc2eb5e07d8a, type: 3}
       propertyPath: m_Name
