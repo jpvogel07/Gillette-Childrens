@@ -1389,7 +1389,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talking: []
+  talking:
+  - sentence:
+    - {fileID: 8300000, guid: 07e85e0730dd85a439bbebf809d5933e, type: 3}
+    - {fileID: 8300000, guid: 034ae79c1032e29488ab8392192b772b, type: 3}
+    - {fileID: 8300000, guid: d1fd15f5ef50d074ea3fb547f6cdfec8, type: 3}
+    - {fileID: 8300000, guid: 569088510eddcf5409f0883148cd0646, type: 3}
+    - {fileID: 8300000, guid: d02e6c01f11df524f977bb6e418c5f83, type: 3}
+    - {fileID: 8300000, guid: c9dec675d912f224b924a636228af7e1, type: 3}
+    - {fileID: 8300000, guid: 3e2949cb6931bda4e84b65fe106e61a4, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: cd10c0a80f94aaf479f05bfe62dd1241, type: 3}
+    - {fileID: 8300000, guid: d17404e9e1d47ca4eaf8400fdac31fe7, type: 3}
+    - {fileID: 8300000, guid: 3d437c25a78bd1340ad7faeee6b5dbca, type: 3}
+    - {fileID: 8300000, guid: e9825884da019074d8970b123921fe20, type: 3}
+    - {fileID: 8300000, guid: c8ec95637baa74749a25dce3b91815ae, type: 3}
+    - {fileID: 8300000, guid: 9ccfab954d200d24ca86388198609c44, type: 3}
+    - {fileID: 8300000, guid: f37c61651a4bb724ea52c60692f42a4d, type: 3}
+    - {fileID: 8300000, guid: 9af5ba1e155a5ea469ce64039d36f029, type: 3}
+    - {fileID: 8300000, guid: 181380616e806b44e91af40143aa595e, type: 3}
+    - {fileID: 8300000, guid: 9034d1e97b7c8b34aa5ab01e6570a4af, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: b28505eb0281d7e4c89cf905188ef3dd, type: 3}
+    - {fileID: 8300000, guid: c1d3fe89497e1a5478884f67d0cd570d, type: 3}
+    - {fileID: 8300000, guid: 1f57e863d1689834abbdf99c3d618de0, type: 3}
   SecretTalking: []
   dialogues:
   - name: Jade
