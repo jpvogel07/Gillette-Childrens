@@ -39,8 +39,8 @@ public class PlayerMovement : MonoBehaviour
 
     public static Action playClick = delegate { };
 
-    private Vector3 OGpos;
-
+    private Vector3 OGpos= new Vector3(90,-250,0);
+   
     private void OnEnable()
     {
         pinputs = new Inputs();
@@ -57,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
         }
         */
         //inventory = GameObject.Find("inventory").GetComponent<Image>();
-        OGpos = inventory.GetComponent<RectTransform>().position;
+
     }
     private void OnDisable()
     {
@@ -71,10 +71,12 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         
+
     }
 
     void Update()
     {
+        inventory.GetComponent<RectTransform>().localPosition = new Vector3(90, -250 - (15f * inventory.GetComponent<RectTransform>().localScale.y), 0);
         Vector3 mousePos = Input.mousePosition;
         //Vector3 mousePos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
         mousePos.z = 0;
@@ -164,7 +166,7 @@ public class PlayerMovement : MonoBehaviour
         ratio = 1 / ratio;
         inventory.GetComponent<RectTransform>().localScale = new Vector3(1, ratio, 1);
         inventory.GetComponent<RectTransform>().position = OGpos;
-        inventory.GetComponent<RectTransform>().position -= new Vector3(0, 15f*inventory.GetComponent<RectTransform>().localScale.y, 0);
+        //inventory.GetComponent<RectTransform>().position -= new Vector3(0, 15f*inventory.GetComponent<RectTransform>().localScale.y, 0);
 
         inventory.color = Color.grey;
         objectiveTXT.text = "Obtain the " + taskList[CurrTask];
