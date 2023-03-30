@@ -575,7 +575,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 75bc7d49e83eb9e438b19b196a6c1336, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2e0f28492d8b5554ca1e29e4addc8dbe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -747,6 +747,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  talking: []
+  SecretTalking:
+  - sentence: []
   dialogues:
   - name: 
     sentences:
@@ -764,8 +767,6 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 0
-  talking: []
-  SecretTalking: {fileID: 0}
 --- !u!114 &2052601646
 MonoBehaviour:
   m_ObjectHideFlags: 0
