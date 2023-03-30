@@ -37,13 +37,13 @@ public class AfterTut : MonoBehaviour
         while (f != TurnOff.Length)
         {
             
-            TurnOff[f].SetActive(true);
+            TurnOff[f].SetActive(false);
             f++;
         }
         while (i != TurnOn.Length)
         {
             
-            TurnOn[i].SetActive(false);
+            TurnOn[i].SetActive(true);
             i++;
         }
     }
