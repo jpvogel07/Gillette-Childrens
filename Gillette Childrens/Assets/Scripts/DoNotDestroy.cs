@@ -21,7 +21,6 @@ public class DoNotDestroy : MonoBehaviour
 
     private void D()
     {
-        Debug.Log("D");
         Destroy(this);
     }
 }
