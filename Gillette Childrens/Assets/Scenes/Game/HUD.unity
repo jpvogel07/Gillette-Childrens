@@ -1054,7 +1054,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2012762239}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1340,8 +1340,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 823129462}
   descMenu: {fileID: 1092447178}
-  closeButton: {fileID: 487053811}
-  backpackCloser: {fileID: 625897062}
+  closeButton: {fileID: 862024427}
+  backpackCloser: {fileID: 487053811}
   text: {fileID: 194240855}
   lostDescriptions:
   - Unknown Item 1
@@ -1366,16 +1366,16 @@ MonoBehaviour:
   - Wheelchair
   - Item 10
   initialized:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1132325697}
+  - {fileID: 1133252208}
+  - {fileID: 1109169642}
+  - {fileID: 1634157043}
+  - {fileID: 588541121}
+  - {fileID: 457394782}
+  - {fileID: 1830410302}
+  - {fileID: 1206958135}
+  - {fileID: 1409114714}
+  - {fileID: 1798550515}
   silhouettes:
   - {fileID: 21300000, guid: 2276c8b236e3f50498f1b30d5e52c902, type: 3}
   - {fileID: 21300000, guid: 3bf31b5551d6dce45a73372e1a559be8, type: 3}
@@ -1549,7 +1549,7 @@ RectTransform:
   - {fileID: 1798550513}
   - {fileID: 1092447179}
   m_Father: {fileID: 2012762239}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3465,9 +3465,13 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3916747103331129605, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4220765614138756104, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5167117014632066751, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
       propertyPath: anim
@@ -3483,7 +3487,7 @@ PrefabInstance:
       objectReference: {fileID: 7400000, guid: 7d43b2e6fb032434cac7d4a01d465d4f, type: 2}
     - target: {fileID: 6156395644130896537, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6275115308097630243, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
       propertyPath: m_IsActive
@@ -3491,7 +3495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6379033489164811536, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8075163275467148077, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
       propertyPath: m_Layer
@@ -3545,6 +3549,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 63b86ba829a37ea4dab675a00de8a065, type: 3}
+    - target: {fileID: 8075163275716647746, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8075163275716647747, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
       propertyPath: m_Layer
       value: 5
@@ -3604,6 +3612,10 @@ PrefabInstance:
     - target: {fileID: 8075163276073090486, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: DisplayNextSentence
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075163276078797428, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8075163276078797429, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
       propertyPath: m_Layer
@@ -3797,6 +3809,10 @@ PrefabInstance:
       propertyPath: mouse
       value: 
       objectReference: {fileID: 97173731}
+    - target: {fileID: 8075163277133980929, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8075163277133980930, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
       propertyPath: m_Layer
       value: 5
@@ -3829,6 +3845,10 @@ PrefabInstance:
       propertyPath: backpackButton
       value: 
       objectReference: {fileID: 775791411}
+    - target: {fileID: 8075163277363312977, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8075163277363312978, guid: 2b90ee451b5cef44ab9389d3a07f8ed5, type: 3}
       propertyPath: m_Layer
       value: 5

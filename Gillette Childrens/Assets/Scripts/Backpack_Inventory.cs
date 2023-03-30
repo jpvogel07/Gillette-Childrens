@@ -20,12 +20,14 @@ public class Backpack_Inventory : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("Initialized inventory");
         int k = 0;
         foreach (Image item in initialized)
         {
             initialized[k].sprite = silhouettes[k];
             obtained[k] = false;
             k++;
+            Debug.Log("Got here are the sprites correct?");
         }
     }
 
@@ -61,6 +63,7 @@ public class Backpack_Inventory : MonoBehaviour
 
     public void closeInventory()
     {
+        closeDesc();
         menu.SetActive(false);
         backpackCloser.SetActive(false);
     }
@@ -69,13 +72,15 @@ public class Backpack_Inventory : MonoBehaviour
     {
         descMenu.SetActive(true);
         displayDesc(position);
-        closeButton.SetActive(false);
+        closeButton.SetActive(true);
+        backpackCloser.SetActive(false);
     }
 
     public void closeDesc()
     {
         descMenu.SetActive(false);
-        closeButton.SetActive(true);
+        closeButton.SetActive(false);
+        backpackCloser.SetActive(true);
     }
 
     public void displayDesc(int position)
