@@ -5,6 +5,7 @@ using System;
 
 public class WorldEvent : MonoBehaviour
 {
+    private DialogueTrigger script;
     public GameObject win;
     public GameObject toggle;
     public GameObject Jade;
@@ -32,12 +33,14 @@ public class WorldEvent : MonoBehaviour
         }
         else
         {
+            script = this.GetComponent<DialogueTrigger>();
             checkdoor.SetActive(false);
             check = true;
             DialogueManager.DialogueDone += ProgressCheck;
             Start_DTrigger();
             GameObject.Find("dialogue manager").gameObject.GetComponent<DialogueManager>().tut = true;
             mouse.winner = win;
+            StartKey.SetActive(false);
         }
     }
 
@@ -88,25 +91,17 @@ public class WorldEvent : MonoBehaviour
 
     private void ProgressCheck()
     {
-        Debug.Log("prog");
         if (check)
         {
+            Debug.Log("prog");
             WorldScript();
         }
     }
 
     public void Start_DTrigger()
     {
-        StartJade.GetComponent<DialogueTrigger>().stage = EventCounter;
-        StartJade.GetComponent<DialogueTrigger>().TriggerDialogue();
-        StartJade.GetComponent<DialogueTrigger>().stage = 100;
-    }
-
-    public void DTrigger()
-    {
-        Jade.GetComponent<DialogueTrigger>().stage = EventCounter-3;
-        Jade.GetComponent<DialogueTrigger>().TriggerDialogue();
-        Jade.GetComponent<DialogueTrigger>().stage = 100;
+        script.TriggerDialogue();
+        check = true;
     }
 
     public void DestoryTut()

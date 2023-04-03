@@ -2726,77 +2726,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206958132}
   m_CullTransparentMesh: 1
---- !u!1 &1393935045
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1393935048}
-  - component: {fileID: 1393935047}
-  - component: {fileID: 1393935046}
-  m_Layer: 0
-  m_Name: World Event System
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1393935046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1393935045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18e39e9f8b679ac428328a1cd9cd57ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TurnOn: []
-  TurnOff: []
---- !u!114 &1393935047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1393935045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 093c40c8beb065549b4a9b0cc4071ca7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  win: {fileID: 0}
-  toggle: {fileID: 0}
-  Jade: {fileID: 0}
-  EventCounter: 0
-  StartKey: {fileID: 0}
-  StartDoor: {fileID: 0}
-  StartJade: {fileID: 0}
-  lobby: {fileID: 0}
-  checkin: {fileID: 0}
-  checkdoor: {fileID: 0}
-  check: 1
-  mouse: {fileID: 0}
---- !u!4 &1393935048
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1393935045}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1409114711
 GameObject:
   m_ObjectHideFlags: 0
@@ -4143,7 +4072,7 @@ PrefabInstance:
       objectReference: {fileID: 2012762242}
     - target: {fileID: 3313665996726227240, guid: 5519e2aea36d23d4abcddc2eb5e07d8a, type: 3}
       propertyPath: talk.Array.size
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3313665996726227241, guid: 5519e2aea36d23d4abcddc2eb5e07d8a, type: 3}
       propertyPath: m_Name

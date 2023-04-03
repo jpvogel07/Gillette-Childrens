@@ -1674,6 +1674,7 @@ GameObject:
   - component: {fileID: 1385772493}
   - component: {fileID: 1385772492}
   - component: {fileID: 1385772491}
+  - component: {fileID: 1385772494}
   m_Layer: 0
   m_Name: World Event System
   m_TagString: Untagged
@@ -1699,8 +1700,6 @@ MonoBehaviour:
   - {fileID: 1191102769594475218}
   - {fileID: 1294384127}
   TurnOff:
-  - {fileID: 847595782}
-  - {fileID: 1739766654}
   - {fileID: 1255183435}
 --- !u!114 &1385772492
 MonoBehaviour:
@@ -1741,6 +1740,92 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1385772494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385772489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking:
+  - sentence:
+    - {fileID: 8300000, guid: 07e85e0730dd85a439bbebf809d5933e, type: 3}
+    - {fileID: 8300000, guid: 034ae79c1032e29488ab8392192b772b, type: 3}
+    - {fileID: 8300000, guid: d1fd15f5ef50d074ea3fb547f6cdfec8, type: 3}
+    - {fileID: 8300000, guid: 569088510eddcf5409f0883148cd0646, type: 3}
+    - {fileID: 8300000, guid: d02e6c01f11df524f977bb6e418c5f83, type: 3}
+    - {fileID: 8300000, guid: c9dec675d912f224b924a636228af7e1, type: 3}
+    - {fileID: 8300000, guid: 3e2949cb6931bda4e84b65fe106e61a4, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: cd10c0a80f94aaf479f05bfe62dd1241, type: 3}
+    - {fileID: 8300000, guid: d17404e9e1d47ca4eaf8400fdac31fe7, type: 3}
+    - {fileID: 8300000, guid: 3d437c25a78bd1340ad7faeee6b5dbca, type: 3}
+    - {fileID: 8300000, guid: e9825884da019074d8970b123921fe20, type: 3}
+    - {fileID: 8300000, guid: c8ec95637baa74749a25dce3b91815ae, type: 3}
+    - {fileID: 8300000, guid: 9ccfab954d200d24ca86388198609c44, type: 3}
+    - {fileID: 8300000, guid: f37c61651a4bb724ea52c60692f42a4d, type: 3}
+    - {fileID: 8300000, guid: 9af5ba1e155a5ea469ce64039d36f029, type: 3}
+    - {fileID: 8300000, guid: 181380616e806b44e91af40143aa595e, type: 3}
+    - {fileID: 8300000, guid: 9034d1e97b7c8b34aa5ab01e6570a4af, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: b28505eb0281d7e4c89cf905188ef3dd, type: 3}
+    - {fileID: 8300000, guid: c1d3fe89497e1a5478884f67d0cd570d, type: 3}
+    - {fileID: 8300000, guid: 1f57e863d1689834abbdf99c3d618de0, type: 3}
+  SecretTalking: []
+  dialogues:
+  - name: Jade
+    sentences:
+    - Why, hello there! You must be the new hire, here for training.
+    - My name is Jade. It's so nice to meet you!
+    - Welcome to your first day at Gillette's Children's Hospital. We're really happy
+      to have you.
+    - First things first, let's get you used to working with this training program.
+    - Hovering over key items will highlight them. Clicking on one will add it to
+      your inventory, over on the right side of the screen.
+    - To check which items you've seen before, you can look in your backpack. Clicking
+      on items in your backpack will tell you their names.
+    - A key item is about to pop up. Try clicking on it!
+  - name: Jade
+    sentences:
+    - Well done! Key items like that can be found all around the hospital, in the
+      form of different tools used by hospital personnel.
+    - 'As a healthcare provider yourself, you''ll need to know where they are and
+      what they do. '
+    - Don't worry, I'm here to teach you all about them, as well as the layout of
+      the hospital.
+    - I'll have you go around the hospital to find me some key items. I'm thinking
+      one from each room.
+    - We'll explore each wing one at a time, so you can get used to which rooms are
+      in what wing.
+    - 'But before we get to that, let''s practice navigating around rooms. '
+    - 'Clicking on things like doors and arrows will take you from area to area,
+      and some objects in the environment can be approached by clicking on them. '
+    - Doors, arrows, and approachable objects will all highlight when you hover over
+      them.
+    - As an example, why don't you approach the check-in desk back there?
+  - name: Jade
+    sentences:
+    - Awesome! Kai here has a chart I need. When he sets it down, would you mind
+      bringing it to me?
+    - A silhouette of the item you're looking for will appear on the right side of
+      the screen, where your inventory is.
+    - Your current objective will appear at the top of the screen, or you can come
+      speak to me again and I'll remind you.
+  hasChoices: 0
+  animation: {fileID: 0}
+  secretMessages: []
+  decisionText:
+  - 
+  - 
+  - 
+  secret: 0
+  tasks: 000000
+  stage: 1
 --- !u!1 &1592663465
 GameObject:
   m_ObjectHideFlags: 0

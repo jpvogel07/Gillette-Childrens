@@ -10,8 +10,8 @@ public class StartKey_Event1 : MonoBehaviour
     {
         //trigger Jade next dialogue
 
+        this.gameObject.SetActive(false);
         Events.GetComponent<WorldEvent>().check = true;
         Events.GetComponent<WorldEvent>().Start_DTrigger();
-        this.gameObject.SetActive(false);
     }
 }

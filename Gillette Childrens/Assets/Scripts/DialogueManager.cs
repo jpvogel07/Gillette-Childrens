@@ -30,7 +30,7 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences;
     private string[] backer;
 
-    public List<AudioClip> talk;
+    private List<AudioClip> talk;
     private int number = 0;
 
     public static Action TriggerTalking = delegate { };
@@ -68,6 +68,8 @@ public class DialogueManager : MonoBehaviour
          }
         */
         //DialogueDone();
+        number = 0;
+        PlayVoices();
 
         dialogueText.enabled = true;
         textBox.SetActive(true);
@@ -142,7 +144,7 @@ public class DialogueManager : MonoBehaviour
         }
         dialogueOpen = false;
         speech.Stop();
-        talk = null;
+        //talk = null;
     }
 
     void DisplayChoices()
@@ -156,9 +158,26 @@ public class DialogueManager : MonoBehaviour
 
     void PlayVoices()
     {
+        
+        Debug.Log("playing number " + number);
         speech.Stop();
-        speech.clip = talk[number];
-        speech.Play();
-    
+        if (number <= talk.Count)
+        {
+            speech.clip = talk[number];
+        }
+        else
+        {
+            speech.clip = null;
+        }
+        if (speech.clip != null)
+        {
+            speech.Play();
+        }
+        
+    }
+
+    public void LoadTalking(List<AudioClip> list)
+    {
+        talk = list;
     }
 }
