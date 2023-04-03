@@ -1410,7 +1410,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 181380616e806b44e91af40143aa595e, type: 3}
     - {fileID: 8300000, guid: 9034d1e97b7c8b34aa5ab01e6570a4af, type: 3}
   - sentence:
-    - {fileID: 8300000, guid: b28505eb0281d7e4c89cf905188ef3dd, type: 3}
+    - {fileID: 8300000, guid: a30671057637f5343a3398395780ce14, type: 3}
     - {fileID: 8300000, guid: c1d3fe89497e1a5478884f67d0cd570d, type: 3}
     - {fileID: 8300000, guid: 1f57e863d1689834abbdf99c3d618de0, type: 3}
   SecretTalking: []
@@ -1844,7 +1844,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talking: []
+  talking:
+  - sentence:
+    - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
+    - {fileID: 8300000, guid: 6cc2de048800c734cba36802befa07af, type: 3}
+    - {fileID: 8300000, guid: 7b1cb98a799dca34b8ed7efb10a985d6, type: 3}
+    - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
+    - {fileID: 8300000, guid: d5321e230c8e45b4eac57def0c086b17, type: 3}
+    - {fileID: 8300000, guid: 6ad3dc1ad3a68104f8c3f31afd318b50, type: 3}
+    - {fileID: 8300000, guid: a1210d7f1a2def54aacc8299fe4111e6, type: 3}
+    - {fileID: 8300000, guid: dabf7c82d7ef8514b8f5ba4357f100bf, type: 3}
+    - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
+    - {fileID: 8300000, guid: c8b20869a20a3c64f87840eba04bb265, type: 3}
+    - {fileID: 8300000, guid: b737b23eb427eb7488334cedc2f7d9e5, type: 3}
+    - {fileID: 8300000, guid: 6ea4857f579870d4da93843afacadcaa, type: 3}
+    - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
+    - {fileID: 8300000, guid: 7fe1f69e517612f4db6c8612d31e11f9, type: 3}
+    - {fileID: 8300000, guid: d9672cff6dcb95c4dbfb6244e9fa3946, type: 3}
+    - {fileID: 8300000, guid: c7fe777d3bbafe145bbbd24990c1b522, type: 3}
+    - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
   SecretTalking: []
   dialogues:
   - name: Jade

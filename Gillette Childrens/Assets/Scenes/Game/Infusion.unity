@@ -838,6 +838,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  talking: []
+  SecretTalking:
+  - sentence: []
   dialogues:
   - name: 
     sentences:
@@ -855,8 +858,6 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 0
-  talking: []
-  SecretTalking: {fileID: 0}
 --- !u!114 &343842165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1129,6 +1130,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  talking:
+  - sentence:
+    - {fileID: 8300000, guid: f81feb5a3f68c974b992920216a126df, type: 3}
+    - {fileID: 8300000, guid: 2823bb08adffc4a44831b082d12deb61, type: 3}
+  SecretTalking:
+  - sentence: []
   dialogues:
   - name: Marshal
     sentences:
@@ -1145,8 +1152,6 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 1
-  talking: []
-  SecretTalking: {fileID: 0}
 --- !u!114 &1474332407
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -995,7 +995,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talking: []
+  talking:
+  - sentence:
+    - {fileID: 8300000, guid: bb3f67e744ec0a840a6606584424c57b, type: 3}
+    - {fileID: 8300000, guid: 1d4ace91f281057439bae0e2b692cc68, type: 3}
   SecretTalking:
   - sentence: []
   dialogues:
