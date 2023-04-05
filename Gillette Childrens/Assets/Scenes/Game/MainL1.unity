@@ -1408,7 +1408,6 @@ MonoBehaviour:
     - {fileID: 8300000, guid: f37c61651a4bb724ea52c60692f42a4d, type: 3}
     - {fileID: 8300000, guid: 9af5ba1e155a5ea469ce64039d36f029, type: 3}
     - {fileID: 8300000, guid: 181380616e806b44e91af40143aa595e, type: 3}
-    - {fileID: 8300000, guid: 9034d1e97b7c8b34aa5ab01e6570a4af, type: 3}
   - sentence:
     - {fileID: 8300000, guid: a30671057637f5343a3398395780ce14, type: 3}
     - {fileID: 8300000, guid: c1d3fe89497e1a5478884f67d0cd570d, type: 3}
@@ -1453,6 +1452,7 @@ MonoBehaviour:
       the screen, where your inventory is.
     - Your current objective will appear at the top of the screen, or you can come
       speak to me again and I'll remind you.
+  manager: {fileID: 0}
   hasChoices: 0
   animation: {fileID: 0}
   secretMessages: []
@@ -1816,6 +1816,7 @@ MonoBehaviour:
       the screen, where your inventory is.
     - Your current objective will appear at the top of the screen, or you can come
       speak to me again and I'll remind you.
+  manager: {fileID: 0}
   hasChoices: 0
   animation: {fileID: 0}
   secretMessages: []
@@ -1954,7 +1955,31 @@ MonoBehaviour:
     - {fileID: 8300000, guid: d9672cff6dcb95c4dbfb6244e9fa3946, type: 3}
     - {fileID: 8300000, guid: c7fe777d3bbafe145bbbd24990c1b522, type: 3}
     - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
-  SecretTalking: []
+  SecretTalking:
+  - sentence:
+    - {fileID: 8300000, guid: b015ec4cb97874e4b8bc9e08fccb6437, type: 3}
+    - {fileID: 8300000, guid: 8484278f5403a854fb4473fddd4ad86f, type: 3}
+    - {fileID: 8300000, guid: 6b4ac7af6cfbc174aaedbc702cce800e, type: 3}
+    - {fileID: 8300000, guid: 5ea75ad3c4d6bed42adc3a04a267994d, type: 3}
+    - {fileID: 8300000, guid: e292dfd1d7a3414479619c0b37180190, type: 3}
+    - {fileID: 8300000, guid: bd3718ab4cbbc4f45a632fdf67396a29, type: 3}
+    - {fileID: 8300000, guid: 5170a07c89d08504fa88ae1edfdbd7e8, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: ab42218d293379d4cb03d5cd3ee428a4, type: 3}
+    - {fileID: 8300000, guid: 439eea637e7ea624f8df905b2d8f7804, type: 3}
+    - {fileID: 8300000, guid: 35c69d3372b440849bf8b79c53a50702, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: 2cd4445b0cd66a447ab1bc5133e330da, type: 3}
+    - {fileID: 8300000, guid: 0e72a572ac9c70949b30f150a72b420d, type: 3}
+    - {fileID: 8300000, guid: 5cba19445de3a17438218471a684fd15, type: 3}
+    - {fileID: 8300000, guid: d8c4bf7460811f24e8fc3276e544bee8, type: 3}
+    - {fileID: 8300000, guid: 626bd1b565650df4f8a98973c2d82dc8, type: 3}
+    - {fileID: 8300000, guid: 7fc0243712c0ebc499f191c52bc65ca2, type: 3}
+    - {fileID: 8300000, guid: d7ad587f5b6ca1d4790a1338975befce, type: 3}
+    - {fileID: 8300000, guid: fc42a96f260eeaf4ca4630f017eba957, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: 2ec28819c783b754abb9b95a39bb18dd, type: 3}
+    - {fileID: 8300000, guid: e17432e8bb74aa843b2135ff885c059a, type: 3}
   dialogues:
   - name: Jade
     sentences:
@@ -1991,6 +2016,7 @@ MonoBehaviour:
     - The cart itself is bright red so that it's easy for doctors to find it in the
       event of an emergency,
     - Speak with me again once you have the it, or if you need another refresher.
+  manager: {fileID: 0}
   hasChoices: 0
   animation: {fileID: 0}
   secretMessages:
@@ -2013,14 +2039,14 @@ MonoBehaviour:
     sentences:
     - Fantastic! Thanks for the hearing aids. Next, I need you to grab an IV stand
       from the infusion center.
-    - The infusion center is where patients go to recieve medicines that have to
+    - The infusion center is where patients go to receive medicines that have to
       be administered intravenously. This process is known as infusion therapy.
     - The infusion center is in the same hall as the audiology lab and outpatient
       clinic, first door on the right.
   - name: Jade
     sentences:
     - Wonderful! Now I've got one more task for you.
-    - Or should I say IV got on more task for you!
+    - Or should I say IV got one more task for you!
     - ...Get it?
     - Anyway, the last room in the outpatient hall that I'll have you explore is
       the outpatient clinic itself.
