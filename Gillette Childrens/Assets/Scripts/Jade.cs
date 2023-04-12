@@ -44,9 +44,9 @@ public class Jade : MonoBehaviour
     {
         if (this.GetComponent<DialogueTrigger>().secret)
         {
-            NextTask();
             wisp = Instantiate(InvWisp);
             wisp.transform.SetParent(this.transform.parent.transform);
+            NextTask();
 
             //item.GetComponent<Image>().sprite = BlackBox;
             //item.transform.localScale = new Vector3(1, 1, 1);

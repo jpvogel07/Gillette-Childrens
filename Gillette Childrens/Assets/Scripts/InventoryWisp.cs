@@ -5,19 +5,20 @@ using UnityEngine.UI;
 
 public class InventoryWisp : MonoBehaviour
 {
-    public GameObject start;
-    public GameObject end;
-    public Sprite image;
-    private float rate, speed=820;
+    private GameObject start;
+    private GameObject end;
+    private Sprite image;
+    private float rate, speed = 820;
     private Vector3 origin;
 
     private void OnEnable()
     {
-        origin = transform.localScale;
         end = GameObject.Find("Jade");
         start = GameObject.Find("inventory");
-        //this.GetComponent<Image>().sprite = image;
-        this.GetComponent<Image>().sprite = GameObject.Find("mouse").GetComponent<PlayerMovement>().InventoryPics[end.GetComponent<Jade>().JadeSpeech.stage-1];
+        origin = start.transform.localScale;
+        image = start.GetComponent<Image>().sprite;
+        this.GetComponent<Image>().sprite = image;
+        //this.GetComponent<Image>().sprite = GameObject.Find("mouse").GetComponent<PlayerMovement>().InventoryPics[end.GetComponent<Jade>().JadeSpeech.stage-1];
         this.GetComponent<Image>().color = Color.white;
         this.transform.position = start.transform.position;
         StartCoroutine(travelTime());
@@ -33,7 +34,7 @@ public class InventoryWisp : MonoBehaviour
 
     IEnumerator travelTime()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(10);
         end.GetComponent<DialogueTrigger>().secret = false;
         Destroy(this.gameObject);
     }

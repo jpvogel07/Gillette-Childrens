@@ -171,7 +171,6 @@ public class PlayerMovement : MonoBehaviour
         inventory.color = Color.grey;
         objectiveTXT.text = "Obtain the " + taskList[CurrTask];
         inventory.GetComponent<Image>().color = Color.grey;
-        
     }
 
     public void NewTask()

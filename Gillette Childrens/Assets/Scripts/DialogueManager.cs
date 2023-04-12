@@ -144,6 +144,7 @@ public class DialogueManager : MonoBehaviour
         }
         dialogueOpen = false;
         speech.Stop();
+        number = 0;
         //talk = null;
     }
 
