@@ -33,7 +33,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        Debug.Log(this + " is talking");
+        //Debug.Log(this + " is talking");
         if (secret)
         {
             manager.LoadTalking(SecretTalking[stage].sentence);

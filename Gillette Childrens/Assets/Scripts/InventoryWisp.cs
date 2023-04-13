@@ -34,7 +34,7 @@ public class InventoryWisp : MonoBehaviour
 
     IEnumerator travelTime()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(3);
         end.GetComponent<DialogueTrigger>().secret = false;
         Destroy(this.gameObject);
     }

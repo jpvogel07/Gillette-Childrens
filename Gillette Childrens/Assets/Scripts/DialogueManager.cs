@@ -160,7 +160,7 @@ public class DialogueManager : MonoBehaviour
     void PlayVoices()
     {
         
-        Debug.Log("playing number " + number);
+        //Debug.Log("playing number " + number);
         speech.Stop();
         if (number <= talk.Count)
         {
