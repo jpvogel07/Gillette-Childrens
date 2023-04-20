@@ -8,10 +8,13 @@ public class AfterTut : MonoBehaviour
     public GameObject[] TurnOn;
     public GameObject[] TurnOff;
     private int i,f;
+    private GameObject toggler;
 
     void Start()
     {
         WorldEvent.TutDone += ThingsOffNOn;
+        toggler = GameObject.Find("UI toggler");
+        toggler.SetActive(false);
         i = 0;
         while (i != TurnOn.Length)
         {
@@ -32,6 +35,7 @@ public class AfterTut : MonoBehaviour
 
     private void ThingsOffNOn()
     {
+        toggler.SetActive(true);
         f = 0;
         i = 0;
         while (f != TurnOff.Length)
