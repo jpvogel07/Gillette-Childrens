@@ -845,6 +845,7 @@ MonoBehaviour:
   - name: 
     sentences:
     - This is not the item you are looking for.
+  manager: {fileID: 0}
   hasChoices: 0
   animation: {fileID: 0}
   secretMessages:
@@ -1132,16 +1133,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talking:
   - sentence:
-    - {fileID: 8300000, guid: f81feb5a3f68c974b992920216a126df, type: 3}
-    - {fileID: 8300000, guid: 2823bb08adffc4a44831b082d12deb61, type: 3}
+    - {fileID: 8300000, guid: 6f2a7ef2c94a5c647b7fe3529718be35, type: 3}
+    - {fileID: 8300000, guid: 3113bd854e3a69d4ab27693ad81e21d5, type: 3}
   SecretTalking:
   - sentence: []
   dialogues:
   - name: Marshal
     sentences:
-    - Hello, my name is Marshal. And I am a co-worker of yours.
-    - Just as a refresher, this is the infusion room. Which has access to the northern
-      hallway and has the IV stand in it.
+    - Howdy, my name is Marshal. And I am a co-worker of yours.
+    - This is the infusion room. Which has access to the northern hallway and has
+      the IV stand in it.
+  manager: {fileID: 0}
   hasChoices: 0
   animation: {fileID: 0}
   secretMessages: []
