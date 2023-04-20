@@ -17,6 +17,16 @@ public class CanvasHandler : MonoBehaviour
 
     public static Action<CanvasHandler> GetThings = delegate { };
 
+    private void OnEnable()
+    {
+        PlayerMovement.EndGame += Off;
+    }
+
+    private void OnDisable()
+    {
+        PlayerMovement.EndGame -= Off;
+    }
+
     private void Start()
     {
         //AR = GameObject.Find("AR switch").gameObject;

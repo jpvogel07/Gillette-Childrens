@@ -28,6 +28,7 @@ public class Jade : MonoBehaviour
         HUD = GameObject.Find("HUD");
         JadeSpeech = this.GetComponent<DialogueTrigger>();
         JadeSpeech.secret = mouse.JadeSecret;
+        JadeSpeech.stage = mouse.CurrTask;
     }
 
     private void Awake()

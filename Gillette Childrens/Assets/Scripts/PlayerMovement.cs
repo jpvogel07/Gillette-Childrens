@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
     //public GameObject WES;
 
     public static Action playClick = delegate { };
+    public static Action EndGame = delegate { };
 
     private Vector3 OGpos= new Vector3(90,-250,0);
    
@@ -180,6 +181,7 @@ public class PlayerMovement : MonoBehaviour
         {
             winner = jade.GetComponent<Jade>().winscreen;
             HUD.SetActive(false);
+            EndGame();
             winner.SetActive(true);
         }
         JadeSecret = false;
