@@ -29,6 +29,7 @@ public class WorldEvent : MonoBehaviour
         toggle = mouse.toggler;
         if (mouse.tut)
         {
+            mouse.jade = Jade;
             NoReload();
         }
         else

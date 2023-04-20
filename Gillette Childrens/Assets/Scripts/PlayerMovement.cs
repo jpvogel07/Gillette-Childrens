@@ -178,6 +178,7 @@ public class PlayerMovement : MonoBehaviour
         CurrTask++;
         if (CurrTask == EndTask)
         {
+            winner = jade.GetComponent<Jade>().winscreen;
             HUD.SetActive(false);
             winner.SetActive(true);
         }
