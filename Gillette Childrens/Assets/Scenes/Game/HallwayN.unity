@@ -997,16 +997,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talking:
   - sentence:
-    - {fileID: 8300000, guid: bb3f67e744ec0a840a6606584424c57b, type: 3}
-    - {fileID: 8300000, guid: 1d4ace91f281057439bae0e2b692cc68, type: 3}
+    - {fileID: 8300000, guid: 63cb24772d502704e97a357721e0de1f, type: 3}
+    - {fileID: 8300000, guid: 5545624d488353a4097d2e1bc0cb0f52, type: 3}
   SecretTalking:
   - sentence: []
   dialogues:
   - name: Julia
     sentences:
-    - Hello, my name is Julia. And I am a co-worker of yours
-    - 'As a refresher this is the north hallway and it has access to the outpatient
-      clinic, the audiology room, as well as the infusion room. '
+    - Hello, my name is Julia. I am a co-worker of yours
+    - 'This is the north hallway and it has access to the outpatient clinic, the
+      audiology room, as well as the infusion room. '
+  manager: {fileID: 0}
   hasChoices: 0
   animation: {fileID: 0}
   secretMessages: []
