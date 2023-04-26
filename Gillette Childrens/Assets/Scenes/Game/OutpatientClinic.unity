@@ -329,7 +329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.3938262
+      value: 0.9284392
       objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_LocalRotation.x
@@ -341,15 +341,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.919185
+      value: 0.37148452
       objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 350.3
+      value: -366.8
       objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -192.5
+      value: -192
       objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -361,7 +361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 133.614
+      value: 43.614
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
@@ -818,10 +818,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6794a4d8b93d9459f5390dbafd97b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  talking: []
+  SecretTalking:
+  - sentence: []
   dialogues:
   - name: 
     sentences:
     - This is not the item you are looking for.
+  manager: {fileID: 0}
   hasChoices: 0
   animation: {fileID: 0}
   secretMessages:
@@ -835,8 +839,6 @@ MonoBehaviour:
   secret: 0
   tasks: 000000
   stage: 0
-  talking: []
-  SecretTalking: {fileID: 0}
 --- !u!114 &877590415
 MonoBehaviour:
   m_ObjectHideFlags: 0
