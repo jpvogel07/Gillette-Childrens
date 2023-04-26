@@ -414,6 +414,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: backparent
       objectReference: {fileID: 0}
+    - target: {fileID: 4613375757883793419, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -515,6 +519,11 @@ PrefabInstance:
 --- !u!224 &555756067 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4920361079581917102, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
+  m_PrefabInstance: {fileID: 555756066}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &555756068 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4613375757883793419, guid: 0ed5df695357b0d4c98d796d4a256f64, type: 3}
   m_PrefabInstance: {fileID: 555756066}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &674666094
@@ -1089,6 +1098,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8257160390965838936, guid: 064830224a982ea4a9cd4948c18e0fa0, type: 3}
   m_PrefabInstance: {fileID: 889280664}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &889280666 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8257160390965838939, guid: 064830224a982ea4a9cd4948c18e0fa0, type: 3}
+  m_PrefabInstance: {fileID: 889280664}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &931350934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1658,6 +1672,7 @@ GameObject:
   - component: {fileID: 1294384132}
   - component: {fileID: 1294384131}
   - component: {fileID: 1294384130}
+  - component: {fileID: 1294384134}
   m_Layer: 5
   m_Name: Chart KeyItem
   m_TagString: Untagged
@@ -1769,6 +1784,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1294384134}
+        m_TargetAssemblyTypeName: Chart, Assembly-CSharp
+        m_MethodName: BackOn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1294384132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1807,6 +1834,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294384127}
   m_CullTransparentMesh: 1
+--- !u!114 &1294384134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294384127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07b97282e8c958048b5e3f9cd66544e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  b: {fileID: 555756068}
 --- !u!1 &1385772489
 GameObject:
   m_ObjectHideFlags: 0
@@ -1843,6 +1883,8 @@ MonoBehaviour:
   - {fileID: 931350934}
   - {fileID: 1191102769594475218}
   - {fileID: 1294384127}
+  - {fileID: 889280666}
+  - {fileID: 1400995691}
   TurnOff:
   - {fileID: 1255183435}
 --- !u!114 &1385772492
@@ -2111,6 +2153,11 @@ PrefabInstance:
 --- !u!224 &1400995690 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8257160390965838936, guid: 064830224a982ea4a9cd4948c18e0fa0, type: 3}
+  m_PrefabInstance: {fileID: 1400995689}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1400995691 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8257160390965838939, guid: 064830224a982ea4a9cd4948c18e0fa0, type: 3}
   m_PrefabInstance: {fileID: 1400995689}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1592663465
@@ -2479,9 +2526,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1592663469}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
+      - m_Target: {fileID: 1592663470}
+        m_TargetAssemblyTypeName: Jade, Assembly-CSharp
+        m_MethodName: Trigger
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

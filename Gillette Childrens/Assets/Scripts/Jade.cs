@@ -18,6 +18,8 @@ public class Jade : MonoBehaviour
     //public  TextMeshProUGUI obj;
     //public string[] TaskList;
     public PlayerMovement mouse;
+    private int g;
+    private bool s;
     
 
     public static Action NextTask = delegate { };
@@ -62,5 +64,12 @@ public class Jade : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
+    }
+
+    public void Trigger()
+    {
+        JadeSpeech.secret = mouse.JadeSecret;
+        JadeSpeech.stage = mouse.CurrTask;
+        JadeSpeech.TriggerDialogue();
     }
 }
