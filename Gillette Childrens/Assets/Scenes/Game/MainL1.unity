@@ -1286,7 +1286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.08340454, y: 0.014221191}
+  m_AnchoredPosition: {x: 0.08337402, y: 0.014221191}
   m_SizeDelta: {x: 253.16, y: 138.0973}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1000466396
@@ -2361,16 +2361,16 @@ MonoBehaviour:
   - name: Jade
     sentences:
     - Need a refresher? No problem.
-    - I needed you to get some MRI scan results from the Neuroscience Center.
+    - I need you to get some MRI scan results from the Neuroscience Center.
     - The Neuroscience center will be all the way at the end of the hallway on your
       right.
     - We need to file the MRI results from the last surgery that took place in the
       room.
-    - Speak with me again once you have the it, or if you need another refresher.
+    - Speak with me again once you have it, or if you need another refresher.
   - name: Jade
     sentences:
     - Need a refresher? No problem.
-    - I needed you to get some X-Ray from the Imaging room.
+    - I need you to get an X-Ray from the Imaging room.
     - The Imaging room is right there if you turn to your left.
     - The patient that had the X-Ray done is currently in the outpatient room and
       the doctor will need them.
@@ -2378,8 +2378,8 @@ MonoBehaviour:
   - name: Jade
     sentences:
     - Need a refresher? No problem.
-    - I needed you to get a Therapy Helmet  from the Gateway Plaza.
-    - The Gateway Plaza is all the way down skaywalk on your left thenit will be
+    - I need you to get a Therapy Helmet  from the Gateway Plaza.
+    - The Gateway Plaza is all the way down skywalk on your left then it will be
       on your left
     - We need those crutches for some incoming patients. Thank!
     - Speak with me again once you have the it, or if you need another refresher.
