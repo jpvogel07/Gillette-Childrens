@@ -1973,7 +1973,7 @@ MonoBehaviour:
       to have you.
     - First things first, let's get you used to working with this training program.
     - Hovering over key items will highlight them. Clicking on one will add it to
-      your inventory, over on the right side of the screen.
+      your inventory, over in the menu on the right side of the screen.
     - To check which items you've seen before, you can look in your backpack. Clicking
       on items in your backpack will tell you their names.
     - A key item is about to pop up. Try clicking on it!
@@ -1999,10 +1999,11 @@ MonoBehaviour:
     sentences:
     - Awesome! Kai here has a chart I need. When he sets it down, would you mind
       bringing it to me?
-    - A silhouette of the item you're looking for will appear on the right side of
-      the screen, where your inventory is.
-    - Your current objective will appear at the top of the screen, or you can come
-      speak to me again and I'll remind you.
+    - In the top right corner of your screen is an arrow. Clicking it will bring
+      up a menu showing a silhouette of the item you're looking for, as well as a
+      minimap and a button to open your backpack.
+    - If you forget what you're looking for, or where to find it, you can come speak
+      to me again and I'll remind you.
   manager: {fileID: 0}
   hasChoices: 0
   animation: {fileID: 0}
