@@ -1959,7 +1959,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 181380616e806b44e91af40143aa595e, type: 3}
     - {fileID: 8300000, guid: 9034d1e97b7c8b34aa5ab01e6570a4af, type: 3}
   - sentence:
-    - {fileID: 8300000, guid: b28505eb0281d7e4c89cf905188ef3dd, type: 3}
+    - {fileID: 8300000, guid: a30671057637f5343a3398395780ce14, type: 3}
     - {fileID: 8300000, guid: c1d3fe89497e1a5478884f67d0cd570d, type: 3}
     - {fileID: 8300000, guid: 1f57e863d1689834abbdf99c3d618de0, type: 3}
   SecretTalking: []
