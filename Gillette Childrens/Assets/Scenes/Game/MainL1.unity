@@ -2313,8 +2313,32 @@ MonoBehaviour:
     - {fileID: 8300000, guid: d7ad587f5b6ca1d4790a1338975befce, type: 3}
     - {fileID: 8300000, guid: fc42a96f260eeaf4ca4630f017eba957, type: 3}
   - sentence:
-    - {fileID: 8300000, guid: 2ec28819c783b754abb9b95a39bb18dd, type: 3}
-    - {fileID: 8300000, guid: e17432e8bb74aa843b2135ff885c059a, type: 3}
+    - {fileID: 8300000, guid: d6d3672fedf13ea4dad5fdf6bc739b24, type: 3}
+    - {fileID: 8300000, guid: ab76b10fa21ad0b4fbf9e1c29a71c7ca, type: 3}
+    - {fileID: 8300000, guid: 231c33b6d6a57ad4b8d05f1713aae403, type: 3}
+    - {fileID: 8300000, guid: 767a43f74a8104b488a033a2fd8c80b9, type: 3}
+    - {fileID: 8300000, guid: aafffdcf7a5452f4199a2e578a8e6916, type: 3}
+    - {fileID: 8300000, guid: 6d03717ef4375014790aa4c3f8be348a, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: 30651f16f6fa79a4e956f531689e6e75, type: 3}
+    - {fileID: 8300000, guid: 97d988e3b27fe194b8a0470fa3e964fc, type: 3}
+    - {fileID: 8300000, guid: e9869a1f60bf43e488bedb40562b3e6b, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: 332af2f0dbdf58c42a74f27fbc209956, type: 3}
+    - {fileID: 8300000, guid: 356dfe3871e30804895eb1f3c302a5ed, type: 3}
+    - {fileID: 8300000, guid: 5052de466a3b31d4996277c17fb7420c, type: 3}
+    - {fileID: 8300000, guid: 51747055e69fefd4da75e81c0023fd0f, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: 0e69776baa0f8df4d92e455a98a902e3, type: 3}
+    - {fileID: 8300000, guid: 222fb8694068ca74581efbd2b1552c3d, type: 3}
+    - {fileID: 8300000, guid: a8ac3b7e214498043b81ff77cfdc96f1, type: 3}
+    - {fileID: 8300000, guid: ce53e54e3c0517f47b423d722a564fe0, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: c07c57705eb4b5348870523a0aefcacd, type: 3}
+    - {fileID: 8300000, guid: 8ec569aaee2bb7b45abe5e77abb6f51f, type: 3}
+    - {fileID: 8300000, guid: 3e4ddb4e1874e0347b125de345fe6735, type: 3}
+    - {fileID: 8300000, guid: 802ea1c03787f02439a22790f335d852, type: 3}
+    - {fileID: 8300000, guid: 73e1dcf92fa5a7643810bcca2113e840, type: 3}
   dialogues:
   - name: Jade
     sentences:
@@ -2438,7 +2462,7 @@ MonoBehaviour:
       We\u2019re going to explore the wing in two parts: first the nearer rooms,
       then the farther rooms. "
     - "The first place I\u2019ll send you to is the rehabilitation unit, where I
-      need you to pick me up a wheelchair. "
+      need you to grab me a wheelchair. "
     - 'The rehab unit is used to help patients recover from illnesses, injuries,
       and surgeries that have left them disabled. Rehab treatments often include
       physical or occupational therapy to help patients re-develop key motor functions. '
