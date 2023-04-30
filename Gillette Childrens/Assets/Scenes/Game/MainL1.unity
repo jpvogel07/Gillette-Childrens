@@ -2276,6 +2276,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 6ad3dc1ad3a68104f8c3f31afd318b50, type: 3}
     - {fileID: 8300000, guid: a1210d7f1a2def54aacc8299fe4111e6, type: 3}
     - {fileID: 8300000, guid: dabf7c82d7ef8514b8f5ba4357f100bf, type: 3}
+    - {fileID: 8300000, guid: ea3aa7e20852fd440b6e7c6ea64356d6, type: 3}
     - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
   - sentence:
     - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
@@ -2288,6 +2289,29 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 7fe1f69e517612f4db6c8612d31e11f9, type: 3}
     - {fileID: 8300000, guid: d9672cff6dcb95c4dbfb6244e9fa3946, type: 3}
     - {fileID: 8300000, guid: c7fe777d3bbafe145bbbd24990c1b522, type: 3}
+    - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
+    - {fileID: 8300000, guid: 7fe1f69e517612f4db6c8612d31e11f9, type: 3}
+    - {fileID: 8300000, guid: d9672cff6dcb95c4dbfb6244e9fa3946, type: 3}
+    - {fileID: 8300000, guid: c7fe777d3bbafe145bbbd24990c1b522, type: 3}
+    - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
+    - {fileID: 8300000, guid: 7fe1f69e517612f4db6c8612d31e11f9, type: 3}
+    - {fileID: 8300000, guid: d9672cff6dcb95c4dbfb6244e9fa3946, type: 3}
+    - {fileID: 8300000, guid: c7fe777d3bbafe145bbbd24990c1b522, type: 3}
+    - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
+    - {fileID: 8300000, guid: 7fe1f69e517612f4db6c8612d31e11f9, type: 3}
+    - {fileID: 8300000, guid: d9672cff6dcb95c4dbfb6244e9fa3946, type: 3}
+    - {fileID: 8300000, guid: c7fe777d3bbafe145bbbd24990c1b522, type: 3}
+    - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
+    - {fileID: 8300000, guid: 7fe1f69e517612f4db6c8612d31e11f9, type: 3}
+    - {fileID: 8300000, guid: d9672cff6dcb95c4dbfb6244e9fa3946, type: 3}
     - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
   SecretTalking:
   - sentence:
@@ -2377,12 +2401,12 @@ MonoBehaviour:
   - name: Jade
     sentences:
     - Need a refresher? No problem.
-    - I needed you to get the wheelchair out of the Rehab unit.
+    - I need you to get the wheelchair out of the Rehab unit.
     - The Rehab unit is down the hallway on your right. Then it will be right on
       your left.
-    - Things like Wheel Chairs get left in there all the time due to a child's progression
+    - Things like Wheelchairs get left in there all the time due to a child's progression
       through rehabilitation
-    - Speak with me again once you have the it, or if you need another refresher.
+    - Speak with me again once you have it, or if you need another refresher.
   - name: Jade
     sentences:
     - Need a refresher? No problem.
@@ -2399,15 +2423,14 @@ MonoBehaviour:
     - The Imaging room is right there if you turn to your left.
     - The patient that had the X-Ray done is currently in the outpatient room and
       the doctor will need them.
-    - Speak with me again once you have the it, or if you need another refresher.
+    - Speak with me again once you have it, or if you need another refresher.
   - name: Jade
     sentences:
     - Need a refresher? No problem.
-    - I need you to get a Therapy Helmet  from the Gateway Plaza.
+    - I need you to get the crutches in the Gateway Plaza.
     - The Gateway Plaza is all the way down skywalk on your left then it will be
       on your left
-    - We need those crutches for some incoming patients. Thank!
-    - Speak with me again once you have the it, or if you need another refresher.
+    - Speak with me again once you have it, or if you need another refresher.
   manager: {fileID: 0}
   hasChoices: 0
   animation: {fileID: 0}
