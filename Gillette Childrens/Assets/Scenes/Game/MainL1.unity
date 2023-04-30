@@ -1958,11 +1958,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: f37c61651a4bb724ea52c60692f42a4d, type: 3}
     - {fileID: 8300000, guid: 9af5ba1e155a5ea469ce64039d36f029, type: 3}
     - {fileID: 8300000, guid: 181380616e806b44e91af40143aa595e, type: 3}
-    - {fileID: 8300000, guid: 9034d1e97b7c8b34aa5ab01e6570a4af, type: 3}
   - sentence:
-    - {fileID: 8300000, guid: a30671057637f5343a3398395780ce14, type: 3}
-    - {fileID: 8300000, guid: c1d3fe89497e1a5478884f67d0cd570d, type: 3}
-    - {fileID: 8300000, guid: 1f57e863d1689834abbdf99c3d618de0, type: 3}
+    - {fileID: 8300000, guid: 65f5d3b7cee55754386622531d850196, type: 3}
+    - {fileID: 8300000, guid: 0340814e935cb3943b49717170f75d8b, type: 3}
+    - {fileID: 8300000, guid: c6aacb670a8866644bb434bef8940f3a, type: 3}
   SecretTalking: []
   dialogues:
   - name: Jade
@@ -2001,7 +2000,7 @@ MonoBehaviour:
       bringing it to me?
     - In the top right corner of your screen is an arrow. Clicking it will bring
       up a menu showing a silhouette of the item you're looking for, as well as a
-      minimap and a button to open your backpack.
+      mini-map and a button to open your backpack.
     - If you forget what you're looking for, or where to find it, you can come speak
       to me again and I'll remind you.
   manager: {fileID: 0}
