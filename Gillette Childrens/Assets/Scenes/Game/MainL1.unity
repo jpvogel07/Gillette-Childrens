@@ -2303,14 +2303,14 @@ MonoBehaviour:
     - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
   - sentence:
     - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
-    - {fileID: 8300000, guid: 7fe1f69e517612f4db6c8612d31e11f9, type: 3}
-    - {fileID: 8300000, guid: d9672cff6dcb95c4dbfb6244e9fa3946, type: 3}
-    - {fileID: 8300000, guid: c7fe777d3bbafe145bbbd24990c1b522, type: 3}
+    - {fileID: 8300000, guid: afb664c813baac840af555513271e593, type: 3}
+    - {fileID: 8300000, guid: f2d8fe10f25260b428b6f64186daca80, type: 3}
+    - {fileID: 8300000, guid: 1def347a1c25d124fbb0bf44dc2ba674, type: 3}
     - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
   - sentence:
     - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
-    - {fileID: 8300000, guid: 7fe1f69e517612f4db6c8612d31e11f9, type: 3}
-    - {fileID: 8300000, guid: d9672cff6dcb95c4dbfb6244e9fa3946, type: 3}
+    - {fileID: 8300000, guid: 7443660f67c0c33409ff59ffc739e232, type: 3}
+    - {fileID: 8300000, guid: 11eee60f828e2724083bed5b755c26ce, type: 3}
     - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
   SecretTalking:
   - sentence:
@@ -2418,16 +2418,16 @@ MonoBehaviour:
     sentences:
     - Need a refresher? No problem.
     - I need you to get an X-Ray from the Imaging room.
-    - The Imaging room is right there if you turn to your left.
+    - The Imaging room is to the left of us down the hall.
     - The patient that had the X-Ray done is currently in the outpatient room and
-      the doctor will need them.
+      the doctor will need it.
     - Speak with me again once you have it, or if you need another refresher.
   - name: Jade
     sentences:
     - Need a refresher? No problem.
     - I need you to get the crutches in the Gateway Plaza.
-    - The Gateway Plaza is all the way down skywalk on your left then it will be
-      on your left
+    - To get to the Gateway Plaza just head left from here and go stright down the
+      skywalk.
     - Speak with me again once you have it, or if you need another refresher.
   manager: {fileID: 0}
   hasChoices: 0
