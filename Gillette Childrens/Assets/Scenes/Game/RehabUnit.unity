@@ -254,7 +254,7 @@ RectTransform:
   m_GameObject: {fileID: 207288666}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.14344, y: 0.14344, z: 0.14344}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 346936266}
@@ -262,7 +262,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 278, y: -135}
+  m_AnchoredPosition: {x: -170, y: 4}
   m_SizeDelta: {x: 631, y: 767}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &207288668
@@ -375,7 +375,7 @@ MonoBehaviour:
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 2a796544deed6c34eb4b0c87bfdd8380, type: 3}
+          m_ObjectArgument: {fileID: 8300000, guid: 82915942247fe1645aae5f47a84242bf, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0

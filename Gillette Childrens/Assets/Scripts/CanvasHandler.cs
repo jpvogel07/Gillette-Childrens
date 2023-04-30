@@ -37,10 +37,12 @@ public class CanvasHandler : MonoBehaviour
     private void Awake()
     {
         //GetThings(this.gameObject.GetComponent<CanvasHandler>());
-
-        MiniMap = GameObject.Find("MiniMap")?.gameObject;
+        if (GameObject.Find("MiniMap"))
+        {
+            MiniMap = GameObject.Find("MiniMap").gameObject;
+        }
         AR = GameObject.Find("AR switch");
-        //MiniMap.GetComponent<Image>().sprite = Map;
+        MiniMap.GetComponent<Image>().sprite = Map;
         //AR.GetComponent<ARHandler>().scene = this.gameObject;
 
     }

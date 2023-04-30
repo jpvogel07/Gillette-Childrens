@@ -44,13 +44,13 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if(dialogueOpen == false)
+        if (dialogueOpen == false)
         {
             dialogueText.enabled = false;
             textBox.SetActive(false);
             nameText.enabled = false;
-        } 
-        else if(dialogueOpen == true)
+        }
+        else if (dialogueOpen == true)
         {
             dialogueText.enabled = true;
             textBox.SetActive(true);
@@ -92,17 +92,17 @@ public class DialogueManager : MonoBehaviour
 
         sentences.Clear();
 
-        foreach(string sentence in dialogue.sentences)
+        foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
 
-        TriggerTalking();        
+        TriggerTalking();
         DisplayNextSentence();
-    } 
+    }
     public void DisplayNextSentence()
     {
-        if (sentences.Count == 0) 
+        if (sentences.Count == 0)
         {
             EndDialogue();
             return;
@@ -115,10 +115,10 @@ public class DialogueManager : MonoBehaviour
         number++;
     }
 
-    IEnumerator TypeSentence(string sentence) 
+    IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";
-        foreach(char letter in sentence.ToCharArray())
+        foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
             yield return null;
@@ -127,7 +127,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void EndDialogue()
     {
-        
+
         continueButton.SetActive(false);
         animateBox.SetBool("IsOpen", false);
         animateName.SetBool("IsOpen", false);
@@ -139,7 +139,8 @@ public class DialogueManager : MonoBehaviour
             hasChoice = false;
         }
         //end of dialogue
-        if (tut) { 
+        if (tut)
+        {
             DialogueDone();
         }
         dialogueOpen = false;
@@ -159,22 +160,18 @@ public class DialogueManager : MonoBehaviour
 
     void PlayVoices()
     {
-        
+
         //Debug.Log("playing number " + number);
         speech.Stop();
         if (number <= talk.Count)
         {
             speech.clip = talk[number];
+            speech.Play();
         }
         else
         {
             speech.clip = null;
         }
-        if (speech.clip != null)
-        {
-            speech.Play();
-        }
-        
     }
 
     public void LoadTalking(List<AudioClip> list)
