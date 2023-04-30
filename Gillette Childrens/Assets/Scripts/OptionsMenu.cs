@@ -57,6 +57,7 @@ public class OptionsMenu : MonoBehaviour
     public void setQuality(int index)
     {
         QualitySettings.SetQualityLevel(index);
+        Debug.Log("The Quality index is: " + index);
     }
 
     public void fullScreenToggle(bool status)
