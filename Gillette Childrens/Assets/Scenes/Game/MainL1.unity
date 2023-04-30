@@ -2292,15 +2292,14 @@ MonoBehaviour:
     - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
   - sentence:
     - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
-    - {fileID: 8300000, guid: 7fe1f69e517612f4db6c8612d31e11f9, type: 3}
-    - {fileID: 8300000, guid: d9672cff6dcb95c4dbfb6244e9fa3946, type: 3}
-    - {fileID: 8300000, guid: c7fe777d3bbafe145bbbd24990c1b522, type: 3}
+    - {fileID: 8300000, guid: 0910533e470dde24fbb639df8b5f84d3, type: 3}
+    - {fileID: 8300000, guid: ab97ba71042e2a442bec35c863192d09, type: 3}
+    - {fileID: 8300000, guid: 58352d2f6fa2d47439f60adec38e8eec, type: 3}
     - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
   - sentence:
     - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
-    - {fileID: 8300000, guid: 7fe1f69e517612f4db6c8612d31e11f9, type: 3}
-    - {fileID: 8300000, guid: d9672cff6dcb95c4dbfb6244e9fa3946, type: 3}
-    - {fileID: 8300000, guid: c7fe777d3bbafe145bbbd24990c1b522, type: 3}
+    - {fileID: 8300000, guid: 0f97ffd7649c7db4a8f3a0d47bec3247, type: 3}
+    - {fileID: 8300000, guid: 27a66e393dcf01b4d94a98d0b13a83a7, type: 3}
     - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
   - sentence:
     - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
@@ -2401,20 +2400,19 @@ MonoBehaviour:
   - name: Jade
     sentences:
     - Need a refresher? No problem.
-    - I need you to get the wheelchair out of the Rehab unit.
-    - The Rehab unit is down the hallway on your right. Then it will be right on
-      your left.
-    - Things like Wheelchairs get left in there all the time due to a child's progression
-      through rehabilitation
+    - I need you to go get the wheelchair, which can be found in the Rehab unit.
+    - The Rehab unit is down the hallway on your right. Then it will be through the
+      door on your left.
+    - Things like Wheelchairs often get left in there as a child progresses through
+      their rehabilitation
     - Speak with me again once you have it, or if you need another refresher.
   - name: Jade
     sentences:
     - Need a refresher? No problem.
-    - I need you to get some MRI scan results from the Neuroscience Center.
+    - I need you to grab an MRI scan that we took from a recent surgery, it can be
+      found in the Neuroscience Center.
     - The Neuroscience center will be all the way at the end of the hallway on your
       right.
-    - We need to file the MRI results from the last surgery that took place in the
-      room.
     - Speak with me again once you have it, or if you need another refresher.
   - name: Jade
     sentences:
