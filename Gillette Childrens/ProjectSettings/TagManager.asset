@@ -9,6 +9,7 @@ TagManager:
   - Blocker
   - AR
   - wisp
+  - Backpack
   layers:
   - Default
   - TransparentFX
