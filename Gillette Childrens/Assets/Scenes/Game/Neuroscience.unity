@@ -510,7 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f23ef4faeb2a2a442b8d4129b462655b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TaskNum: 6
+  TaskNum: 5
   mouse: {fileID: 0}
   item: {fileID: 0}
   Jade: {fileID: 0}

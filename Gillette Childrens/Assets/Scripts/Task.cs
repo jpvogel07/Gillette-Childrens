@@ -54,11 +54,6 @@ public class Task : MonoBehaviour
             mouse.GetComponent<PlayerMovement>().keys[TaskNum] = true;
             Destroy(this.gameObject);
         }
-        else
-        {
-            this.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
-            Debug.Log("task failed");
-        }
     }
 
     /*private void ItemPopup() {

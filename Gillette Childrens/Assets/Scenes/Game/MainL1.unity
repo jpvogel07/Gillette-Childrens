@@ -584,7 +584,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Main Menu
+  m_text: Continue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1958,11 +1958,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: f37c61651a4bb724ea52c60692f42a4d, type: 3}
     - {fileID: 8300000, guid: 9af5ba1e155a5ea469ce64039d36f029, type: 3}
     - {fileID: 8300000, guid: 181380616e806b44e91af40143aa595e, type: 3}
-    - {fileID: 8300000, guid: 9034d1e97b7c8b34aa5ab01e6570a4af, type: 3}
   - sentence:
-    - {fileID: 8300000, guid: a30671057637f5343a3398395780ce14, type: 3}
-    - {fileID: 8300000, guid: c1d3fe89497e1a5478884f67d0cd570d, type: 3}
-    - {fileID: 8300000, guid: 1f57e863d1689834abbdf99c3d618de0, type: 3}
+    - {fileID: 8300000, guid: 65f5d3b7cee55754386622531d850196, type: 3}
+    - {fileID: 8300000, guid: 0340814e935cb3943b49717170f75d8b, type: 3}
+    - {fileID: 8300000, guid: c6aacb670a8866644bb434bef8940f3a, type: 3}
   SecretTalking: []
   dialogues:
   - name: Jade
@@ -2001,7 +2000,7 @@ MonoBehaviour:
       bringing it to me?
     - In the top right corner of your screen is an arrow. Clicking it will bring
       up a menu showing a silhouette of the item you're looking for, as well as a
-      minimap and a button to open your backpack.
+      mini-map and a button to open your backpack.
     - If you forget what you're looking for, or where to find it, you can come speak
       to me again and I'll remind you.
   manager: {fileID: 0}
@@ -2277,6 +2276,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 6ad3dc1ad3a68104f8c3f31afd318b50, type: 3}
     - {fileID: 8300000, guid: a1210d7f1a2def54aacc8299fe4111e6, type: 3}
     - {fileID: 8300000, guid: dabf7c82d7ef8514b8f5ba4357f100bf, type: 3}
+    - {fileID: 8300000, guid: ea3aa7e20852fd440b6e7c6ea64356d6, type: 3}
     - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
   - sentence:
     - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
@@ -2289,6 +2289,28 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 7fe1f69e517612f4db6c8612d31e11f9, type: 3}
     - {fileID: 8300000, guid: d9672cff6dcb95c4dbfb6244e9fa3946, type: 3}
     - {fileID: 8300000, guid: c7fe777d3bbafe145bbbd24990c1b522, type: 3}
+    - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
+    - {fileID: 8300000, guid: 0910533e470dde24fbb639df8b5f84d3, type: 3}
+    - {fileID: 8300000, guid: ab97ba71042e2a442bec35c863192d09, type: 3}
+    - {fileID: 8300000, guid: 58352d2f6fa2d47439f60adec38e8eec, type: 3}
+    - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
+    - {fileID: 8300000, guid: 0f97ffd7649c7db4a8f3a0d47bec3247, type: 3}
+    - {fileID: 8300000, guid: 27a66e393dcf01b4d94a98d0b13a83a7, type: 3}
+    - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
+    - {fileID: 8300000, guid: afb664c813baac840af555513271e593, type: 3}
+    - {fileID: 8300000, guid: f2d8fe10f25260b428b6f64186daca80, type: 3}
+    - {fileID: 8300000, guid: 1def347a1c25d124fbb0bf44dc2ba674, type: 3}
+    - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
+  - sentence:
+    - {fileID: 8300000, guid: 53a8f4d7a135af542a6c75d80f9f2838, type: 3}
+    - {fileID: 8300000, guid: 7443660f67c0c33409ff59ffc739e232, type: 3}
+    - {fileID: 8300000, guid: 11eee60f828e2724083bed5b755c26ce, type: 3}
     - {fileID: 8300000, guid: b3c3c3d04c3fe184d821afb24aaec655, type: 3}
   SecretTalking:
   - sentence:
@@ -2378,37 +2400,35 @@ MonoBehaviour:
   - name: Jade
     sentences:
     - Need a refresher? No problem.
-    - I needed you to get the wheelchair out of the Rehab unit.
-    - The Rehab unit is down the hallway on your right. Then it will be right on
-      your left.
-    - Things like Wheel Chairs get left in there all the time due to a child's progression
-      through rehabilitation
-    - Speak with me again once you have the it, or if you need another refresher.
+    - I need you to go get the wheelchair, which can be found in the Rehab unit.
+    - The Rehab unit is down the hallway on your right. Then it will be through the
+      door on your left.
+    - Things like Wheelchairs often get left in there as a child progresses through
+      their rehabilitation
+    - Speak with me again once you have it, or if you need another refresher.
   - name: Jade
     sentences:
     - Need a refresher? No problem.
-    - I need you to get some MRI scan results from the Neuroscience Center.
+    - I need you to grab an MRI scan that we took from a recent surgery, it can be
+      found in the Neuroscience Center.
     - The Neuroscience center will be all the way at the end of the hallway on your
       right.
-    - We need to file the MRI results from the last surgery that took place in the
-      room.
     - Speak with me again once you have it, or if you need another refresher.
   - name: Jade
     sentences:
     - Need a refresher? No problem.
     - I need you to get an X-Ray from the Imaging room.
-    - The Imaging room is right there if you turn to your left.
+    - The Imaging room is to the left of us down the hall.
     - The patient that had the X-Ray done is currently in the outpatient room and
-      the doctor will need them.
-    - Speak with me again once you have the it, or if you need another refresher.
+      the doctor will need it.
+    - Speak with me again once you have it, or if you need another refresher.
   - name: Jade
     sentences:
     - Need a refresher? No problem.
-    - I need you to get a Therapy Helmet  from the Gateway Plaza.
-    - The Gateway Plaza is all the way down skywalk on your left then it will be
-      on your left
-    - We need those crutches for some incoming patients. Thank!
-    - Speak with me again once you have the it, or if you need another refresher.
+    - I need you to get the crutches in the Gateway Plaza.
+    - To get to the Gateway Plaza just head left from here and go stright down the
+      skywalk.
+    - Speak with me again once you have it, or if you need another refresher.
   manager: {fileID: 0}
   hasChoices: 0
   animation: {fileID: 0}
@@ -2753,7 +2773,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 22
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
