@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
     
     public Sprite[] InventoryPics = new Sprite[3];
     public Image inventory;
+    public GameObject PopUp;
     //public GameObject WES;
 
     public static Action playClick = delegate { };
@@ -105,6 +106,11 @@ public class PlayerMovement : MonoBehaviour
         {
             //Debug.Log("Click");
             playClick();
+            if (PopUp)
+            {
+                Destroy(PopUp);
+                Debug.Log("pop");
+            }
         }
     }
 
